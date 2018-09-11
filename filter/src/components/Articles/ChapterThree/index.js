@@ -5,9 +5,10 @@ class ChapterTwo extends Component {
 
 render() {
   return (
-    <div>
+    <div className="wrapper">
+    <h1>Sovjetiska undervattensfarkoster</h1>
     <p>janwfkfnekfnfsnkln </p>
-  
+
 
     </div>
   )
