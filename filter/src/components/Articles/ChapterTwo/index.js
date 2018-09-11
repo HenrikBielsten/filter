@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Joystick from "../../Joystick";
 
 
 class ChapterThree extends Component {
@@ -8,6 +9,8 @@ render() {
     <div className="wrapper">
     <h1>Sovjetiska undervattensfarkoster</h1>
     <p>janwfkfnekfnfsnkln </p>
+    <Joystick />
+
     </div>
   )
 }
