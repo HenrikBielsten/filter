@@ -1,4 +1,8 @@
   const articles = [
+  {
+  id: 1,
+  title: 'Miniubåtar med larvband',
+  chapters: [
     {
       chapter: 1,
       title: 'Miniubåtar med larvband',
@@ -18,6 +22,16 @@
       image: '1',
       text2: "  Pri ex modo libris incorrupte."
     },
-  ];
+  ]
+},
+{
+    id:2,
+    title: 'tiittlekjfe o',
+    chapters: [
+      {}
+    ]
+
+}
+];
 
 export default articles;

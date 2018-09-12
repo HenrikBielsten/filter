@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Article from '../Article/Article.js';
 import articles from '../Article/articles';
 import ArticleWrapper from '../ArticleWrapper/ArticlesWrapper.js';
 
