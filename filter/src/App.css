@@ -1,3 +1,25 @@
+@font-face {
+  font-family: 'Harriet Display-Regular';
+  src: url('/Font/Harriet Display-Regular');
+}
+@font-face {
+  font-family: 'HarrietDisplay-Light';
+  src: url('/Font/HarrietDisplay-Light.otf');
+}
+@font-face {
+  font-family: 'HarrietDisplayMedium';
+  src: url('/Font/HarrietDisplayMedium.otf');
+}
+@font-face {
+  font-family: 'HarrietText-Regular';
+  src: url('/Font/HarrietText-Regular.otf');
+}
+@font-face {
+  font-family: 'pf-din-text-pro';
+  src: url('/Font/pf-din-text-pro.otf');
+}
+
+
 .App {
   text-align: center;
 }
