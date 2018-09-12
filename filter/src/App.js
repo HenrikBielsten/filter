@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import Article from './components/Articles';
-import './App.css';
+// import ArticleWrapper from './components/ArticleWrapper/ArticlesWrapper.js';
+import Router from './components/Routes/MainRoutes'
+// import articles from './components/Article/articles';
+import './index.css';
+// <ArticleWrapper articles={articles}/>
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">DIS IS HTE BEST APP EVER</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Article />
+        <h2> Chapters</h2>
+        <Router />
       </div>
     );
   }
