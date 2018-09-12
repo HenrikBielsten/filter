@@ -8,11 +8,26 @@ class Article extends Component {
 render() {
   return (
     <div>
-    <ChapterOne />
-    <ChapterTwo />
-    <ChapterThree />
+    // article: {
+    //   title:
+    //   chapters: {
+    //     [
+    //       {
+    //         [],
+    //         [
+    //
+    //         ]
+    //       }
+    //     ],
+    //     [...
+    //     ]
+    //   }
+    // }
     </div>
   )
 }
 }
+
+
+
 export default Article;
