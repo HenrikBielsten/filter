@@ -1,13 +1,22 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import './App.css';
 import Joystick from './components/Joystick/Joystick.js'
 import Test from './components/Test/Test.js'
 
+=======
+// import ArticleWrapper from './components/ArticleWrapper/ArticlesWrapper.js';
+import Router from './components/Routes/MainRoutes'
+// import articles from './components/Article/articles';
+import './index.css';
+// <ArticleWrapper articles={articles}/>
+>>>>>>> 2986bb7c241189ede9b6c208ea822fde47e668cb
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+<<<<<<< HEAD
 
         <h1>HEJ</h1>
 
@@ -141,6 +150,10 @@ class App extends Component {
 	</div>
 </article>
 
+=======
+        <h2> Chapters</h2>
+        <Router />
+>>>>>>> 2986bb7c241189ede9b6c208ea822fde47e668cb
       </div>
     );
   }
