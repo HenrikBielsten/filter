@@ -8,21 +8,7 @@ class Article extends Component {
 render() {
   return (
     <div>
-    // article: {
-    //   title:
-    //   chapters: {
-    //     [
-    //       {
-    //         [],
-    //         [
-    //
-    //         ]
-    //       }
-    //     ],
-    //     [...
-    //     ]
-    //   }
-    // }
+      hej
     </div>
   )
 }
