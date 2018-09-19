@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Joystick from './components/Joystick/Joystick.js'
-import Test from './components/Test/Test.js'
+// import Joystick from './components/Joystick/Joystick.js'
+// import Test from './components/Test/Test.js'
 import ProgressBar from './components/ProgressBar/ProgressBar.js'
 import NippleTest from './components/NippleTest/NippleTest.js';
 import Router from './components/Routes/MainRoutes'
