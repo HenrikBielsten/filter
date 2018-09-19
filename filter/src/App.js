@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Joystick from './components/Joystick/Joystick.js'
 import Test from './components/Test/Test.js'
-
+import ProgressBar from './components/ProgressBar/ProgressBar.js'
 
 // import ArticleWrapper from './components/ArticleWrapper/ArticlesWrapper.js';
 import Router from './components/Routes/MainRoutes'
@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
+<ProgressBar />
 
         <h1>HEJ</h1>
 
