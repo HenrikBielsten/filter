@@ -1,80 +1,75 @@
 import React, { Component } from "react";
-import './Joystick.css';
+import ReactNipple from 'react-nipple';
 
-class Joystick extends Component {
+class NippleTest extends Component {
+
+  state = {
+    upDown: 0,
+  }
 
   constructor(props){
         super(props);
         this.timer = null;
     }
 
-  scrollUpF = () => {
-    window.scrollBy(0, -1); // horizontal and vertical scroll increments
-    this.timer = setTimeout(() => this.scrollUpF(),20); // scrolls every X milliseconds
-    console.log('scrollUpF');
-  }
+  // pressure = (evt,data) => {
+  //   console.log(evt);
+  // }
 
-  scrollUpS = () => {
-    window.scrollBy(0, -1); // horizontal and vertical scroll increments
-    this.timer = setTimeout(() => this.scrollUpS(),50); // scrolls every X milliseconds
-    console.log('scrollUpS');
+  scroll = (evt, data) => {
+    this.stopScroll();
+    console.log(data);
+    console.log(data.direction);
+    if (data.direction === undefined) {
+      this.setState({
+        upDown: 0,
+      })
+    }
+    else if (data.direction.y === 'down') {
+      this.setState({
+        upDown: 1,
+      })
+    } else if (data.direction.y === 'up') {
+      this.setState({
+        upDown: -1,
+      })
+    }
+    console.log(this.state.upDown);
+    window.scrollBy(0, this.state.upDown); // horizontal and vertical scroll increments
+    this.timer = setTimeout(() => this.scroll(evt,data), 20); // scrolls every X milliseconds
   }
-
-  scrollDownS = () => {
-    window.scrollBy(0, 1); // horizontal and vertical scroll increments
-    this.timer = setTimeout(() => this.scrollDownS(),50); // scrolls every X milliseconds
-    console.log('scrollDownS');
-  }
-
-  scrollDownF = () => {
-    window.scrollBy(0, 1); // horizontal and vertical scroll increments
-    this.timer = setTimeout(() => this.scrollDownF(),20); // scrolls every X milliseconds
-    console.log('scrollUpF');
-  }
-
 
   stopScroll = () => {
       clearTimeout(this.timer);
       console.log('stopped');
   }
 
-render() {
-  return (
-    <div>
+    render() {
+        return (
+            <div>
+                <ReactNipple
+                    // supports all nipplejs options
+                    // see https://github.com/yoannmoinet/nipplejs#options
+                    options={{ mode: 'static', position: { top: '50%', left: '50%' }, color: 'green' }}
+                    // any unknown props will be passed to the container element, e.g. 'title', 'style' etc
+                    style={{
+                        outline: '1px solid red',
+                        width: '20vh',
+                        height: '20vh',
+                        position: 'fixed',
+                        top: '68vh',
+                        left: '60vw',
+                        // if you pass position: 'relative', you don't need to import the stylesheet
+                    }}
+                    // all events supported by nipplejs are available as callbacks
+                    // see https://github.com/yoannmoinet/nipplejs#start
 
-      <div
-        className="scrollContainer">
-
-        <div className="scrollUpFast"
-          onPointerOver={this.scrollUpF}
-          onMouseLeave={this.stopScroll}>
-
-        </div>
-
-        <div
-          className="scrollUpSlow"
-          onPointerOver={this.scrollUpS}
-          onMouseLeave={this.stopScroll}>
-
-        </div>
-
-        <div className="scrollDownSlow"
-          onPointerOver={this.scrollDownS}
-          onMouseLeave={this.stopScroll}>
-
-        </div>
-
-        <div className="scrollDownFast"
-          onPointerOver={this.scrollDownF}
-          onMouseLeave={this.stopScroll}>
-
-        </div>
-
-      </div>
-
-    </div>
-  )
-}
+                      onMove={this.scroll}
+                      onEnd={this.stopScroll}
+                />
+            </div>
+        );
+    }
 }
 
-export default Joystick;
+export default NippleTest;
