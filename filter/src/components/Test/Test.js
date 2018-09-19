@@ -23,6 +23,8 @@ const handle = (props) => {
 };
 
 const wrapperStyle = { width: "90vw", margin: 10 };
+const style = { float: 'left', width: 160, height: 400, marginBottom: 160, marginLeft: 50 };
+const parentStyle = { overflow: 'hidden' };
 
 class Test extends Component {
 
@@ -30,14 +32,17 @@ class Test extends Component {
     return (
       <div className="App">
 
-            <div style={wrapperStyle}>
-              <p>Slider with custom handle</p>
-              <Slider min={0} max={20} defaultValue={3} handle={handle} />
-            </div>
-            <div style={wrapperStyle}>
-              <p>Range with custom handle</p>
-              <Range min={0} max={20} defaultValue={[3, 10]} tipFormatter={value => `${value}%`} />
-            </div>
+            <div style={style}>
+              <div style={parentStyle}>
+                <p>Slider with custom handle</p>
+                <Slider vertical min={0} max={20} defaultValue={3} handle={handle} />
+                </div>
+                {/* <div style={wrapperStyle}>
+                <p>Range with custom handle</p>
+                <Range min={0} max={20} defaultValue={[3, 10]} tipFormatter={value => `${value}%`} />
+                </div> */}
+              </div>
+
 
       </div>
   // document.getElementById('__react-content')

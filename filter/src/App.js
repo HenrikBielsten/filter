@@ -3,12 +3,10 @@ import './App.css';
 import Joystick from './components/Joystick/Joystick.js'
 import Test from './components/Test/Test.js'
 import ProgressBar from './components/ProgressBar/ProgressBar.js'
-
-// import ArticleWrapper from './components/ArticleWrapper/ArticlesWrapper.js';
+import NippleTest from './components/NippleTest/NippleTest.js';
 import Router from './components/Routes/MainRoutes'
-// import articles from './components/Article/articles';
 import './index.css';
-// <ArticleWrapper articles={articles}/>
+
 
 
 class App extends Component {
@@ -19,8 +17,10 @@ class App extends Component {
 
         <h1>HEJ</h1>
 
-        <Test />
-        <Joystick />
+        <NippleTest />
+
+        {/* <Test /> */}
+        {/* <Joystick /> */}
 
         <article id="post-6736" className="longread post-6736 post type-post status-publish format-standard has-post-thumbnail hentry category-reportage tag-palmemordet-den-osannolika-mordaren skribenter-thomas-pettersson fotografer-hans-gedda">
 	<div className="entry-thumbnail">
