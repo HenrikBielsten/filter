@@ -28,16 +28,12 @@ class ProgressBar extends Component {
              html.clientHeight, html.scrollHeight, html.offsetHeight );
 
     var value = Math.floor(window.scrollY/(body.offsetHeight-window.innerHeight)*100);
-    this.setState({ percentage: value})
-
+    console.log(window.scrollY/body.offsetHeight);
  };
 render() {
   return (
     <div className="progress-bar">
-
         <Filler percentage={this.state.percentage} />
-
-
     </div>
   )
 }
