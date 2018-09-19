@@ -20,14 +20,14 @@ class ProgressBar extends Component {
 
 
   handleScroll() {
-   var winHeight = window.Height;
+   // var winHeight = window.Height;
 
     var body = document.body;
-    var html = document.documentElement;
-    var docHeight = Math.max( body.scrollHeight, body.offsetHeight,
-             html.clientHeight, html.scrollHeight, html.offsetHeight );
+    // var html = document.documentElement;
+    // var docHeight = Math.max( body.scrollHeight, body.offsetHeight,
+             // html.clientHeight, html.scrollHeight, html.offsetHeight );
 
-    var value = Math.floor(window.scrollY/(body.offsetHeight-window.innerHeight)*100);
+    var value = (window.scrollY/(body.offsetHeight-window.innerHeight)*100);
     this.setState({ percentage: value})
 
  };

@@ -36,7 +36,7 @@ class NippleTest extends Component {
     }
     console.log(this.state.upDown);
     window.scrollBy(0, this.state.upDown); // horizontal and vertical scroll increments
-    this.timer = setTimeout(() => this.scroll(evt,data),100); // scrolls every X milliseconds
+    this.timer = setTimeout(() => this.scroll(evt,data), 20); // scrolls every X milliseconds
   }
 
   stopScroll = () => {

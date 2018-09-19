@@ -2,5 +2,5 @@
   background-color: pink;
   height: 100%;
   border-radius: inherit;
-  transition: width .2s ease-in;
+  /* transition: width .05s ease-in; */
 }
