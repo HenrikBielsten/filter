@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Joystick from './components/Joystick/Joystick.js'
+// import Joystick from './components/Joystick/Joystick.js'
+import JoystickNew from './components/Joystick/JoystickNew.js'
 // import Test from './components/Test/Test.js'
 import ProgressBar from './components/ProgressBar/ProgressBar.js'
 import Router from './components/Routes/MainRoutes'
@@ -19,9 +20,10 @@ class App extends Component {
         {/* <NippleTest /> */}
 
         {/* <Test /> */}
-        <Joystick />
+        {/* <Joystick /> */}
+        <JoystickNew />
 
-        <article id="post-6736" className="longread post-6736 post type-post status-publish format-standard has-post-thumbnail hentry category-reportage tag-palmemordet-den-osannolika-mordaren skribenter-thomas-pettersson fotografer-hans-gedda">
+        <article style={{overflow: 'hidden'}} id="post-6736" className="longread post-6736 post type-post status-publish format-standard has-post-thumbnail hentry category-reportage tag-palmemordet-den-osannolika-mordaren skribenter-thomas-pettersson fotografer-hans-gedda">
 	<div className="entry-thumbnail">
 			<div className="featured-image-container">
 			<div className="featured-image" style={{backgroundImage: "url('https://i1.wp.com/magasinetfilter.se/wp-content/uploads/2018/05/kap1-1.jpg?fit=1500%2C840&#038;ssl=1')"}}></div></div>
