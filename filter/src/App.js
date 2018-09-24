@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Joystick from './components/Joystick/Joystick.js'
 // import Test from './components/Test/Test.js'
-import ProgressBar from './components/ProgressBar/ProgressBar.js'
-import Router from './components/Routes/MainRoutes'
+
 import './index.css';
 
 
@@ -12,14 +11,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-<ProgressBar />
+
 
         <h1>HEJ</h1>
 
         {/* <NippleTest /> */}
 
         {/* <Test /> */}
-        <Joystick />
+         <Joystick />
 
         <article id="post-6736" className="longread post-6736 post type-post status-publish format-standard has-post-thumbnail hentry category-reportage tag-palmemordet-den-osannolika-mordaren skribenter-thomas-pettersson fotografer-hans-gedda">
 	<div className="entry-thumbnail">
@@ -149,8 +148,7 @@ class App extends Component {
 </article>
 
 =======
-        <h2> Chapters</h2>
-        <Router />
+
 
       </div>
     );

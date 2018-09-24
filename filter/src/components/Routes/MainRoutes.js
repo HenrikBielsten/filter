@@ -11,8 +11,8 @@ import NotFound from '../NotFound/NotFound';
 const Router = () => (
   <BrowserRouter>
     <Switch>
-    <Route path='/' component={Articles}/>
-    <Route path='/articles/:id/' component={Article}/>
+    <Route exact path='/' component={Articles}/>
+    <Route path='/articles/:id' component={Article}/>
     <Route component={NotFound}/>
     </Switch>
   </BrowserRouter>
