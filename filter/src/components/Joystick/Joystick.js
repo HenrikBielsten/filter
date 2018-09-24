@@ -5,6 +5,7 @@ class NippleTest extends Component {
 
   state = {
     upDown: 0,
+    velocity: 0,
   }
 
   constructor(props){
@@ -19,24 +20,27 @@ class NippleTest extends Component {
   scroll = (evt, data) => {
     this.stopScroll();
     console.log(data);
-    console.log(data.direction);
+    console.log(data.distance);
     if (data.direction === undefined) {
       this.setState({
         upDown: 0,
+        velocity: 0,
       })
     }
     else if (data.direction.y === 'down') {
       this.setState({
         upDown: 1,
+        velocity: data.distance,
       })
     } else if (data.direction.y === 'up') {
       this.setState({
         upDown: -1,
+        velocity: data.distance,
       })
     }
     console.log(this.state.upDown);
     window.scrollBy(0, this.state.upDown); // horizontal and vertical scroll increments
-    this.timer = setTimeout(() => this.scroll(evt,data), 20); // scrolls every X milliseconds
+    this.timer = setTimeout(() => this.scroll(evt,data), this.state.velocity); // scrolls every X milliseconds
   }
 
   stopScroll = () => {
@@ -57,8 +61,8 @@ class NippleTest extends Component {
                         width: '20vh',
                         height: '20vh',
                         position: 'fixed',
-                        top: '68vh',
-                        left: '60vw',
+                        // top: '68vh',
+                        // left: '60vw',
                         // if you pass position: 'relative', you don't need to import the stylesheet
                     }}
                     // all events supported by nipplejs are available as callbacks
