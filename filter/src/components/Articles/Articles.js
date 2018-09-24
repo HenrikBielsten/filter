@@ -5,10 +5,6 @@ class Articles extends Component {
   state = {
     articles: articles,
   }
-  componentDidMount() {
-    let { articles } = this.props.match.params;
-  }
-
   render() {
     return (
       <div>

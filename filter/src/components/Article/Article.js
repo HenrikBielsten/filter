@@ -2,13 +2,10 @@ import React, { Component } from 'react';
 import articles from './articles.js';
 import { NavLink } from 'react-router-dom';
 import ProgressBar from '../ProgressBar/ProgressBar.js';
-import Joystick from '../Joystick/Joystick.js';
+import JoystickNew from '../Joystick/JoystickNew.js'
+
 
 class Article extends Component{
-  constructor(props) {
-    super(props)
-
-};
   componentWillMount() {
     const { id } = this.props.match.params;
     const article = articles.filter(article => article.id === id);
@@ -26,8 +23,9 @@ class Article extends Component{
          <p> {this.state.article.ingress} </p>
          <p>{this.state.article.text}</p>
          <p>{this.state.article.text2}</p>
+         <p>{this.state.article.text3}</p>
          <p><NavLink exact to="/">Back</NavLink></p>
-         <Joystick />
+         <JoystickNew />
          </div>
        );
      }
