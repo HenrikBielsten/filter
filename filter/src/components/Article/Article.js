@@ -3,6 +3,7 @@ import articles from './articles.js';
 import { NavLink } from 'react-router-dom';
 import JoystickNew from '../Joystick/JoystickNew.js';
 import Header from '../Header/Header.js';
+import ProgressBar from '../ProgressBar/ProgressBar.js';
 
 import "./Article.css";
 
@@ -32,6 +33,7 @@ class Article extends Component{
        return (
          <div  key={this.state.article.id} className="Article">
          <Header />
+         <ProgressBar />
          <h3> {this.state.article.title} </h3>
          <h5> Chapter: {this.state.article.chapter} </h5>
          <p> {this.state.article.ingress} </p>

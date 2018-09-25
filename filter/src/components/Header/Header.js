@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import './index.css';
-import ProgressBar from '../ProgressBar/ProgressBar.js';
 class Header extends Component {
   constructor(props) {
    super(props);
@@ -28,7 +27,7 @@ render() {
           </div>
          </div>
       </div>
-      <ProgressBar />
+
     </div>
   )
 }
