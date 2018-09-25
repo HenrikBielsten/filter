@@ -1,20 +1,26 @@
 .imgOpen {
   height: 50vw;
   width: 100vw;
-  transition: .5s;
+  transition: .3s ;
 }
 
 .imgClosed {
-  transition: .5s;
+  transition: .3s ;
   height: 0px!important;
   width: 100vw;
 }
 
 .imageOne {
   border-top: black solid 3px;
-  height: 50vw;
-  width: 100vw;
   background-image: url('/../../images/imageOne.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+
+.imageTwo {
+  border-top: black solid 3px;
+  background-image: url('/../../images/imageTwo.jpg');
   background-size: cover;
   background-position: center;
 }
