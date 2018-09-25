@@ -3,7 +3,8 @@ import articles from './articles.js';
 import { NavLink } from 'react-router-dom';
 import JoystickNew from '../Joystick/JoystickNew.js';
 import Header from '../Header/Header.js';
-
+import ProgressBar from '../ProgressBar/ProgressBar.js';
+import MenuBottom from '../MenuBottom/MenuBottom';
 import "./Article.css";
 
 class Article extends Component{
@@ -41,6 +42,7 @@ class Article extends Component{
        return (
          <div  key={this.state.article.id} className="Article">
          <Header />
+         <ProgressBar />
          <div
            style={{backgroundColor: 'green', height: '50px', width: '50px', position: 'fixed'}}
            onClick={this.toggleClass}
@@ -66,6 +68,7 @@ class Article extends Component{
          <p>{this.state.article.text3}</p>
          <p><NavLink exact to="/">Back</NavLink></p>
          <JoystickNew />
+         <MenuBottom />
          </div>
        );
      }

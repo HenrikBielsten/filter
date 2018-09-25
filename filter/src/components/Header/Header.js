@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import './index.css';
-import ProgressBar from '../ProgressBar/ProgressBar.js';
 class Header extends Component {
   constructor(props) {
    super(props);
@@ -26,9 +25,17 @@ render() {
             className={this.state.navbar ? "bars Active" : "bars "}
             onClick={this.eventHandler} >
           </div>
+          <div
+            className={this.state.navbar ? "bars Active" : "bars2 "}
+            onClick={this.eventHandler} >
+          </div>
+          <div
+            className={this.state.navbar ? "bars Active" : "bars3 "}
+            onClick={this.eventHandler} >
+          </div>
          </div>
       </div>
-      <ProgressBar />
+
     </div>
   )
 }
