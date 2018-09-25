@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 import JoystickNew from '../Joystick/JoystickNew.js';
 import Header from '../Header/Header.js';
 
+import "./Article.css";
+
 class Article extends Component{
   componentWillMount() {
     const { id } = this.props.match.params;
@@ -30,9 +32,6 @@ class Article extends Component{
        );
      }
 }
-
-// {`/../../images/${this.state.article.image}`}
-
 
 
 export default Article;

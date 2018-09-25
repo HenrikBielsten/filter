@@ -1,7 +1,3 @@
-.image {
-
-}
-
-.imageOne {
-  background-image: url('../../images/imageOne.jpg')
+img {
+  width: 100vw;
 }

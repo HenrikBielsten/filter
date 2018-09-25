@@ -5,7 +5,7 @@
 .logo {
   height: 32px;
   width: 90.48px;
-  background-image: url('../../images/Filter_logo.svg');
+  /* background-image: url('../../images/Filter_logo.svg'); */
   background-repeat: no-repeat;
   background-size: contain;
 }
