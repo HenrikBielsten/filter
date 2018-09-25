@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import articles from './articles.js';
 import { NavLink } from 'react-router-dom';
-import ProgressBar from '../ProgressBar/ProgressBar.js';
-import JoystickNew from '../Joystick/JoystickNew.js'
-
+import JoystickNew from '../Joystick/JoystickNew.js';
+import Header from '../Header/Header.js';
 
 class Article extends Component{
   componentWillMount() {
@@ -17,7 +16,7 @@ class Article extends Component{
   render() {
        return (
          <div  key={this.state.article.id} className="Article">
-         <ProgressBar />
+         <Header />
          <h3> {this.state.article.title} </h3>
          <h5> Chapter: {this.state.article.chapter} </h5>
          <p> {this.state.article.ingress} </p>
