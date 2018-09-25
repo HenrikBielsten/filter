@@ -22,6 +22,7 @@ class Article extends Component{
          <h5> Chapter: {this.state.article.chapter} </h5>
          <p> {this.state.article.ingress} </p>
          <p>{this.state.article.text}</p>
+         <img src="/../../images/everipedia-1.jpg" style={{height: '100px', width: '100px'}} alt="hej"/>
          <p>{this.state.article.text2}</p>
          <p>{this.state.article.text3}</p>
          <p><NavLink exact to="/">Back</NavLink></p>
@@ -31,6 +32,7 @@ class Article extends Component{
      }
 }
 
+// {`/../../images/${this.state.article.image}`}
 
 
 
