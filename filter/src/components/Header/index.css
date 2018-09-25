@@ -1,22 +1,21 @@
 .wrapper {
   position: fixed;
+  top: 0;
   width: 100%;
 }
 .logo {
   height: 32px;
   width: 90.48px;
-  /* background-image: url('../../images/Filter_logo.svg'); */
-  background-repeat: no-repeat;
-  background-size: contain;
+  margin-left: 20px;
 }
 .header {
   position: relative;
+  display: flex;
+  align-items: center;
   height: 50px;
   width: 100%;
   background-color: black;
   color: white;
-  position: fixed;
-  top: 0;
 }
 .hamburger {
   position: relative;
