@@ -7,7 +7,7 @@ render() {
   return (
     <div className="wrapper">
       <div className="header">
-        <div className="logo"></div>
+        <img className="logo" src={window.location.origin + '/images/Filter_logo.svg'}  alt="logo"/>
       </div>
       <ProgressBar />
       <div className="hamburger">
