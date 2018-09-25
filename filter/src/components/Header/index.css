@@ -18,32 +18,27 @@
   color: white;
 }
 .hamburger {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  top: 0;
-  width: 100%;
-}
-.bars {
-  width: 32px;
-  height: 32px;
-  margin-right: 12px;
-  cursor: pointer;
-  transition: 1s;
-}
-.bars:before {
-  content: "";
   position: absolute;
   right: 12px;
-  top: 0.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  top: 12px;
   width: 32px;
-  height: 0.15em;
-  background: white;
-  box-shadow:
-    0 0.25em 0 0 white,
-    0 0.5em 0 0 white;
+  height: 30px;
+  border-radius: 50%;
 }
-.bars:before.Active {
-  background-color: blue;
+.bars, .bars2, .bars3  {
+  width: 30px;
+  height: 3px;
+  cursor: pointer;
+  transition: 1s;
+  background-color: white;
+  margin-bottom: 6px;
+}
+.bars.Active {
+  background-color: #D8AD9C;
   transition: 1s;
 }

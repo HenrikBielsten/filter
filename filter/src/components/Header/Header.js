@@ -25,6 +25,14 @@ render() {
             className={this.state.navbar ? "bars Active" : "bars "}
             onClick={this.eventHandler} >
           </div>
+          <div
+            className={this.state.navbar ? "bars Active" : "bars2 "}
+            onClick={this.eventHandler} >
+          </div>
+          <div
+            className={this.state.navbar ? "bars Active" : "bars3 "}
+            onClick={this.eventHandler} >
+          </div>
          </div>
       </div>
 
