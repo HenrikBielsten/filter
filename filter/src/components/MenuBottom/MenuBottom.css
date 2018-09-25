@@ -1,0 +1,8 @@
+.menuBottom {
+  position: fixed;
+  bottom: 0;
+  height: 56px;
+  width: 100%;
+  border-top: 3px solid #C78D41;
+  background-color: black;
+}
