@@ -1,6 +1,6 @@
 .progress-bar {
-  border: 1px solid black;
-  height: 5%;
+  background-color: #A89898;
+  height: 6px;
   width: 100%;
   position: fixed;
   top: 50px;
