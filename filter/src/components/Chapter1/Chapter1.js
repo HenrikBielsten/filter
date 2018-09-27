@@ -25,7 +25,7 @@ class Chapter1 extends Component{
     const article = this.state.articles[0];
 
     return (
-      <div className="Chapter1">
+      <div className="chapter1 chapter">
         <Header />
         <ProgressBar />
         <Title title={article.title} />
@@ -76,7 +76,7 @@ class Chapter1 extends Component{
         <Text text={article.text40} />
         <Text text={article.text41} />
         <Text text={article.text42} />
-        <Image src={article.image1} mode='fit' />
+        <Image src={article.image2} mode='fit' />
         <JoystickNew />
         <MenuBottom />
       </div>

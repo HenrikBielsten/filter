@@ -1,25 +1,10 @@
-.imgOpen {
-  height: 50vw;
-  width: 100vw;
-  transition: .3s ;
+.chapter {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  transition: 1s margin;
 }
 
-.imgClosed {
-  transition: .3s ;
-  height: 0px!important;
-  width: 100vw;
-}
-
-.image {
-  border-top: black solid 3px;
-  height: 65vw;
-  width: 100vw;
-  transition: .3s ;
-}
-
-.imageTwo {
-  border-top: black solid 3px;
-  background-image: url('/../../images/imageTwo.jpg');
-  background-size: cover;
-  background-position: center;
+.chapter.false{
+    margin-top: 0;
+    margin-bottom: 0;
 }

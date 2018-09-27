@@ -49,7 +49,7 @@
       text40: "Eftersom Satoshi Nakamoto släppt sin källkod fri hade det dock börjat dyka upp en mängd andra kryptovalutor byggda på blockkedjetekniken. Vissa var genuina försök att skapa bättre versioner av bitcoin, andra var monument över en ny, underlig värld där vem som helst kunde skapa miljontals dollar ur tomma luften. Sam Kazemian ägnade till exempel processorkraft åt att bryta dogecoin: en kryptovaluta som var en hommage till ett populärt internetskämt som handlade om en dumglad hund. Trots att valutan var ett slags parodi nådde den snart ett ansamlat marknadsvärde på 80 miljoner dollar.",
       text41: "Precis som bitcoin gick dogecoin och de andra valutor Sam bröt att växla mot dollar. Varje månad drog han in ungefär 1 000 dollar, tillräckligt för att betala hyran – där elen lyckligtvis ingick – och delar av universitetsavgiften.",
       text42: "– Innan jag träffade Sam trodde jag att kryptovalutor mest var något folk hade till att köpa droger på internet, säger Theodor. Jag tyckte att allt han berättade var väldigt intressant. Men hela grejen var fortfarande ganska underground och det fanns inte riktigt något användningsområde. När jag och Sam diskuterade vad vi skulle bygga tillsammans pratade vi om helt andra saker.",
-      image1: 'https://i2.wp.com/magasinetfilter.se/wp-content/uploads/2018/09/everipedia-2.jpg?w=1600&ssl=1',
+      image2: 'https://i2.wp.com/magasinetfilter.se/wp-content/uploads/2018/09/everipedia-2.jpg?w=1600&ssl=1',
       id: '1',
     },
     {
