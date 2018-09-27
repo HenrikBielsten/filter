@@ -1,0 +1,28 @@
+.hideAndShowPicturesWrapper {
+  margin-top: 1px;
+  cursor: pointer;
+  height: 38px;
+  width: 40px;
+  margin-left: 43px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "SF Pro Text";
+}
+.hideAndShowPicturesIcon {
+  width: 4vh;
+  height: 4vh;
+  background-image: url(/../../icons/icon_image.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.hideAndShowPicturesText {
+  width: 10vh;
+  height: 1vh;
+  color: white;
+  line-height: 12px;
+  font-weight: 300;
+  font-size: 10px;
+  margin: 0;
+}

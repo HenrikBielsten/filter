@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  transition: 1s transform;
 }
 .logo {
   height: 32px;
@@ -41,4 +42,7 @@
 .bars.Active {
   background-color: #D8AD9C;
   transition: 1s;
+}
+.wrapper.false{
+  transform: translateY(-100%);
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ReadMode_off" transform="translate(-234.000000, -619.000000)" fill-rule="nonzero" stroke="#1A1A1A" stroke-width="2">
+            <g id="Group-3" transform="translate(232.000000, 619.000000)">
+                <g id="Group" transform="translate(2.000000, 0.000000)">
+                    <g id="Group-9" transform="translate(4.705882, 0.000000)">
+                        <g id="Group-8-Copy" transform="translate(13.574038, 15.864371) rotate(10.000000) translate(-13.574038, -15.864371) translate(2.279921, 1.746724)">
+                            <rect id="Rectangle" fill="#FFFFFF" x="1" y="1" width="20.5882353" height="26.2352941"></rect>
+                            <path d="M4.70588235,4.95588235 L17.8823529,4.95588235" id="Line" stroke-linecap="square"></path>
+                            <path d="M4.70588235,8.72058824 L17.8823529,8.72058824" id="Line-Copy" stroke-linecap="square"></path>
+                            <path d="M4.70588235,12.4852941 L17.8823529,12.4852941" id="Line-Copy-2" stroke-linecap="square"></path>
+                            <path d="M4.70588235,16.25 L17.8823529,16.25" id="Line-Copy-3" stroke-linecap="square"></path>
+                            <path d="M4.70588235,20.0147059 L17.8823529,20.0147059" id="Line-Copy-4" stroke-linecap="square"></path>
+                            <path d="M4.70588235,23.7794118 L17.8823529,23.7794118" id="Line-Copy-5" stroke-linecap="square"></path>
+                        </g>
+                    </g>
+                    <g id="Group-8" transform="translate(0.000000, 1.882353)">
+                        <rect id="Rectangle" fill="#FFFFFF" x="1" y="1" width="20.5882353" height="26.2352941"></rect>
+                        <path d="M4.70588235,4.95588235 L17.8823529,4.95588235" id="Line" stroke-linecap="square"></path>
+                        <path d="M4.70588235,8.72058824 L17.8823529,8.72058824" id="Line-Copy" stroke-linecap="square"></path>
+                        <path d="M4.70588235,12.4852941 L17.8823529,12.4852941" id="Line-Copy-2" stroke-linecap="square"></path>
+                        <path d="M4.70588235,16.25 L17.8823529,16.25" id="Line-Copy-3" stroke-linecap="square"></path>
+                        <path d="M4.70588235,20.0147059 L17.8823529,20.0147059" id="Line-Copy-4" stroke-linecap="square"></path>
+                        <path d="M4.70588235,23.7794118 L17.8823529,23.7794118" id="Line-Copy-5" stroke-linecap="square"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
