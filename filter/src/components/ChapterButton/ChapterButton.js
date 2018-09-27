@@ -7,9 +7,9 @@ class ChapterButton extends Component {
 render() {
   return (
     <NavLink exact to="/">
-      <div className="ChapterButtonWrapper">
-        <div className="ChapterButtonIcon"></div>
-        <div className="ChapterButtonText">
+      <div className="chapterButtonWrapper">
+        <div className="chapterButtonIcon"></div>
+        <div className="chapterButtonText">
           Kapitel
         </div>
       </div>

@@ -5,9 +5,9 @@ class Fontsize extends Component {
 
 render() {
   return (
-    <div className="FontsizeWrapper">
-      <div className="FontsizeIcon"></div>
-      <div className="FontsizeText">
+    <div className="fontsizeWrapper">
+      <div className="fontsizeIcon"></div>
+      <div className="fontsizeText">
         Textstorlek
       </div>
     </div>

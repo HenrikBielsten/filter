@@ -1,4 +1,4 @@
-.HideAndShowPicturesWrapper {
+.hideAndShowPicturesWrapper {
   margin-top: 1px;
   cursor: pointer;
   height: 38px;
@@ -10,14 +10,14 @@
   align-items: center;
   font-family: "SF Pro Text";
 }
-.HideAndShowPicturesIcon {
+.hideAndShowPicturesIcon {
   width: 4vh;
   height: 4vh;
   background-image: url(/../../icons/icon_image.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
-.HideAndShowPicturesText {
+.hideAndShowPicturesText {
   width: 10vh;
   height: 1vh;
   color: white;

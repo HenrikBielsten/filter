@@ -24,7 +24,8 @@ class Article extends Component{
     })
   }
 
-  toggleClass = () => {
+  toggleClass = (e) => {
+    e.stopPropagation();
     this.setState({
       closed: !this.state.closed
     })
@@ -45,7 +46,7 @@ class Article extends Component{
 
   render() {
        return (
-         <div  key={this.state.article.id} className={`Article ${this.state.togglemenus}`} onClick={this.toggleMenu}>
+         <div  key={this.state.article.id} className={`article ${this.state.togglemenus}`} onClick={this.toggleMenu}>
          <Header menuHidden={this.state.togglemenus}/>
          <ProgressBar menuHidden={this.state.togglemenus}/>
          <div

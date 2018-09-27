@@ -17,10 +17,10 @@ class NightMode extends Component {
 
 render() {
   return (
-    <div className="NightModeWrapper">
-      <div className={this.state.navbar ? "NightModeIcon Active" : "NightModeIcon "}
+    <div className="nightModeWrapper">
+      <div className={this.state.navbar ? "nightModeIcon Active" : "nightModeIcon "}
       onClick={this.eventHandler} ></div>
-      <p className="NightModeText">
+      <p className="nightModeText">
         Nattläge
       </p>
     </div>

@@ -1,4 +1,4 @@
-.progress-bar {
+.progressBar {
   background-color: #A89898;
   height: 6px;
   width: 100%;
@@ -7,6 +7,6 @@
   transition: 1s top;
 }
 
-.progress-bar.false{
+.progressBar.false{
   top: -6px;
 }
