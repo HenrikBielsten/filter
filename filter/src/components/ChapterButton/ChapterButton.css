@@ -1,0 +1,27 @@
+.ChapterButtonWrapper {
+  cursor: pointer;
+  height: 38px;
+  width: 40px;
+  margin-left: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "SF Pro Text";
+}
+.ChapterButtonIcon {
+  width: 4vh;
+  height: 5vh;
+  background-image: url('/../../icons/icon_chapters.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.ChapterButtonText {
+  height: 2vh;
+  width: 5vh;
+  color: white;
+  line-height: 12px;
+  font-weight: 300;
+  font-size: 10px;
+  margin-bottom: -3px;
+}

@@ -1,0 +1,32 @@
+.NightModeWrapper {
+  cursor: pointer;
+  height: 38px;
+  width: 40px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "SF Pro Text";
+}
+.NightModeIcon {
+  width: 3vh;
+  height: 3.5vh;
+  background-image: url('/../../icons/icon_nightmode.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  margin-bottom: 3px;
+}
+.NightModeIcon.Active {
+  opacity: 1;
+}
+.NightModeText {
+  height: 1vh;
+  width: 5vh;
+  color: white;
+  line-height: 12px;
+  font-weight: 300;
+  font-size: 10px;
+  margin: 0;
+}
