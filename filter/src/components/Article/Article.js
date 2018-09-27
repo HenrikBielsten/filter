@@ -11,6 +11,7 @@ class Article extends Component{
 
   state = {
     closed: false,
+    oneClosed: false,
   }
 
   componentWillMount() {
@@ -29,8 +30,17 @@ class Article extends Component{
     console.log(this.state.closed);
   }
 
+  toggleClassOnOne = (data) => {
+    this.setState({
+      oneClosed: !this.state.oneClosed
+    })
+    console.log(data);
+  }
+
+
   render() {
        return (
+<<<<<<< HEAD
          <div  key={this.state.article.id} >
           <Header />
           <ProgressBar />
@@ -56,6 +66,37 @@ class Article extends Component{
            <JoystickNew />
            </div>
            <MenuBottom />
+=======
+         <div  key={this.state.article.id} className="Article">
+         <Header />
+         <ProgressBar />
+         <div
+           style={{backgroundColor: 'green', height: '50px', width: '50px', position: 'fixed'}}
+           onClick={this.toggleClass}
+           >Press Me
+         </div>
+         <h3> {this.state.article.title} </h3>
+         <h5> Chapter: {this.state.article.chapter} </h5>
+         <p> {this.state.article.ingress} </p>
+         <p>{this.state.article.text}</p>
+         <div
+           style={{backgroundColor: 'red', height: '50px', width: '50px'}}
+           onClick={this.toggleClassOnOne}
+           >Press Me
+         </div>
+         <div className={`${this.state.closed ? 'imgClosed' : 'imgOpen'} ${this.state.article.imageOne[0].name}`}></div>
+         <p>{this.state.article.text2}</p>
+         <div
+           style={{backgroundColor: 'orange', height: '50px', width: '50px'}}
+           onClick={this.toggleClassOnOne}
+           >Press Me
+         </div>
+         <div className={`${this.state.closed ? 'imgClosed' : 'imgOpen'} ${this.state.article.imageTwo[0].name}`}></div>
+         <p>{this.state.article.text3}</p>
+         <p><NavLink exact to="/">Back</NavLink></p>
+         <JoystickNew />
+         <MenuBottom />
+>>>>>>> d4dd7f0e7802c1000da6098459c1f462758058e8
          </div>
        );
      }
