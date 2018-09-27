@@ -6,10 +6,15 @@ import ChapterButton from '../ChapterButton/ChapterButton.js';
 import HideAndShowPictures from '../HideAndShowPictures/HideAndShowPictures.js';
 
 class MenuBottom extends Component {
+  onClick = (e) => {
+  e.stopPropagation();
+  }
 
 render() {
   return (
-    <div className="menuBottom">
+    <div
+      onClick={this.onClick}
+      className={`menuBottom ${this.props.menuHidden}`}>
       <div className="menuBottomContentWrapper">
         <Fontsize />
         <HideAndShowPictures />

@@ -13,10 +13,15 @@ class Header extends Component {
      navbar: !prevState.navbar
    }));
  }
+ onClick = (e) => {
+ e.stopPropagation();
+ }
 
 render() {
   return (
-    <div className="wrapper">
+    <div
+      onClick={this.onClick}
+      className={`wrapper ${this.props.menuHidden}`}>
       <div className="header">
         <img className="logo" src={window.location.origin + '/images/Filter_logo.svg'}  alt="logo"/>
         <div

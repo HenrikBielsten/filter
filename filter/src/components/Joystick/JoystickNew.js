@@ -11,6 +11,10 @@ class JoystickNew extends Component {
         this.timer = null;
     }
 
+  onClick = (e) => {
+  e.stopPropagation();
+  }
+
   stopScroll = () => {
       clearTimeout(this.timer);
       console.log('stopped');
@@ -81,6 +85,7 @@ class JoystickNew extends Component {
             <div>
 
                 <div
+                  onClick={this.onClick}
                   onMouseMove={this.onMove}
                   onTouchStart={this.onMove}
                   onTouchEnd={this.stopScroll}
