@@ -48,7 +48,7 @@ class Article extends Component{
        return (
          <div  key={this.state.article.id} className={`article ${this.state.togglemenus}`} onClick={this.toggleMenu}>
          <Header menuHidden={this.state.togglemenus}/>
-         <ProgressBar menuHidden={this.state.togglemenus}/>
+         <ProgressBar menuHidden={this.state.togglemenus} />
          <div
            style={{backgroundColor: 'green', height: '50px', width: '50px', position: 'fixed'}}
            onClick={this.toggleClass}
