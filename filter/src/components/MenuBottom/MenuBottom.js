@@ -9,7 +9,7 @@ class MenuBottom extends Component {
 
 render() {
   return (
-    <div className="menuBottom">
+    <div className={`menuBottom ${this.props.hidden}`}>
       <div className="menuBottomContentWrapper">
         <Fontsize />
         <HideAndShowPictures />

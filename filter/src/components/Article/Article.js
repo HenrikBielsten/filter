@@ -12,6 +12,7 @@ class Article extends Component{
   state = {
     closed: false,
     oneClosed: false,
+    menu: true,
   }
 
   componentWillMount() {
@@ -23,7 +24,8 @@ class Article extends Component{
     })
   }
 
-  toggleClass = () => {
+  toggleClass = (e) => {
+    // e.stopPropagation();
     this.setState({
       closed: !this.state.closed
     })
@@ -37,12 +39,18 @@ class Article extends Component{
     console.log(data);
   }
 
+  toggleMenu = (e) => {
+    this.setState({
+      menu: !this.state.menu
+    })
+  }
+
 
   render() {
        return (
-         <div  key={this.state.article.id} className="Article">
-         <Header />
-         <ProgressBar />
+         <div key={this.state.article.id} className={`Article ${this.state.menu}`} onClick={this.toggleMenu}>
+         <Header hidden={this.state.menu}/>
+         <ProgressBar menuHidden={this.state.menu}/>
          <div
            style={{backgroundColor: 'green', height: '50px', width: '50px', position: 'fixed'}}
            onClick={this.toggleClass}
@@ -68,7 +76,7 @@ class Article extends Component{
          <p>{this.state.article.text3}</p>
          <p><NavLink exact to="/">Back</NavLink></p>
          <JoystickNew />
-         <MenuBottom />
+           <MenuBottom hidden={this.state.menu} />
          </div>
        );
      }

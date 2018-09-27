@@ -1,6 +1,8 @@
 .Article {
   margin-top: 60px;
   margin-bottom: 60px;
+
+  transition: 1s margin;
 }
 .imgOpen {
   height: 50vw;
@@ -27,4 +29,9 @@
   background-image: url('/../../images/imageTwo.jpg');
   background-size: cover;
   background-position: center;
+}
+
+.Article.false{
+    margin-top: 0;
+    margin-bottom: 0;
 }

@@ -4,4 +4,10 @@
   width: 100%;
   position: fixed;
   top: 50px;
+
+    transition: 1s top;
+}
+
+.progress-bar.false{
+    top: -6px;
 }
