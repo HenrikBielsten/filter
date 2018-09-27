@@ -1,4 +1,4 @@
-.FontsizeWrapper {
+.fontsizeWrapper {
   cursor: pointer;
   height: 38px;
   width: 40px;
@@ -8,14 +8,14 @@
   align-items: center;
   font-family: "SF Pro Text";
 }
-.FontsizeIcon {
+.fontsizeIcon {
   width: 5vh;
   height: 4vh;
   background-image: url('/../../icons/icon_textsize.svg');
   background-size: contain;
   background-repeat: no-repeat;
 }
-.FontsizeText {
+.fontsizeText {
   height: 1vh;
   width: 7vh;
   color: white;

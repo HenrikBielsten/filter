@@ -5,9 +5,9 @@ class HideAndShowPictures extends Component {
 
 render() {
   return (
-    <div className="HideAndShowPicturesWrapper">
-      <div className="HideAndShowPicturesIcon"></div>
-      <p className="HideAndShowPicturesText">
+    <div className="hideAndShowPicturesWrapper">
+      <div className="hideAndShowPicturesIcon"></div>
+      <p className="hideAndShowPicturesText">
         Dölj/visa bilder
       </p>
     </div>

@@ -12,7 +12,11 @@ class JoystickNew extends Component {
     }
 
   onClick = (e) => {
+<<<<<<< HEAD
     e.stopPropagation();
+=======
+  e.stopPropagation();
+>>>>>>> d20aaf465bd1d0c7b9ad4926813ade7eeec36685
   }
 
   stopScroll = () => {

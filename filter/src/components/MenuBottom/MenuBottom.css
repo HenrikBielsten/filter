@@ -7,7 +7,10 @@
   background-color: black;
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
 
+=======
+>>>>>>> d20aaf465bd1d0c7b9ad4926813ade7eeec36685
   transition: 1s transform;
 }
 .menuBottomContentWrapper {
@@ -20,6 +23,10 @@
   /* margin: 12px 12px 12px 12px; */
 }
 
+<<<<<<< HEAD
 .menuBottom.false{
+=======
+.menuBottom.false {
+>>>>>>> d20aaf465bd1d0c7b9ad4926813ade7eeec36685
   transform: translateY(100%);
 }

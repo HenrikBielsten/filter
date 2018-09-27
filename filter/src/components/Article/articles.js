@@ -1,7 +1,7 @@
   const articles = [
     {
       chapter: 1,
-      title: 'Miniubåtar med larvband',
+      title: "<h1 style={{color: 'red'}}>Miniubåtar med larvband<h1/>",
       ingress: 'nej vksjrng ejud cefb u riu fiuh fzjd sje fjd jxgh ruhgudfuh gdslcns fbödiv frgvd',
       text: "Loresm ipsum dodnsjd jsd jsdbshd sh dh shd shd shd hs dhsdg shd hs s dh sdhsd hds h dhs dh shd hd dh shd hs dhsd h dh hd hd dh hd hd hd dhfbdf hd hdfbd hd hfd fh df df djf hdjf jd lor sitlmdef rgnjn dkm ekdm d wkdm wkd fwkfne ne jed ebjf efhb bdhfb dhfb dhbf hd fhdb fhbd fjbd jfb djf dj fdjfjdf fgjnf gjnrjgnfen ejrngfjen jnf jnewkfjn cjkesnfkjngfkjnfjkdnjkfnsjefnjen j fje fj jv rjgnj skdnj dfldjfb sbf jsb ejkbf jafjnbe jsfslckjehf ökjdf skdjfn dkjfn flskjdfn dlsakjd asdkjan r ngjnr jgnrn ofkjeojf idjs fef ehrhe öföjresnjngröjng sjnf sejnf jsen fgnr fng rdvdjngnrjnsjfn e dedncegjn rgrjng j gvfn gjndf ejf ejng rjgnjg jnrjg njngr jngrjnj g amkdjfienfiedwiojowjdojoet, usjdns dblirugh lfdl qpwiorkj äoöehgj KEJFN SJFS EBFJEFB LSJDBF fehf lksjdf kjlsd asjldb ajlhsb asbdhs jdhfb sbdfjshbfjhsebf jehsbf chsbef jheb fjhs dfhjbs efhbew fhjb jns d sjn jsnd js djsndjsnd jsdjns djnsjnd sdjndjs sjnd sjnds jdns djsnd ssu ex paulo apeirian. In facer virtute mePri ex modo libris incorrupte.",
       imageOne: [

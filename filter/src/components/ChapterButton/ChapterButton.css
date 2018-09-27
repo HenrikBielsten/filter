@@ -1,4 +1,4 @@
-.ChapterButtonWrapper {
+.chapterButtonWrapper {
   cursor: pointer;
   height: 38px;
   width: 40px;
@@ -9,14 +9,14 @@
   align-items: center;
   font-family: "SF Pro Text";
 }
-.ChapterButtonIcon {
+.chapterButtonIcon {
   width: 4vh;
   height: 5vh;
   background-image: url('/../../icons/icon_chapters.svg');
   background-size: contain;
   background-repeat: no-repeat;
 }
-.ChapterButtonText {
+.chapterButtonText {
   height: 2vh;
   width: 5vh;
   color: white;

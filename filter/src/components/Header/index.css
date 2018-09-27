@@ -2,8 +2,12 @@
   position: fixed;
   top: 0;
   width: 100%;
+<<<<<<< HEAD
     transition: 1s transform;
 
+=======
+  transition: 1s transform;
+>>>>>>> d20aaf465bd1d0c7b9ad4926813ade7eeec36685
 }
 .logo {
   height: 32px;
@@ -44,7 +48,12 @@
   background-color: #D8AD9C;
   transition: 1s;
 }
+<<<<<<< HEAD
 
 .wrapper.false{
     transform: translateY(-100%);
+=======
+.wrapper.false{
+  transform: translateY(-100%);
+>>>>>>> d20aaf465bd1d0c7b9ad4926813ade7eeec36685
 }

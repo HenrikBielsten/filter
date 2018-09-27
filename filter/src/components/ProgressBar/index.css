@@ -1,13 +1,21 @@
-.progress-bar {
+.progressBar {
   background-color: #A89898;
   height: 6px;
   width: 100%;
   position: fixed;
   top: 50px;
+<<<<<<< HEAD
 
     transition: 1s top;
 }
 
 .progress-bar.false{
     top: -6px;
+=======
+  transition: 1s top;
+}
+
+.progressBar.false{
+  top: 0px;
+>>>>>>> d20aaf465bd1d0c7b9ad4926813ade7eeec36685
 }
