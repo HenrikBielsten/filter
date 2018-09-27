@@ -10,11 +10,11 @@
   width: 100vw;
 }
 
-.imageOne {
+.image {
   border-top: black solid 3px;
-  background-image: url('/../../images/imageOne.jpg');
-  background-size: cover;
-  background-position: center;
+  height: 65vw;
+  width: 100vw;
+  transition: .3s ;
 }
 
 .imageTwo {
