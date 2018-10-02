@@ -2,7 +2,7 @@
     {
       chapter: 1,
       headline: 'Miniubåtar med larvband',
-      title: 'Title 1',
+      title: 'Den förlorade sonen',
       ingress: 'Så fick en 23-åring från Jönköping 300 miljoner för att bygga en ny version av Wikipedia.',
       text: "SAM KAZEMIANS ANVÄNDARNAMN på Instagram är »PersianZuck«. Persian eftersom han är född i Teheran, Zuck eftersom Facebookgrundaren Mark Zuckerberg kallas så. Med välansat skägg, tyngdlyftarkropp, keps och tjock guldlänk ser 25-åringen snarare ut som en persisk version av rapparen Ice Cube.",
       text2: "Han slänger sin träningsväska över axeln och klipper tillsammans med norrmannen Suchet Dhindsa de sista trappstegen upp mot en nedgången byggnad på University of Californias frat row, den gata som huserar det massiva universitetets alla fraternities och sororities, det vill säga könsseparatistiska studentföreningar. Utöver någonstans att bo ger de medlemmarna möjlighet att knyta kontakter, skapa sig ett sammanhang och supa sig spyfärdiga sju dagar i veckan.",
@@ -50,6 +50,8 @@
       text41: "Precis som bitcoin gick dogecoin och de andra valutor Sam bröt att växla mot dollar. Varje månad drog han in ungefär 1 000 dollar, tillräckligt för att betala hyran – där elen lyckligtvis ingick – och delar av universitetsavgiften.",
       text42: "– Innan jag träffade Sam trodde jag att kryptovalutor mest var något folk hade till att köpa droger på internet, säger Theodor. Jag tyckte att allt han berättade var väldigt intressant. Men hela grejen var fortfarande ganska underground och det fanns inte riktigt något användningsområde. När jag och Sam diskuterade vad vi skulle bygga tillsammans pratade vi om helt andra saker.",
       image2: 'https://i2.wp.com/magasinetfilter.se/wp-content/uploads/2018/09/everipedia-2.jpg?w=1600&ssl=1',
+      extraTitle: 'Sjukt grym extra information',
+      extraContent: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       id: '1',
     },
     {

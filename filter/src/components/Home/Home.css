@@ -1,0 +1,7 @@
+.headerLine {
+  height: 3px;
+  width: 100%;
+  background-color: #D8AD9C;
+  position: fixed;
+  top: 50px;
+}

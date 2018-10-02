@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "SF Pro Text";
+    font-family: 'pf-din-text-pro';
 }
 .hideAndShowPicturesIcon {
   width: 4vh;

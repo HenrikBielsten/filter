@@ -12,7 +12,6 @@ class JoystickNew extends Component {
     }
 
   onClick = (e) => {
-
     e.stopPropagation();
   }
 

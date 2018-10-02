@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { NavLink } from 'react-router-dom';
 import JoystickNew from '../Joystick/JoystickNew.js';
 import Header from '../Header/Header.js';
 import ProgressBar from '../ProgressBar/ProgressBar.js';
@@ -10,9 +9,9 @@ import Text from '../Text/Text';
 import Image from '../Image/Image';
 import BigText from '../BigText/BigText';
 import articles from '../Database/articles.js';
-
+import ReadMore from '../ReadMore/ReadMore.js';
 import "./Article.css";
-// import Test from './test.js';
+
 
 class Chapter1 extends Component{
 
@@ -35,7 +34,7 @@ class Chapter1 extends Component{
           menuhidden={this.state.togglemenus.toString()}
           src={window.location.origin + '/icons/Filter_logo_F_white.svg'} mode='fit'
           title={article.title}
-          dot={`.`}
+          dot={` • `}
           id={article.chapter}
           extra={`/`}
           lastid={this.state.articles.length}
@@ -48,6 +47,7 @@ class Chapter1 extends Component{
         <Text text={article.text3} />
         <Text text={article.text4} />
         <Text text={article.text5} />
+        <ReadMore title={article.extraTitle} content={article.extraContent} />
         <Text text={article.text6} />
         <Text text={article.text7} />
         <Text text={article.text8} />
