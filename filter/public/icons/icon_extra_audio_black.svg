@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>button_extra_sound_black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="extra/button">
+            <g id="Group-11-Copy" fill="#DAB0A0">
+                <rect id="Rectangle-9" fill-rule="nonzero" x="0" y="0" width="16" height="16" rx="2"></rect>
+            </g>
+            <g id="extra/button/icon/sound" transform="translate(1.300000, 1.000000)">
+                <g id="icon_sound" transform="translate(0.500000, 1.000000)">
+                    <path d="M10.6666667,1 C11.1129141,2.66810371 11.3360378,4.33477038 11.3360378,6 C11.3360378,7.66522962 11.1129141,9.33189629 10.6666667,11" id="Line-2" stroke="#1A1A1A" stroke-linecap="round"></path>
+                    <path d="M3,4 L7.18765248,0.649878019 C7.40328344,0.477373245 7.71792963,0.512333932 7.8904344,0.7279649 C7.96135962,0.816621424 8,0.926776676 8,1.04031242 L8,10.9596876 C8,11.23583 7.77614237,11.4596876 7.5,11.4596876 C7.38646425,11.4596876 7.276309,11.4210472 7.18765248,11.350122 L3,8 L3,4 Z" id="Rectangle-3" fill="#1A1A1A" fill-rule="nonzero"></path>
+                    <rect id="Rectangle-4" fill="#1A1A1A" fill-rule="nonzero" x="0" y="4" width="5" height="4" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

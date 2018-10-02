@@ -10,6 +10,7 @@ class MenuBottom extends Component {
   e.stopPropagation();
   }
 
+
 render() {
   return (
     <div
@@ -17,7 +18,7 @@ render() {
       className={`menuBottom ${this.props.menuHidden}`}>
       <div className="menuBottomContentWrapper">
         <Fontsize />
-        <HideAndShowPictures />
+        <HideAndShowPictures toggleImages={this.props.toggleImages}/>
         <ChapterButton />
         <NightMode />
       </div>

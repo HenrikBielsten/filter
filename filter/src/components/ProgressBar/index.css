@@ -5,6 +5,7 @@
   position: fixed;
   top: 50px;
   transition: 1s top;
+  z-index: 1000;
 }
 
 .progress-bar.false{

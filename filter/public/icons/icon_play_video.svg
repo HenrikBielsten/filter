@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_play_video</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Extra/video" transform="translate(-167.000000, -118.000000)" fill="#FCFCF9" fill-rule="nonzero">
+            <g id="Group-5" transform="translate(0.000000, -59.000000)">
+                <g id="Group-13" transform="translate(24.000000, 0.000000)">
+                    <g id="icon_play_video" transform="translate(143.000000, 177.000000)">
+                        <path d="M1.74970036,2.29063584e-16 C0.783367533,1.69933605e-16 1.1834164e-16,0.78282683 0,1.74849266 L0,40.2153313 C1.1834164e-16,41.1809971 0.783367533,41.9638239 1.74970036,41.9638239 C2.00405339,42.0120587 2.26521548,42.0120587 2.51956851,41.9638239 L41.0129763,22.7304046 C41.616606,22.4382552 42,21.826998 42,21.1567612 C42,20.4865245 41.616606,19.8752673 41.0129763,19.5831178 L2.51956851,0.174849266 C2.27658987,0.0676211571 2.01518891,0.00825285443 1.74970036,2.29063584e-16 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

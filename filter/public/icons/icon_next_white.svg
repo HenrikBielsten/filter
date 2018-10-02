@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_next_white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/Next_arrow/light">
+            <g id="icon_next_white">
+                <rect id="Rectangle-2" fill="#D8AD9C" fill-rule="nonzero" x="0" y="0" width="24" height="24" rx="2"></rect>
+                <path d="M8,3 L16.4696699,11.4696699 C16.7625632,11.7625631 16.7625632,12.2374369 16.4696699,12.5303301 L8,21" id="Line-3" stroke="#FCFCF9" stroke-width="2" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

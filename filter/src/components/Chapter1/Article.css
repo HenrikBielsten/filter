@@ -2,6 +2,10 @@
   margin-top: 60px;
   margin-bottom: 60px;
   transition: 1s margin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .imgOpen {
   height: 50vw;
@@ -12,8 +16,14 @@
 .chapter.false{
     margin-top: 0;
     margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .chapterOne.false{
     margin-top: 0;
     margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

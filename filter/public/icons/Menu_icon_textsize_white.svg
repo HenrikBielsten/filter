@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="22px" viewBox="0 0 35 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ReadMode_off" transform="translate(-32.000000, -624.000000)" fill="#FFFFFF">
+            <g id="Group-7" transform="translate(24.000000, 620.000000)">
+                <g id="Group-4" transform="translate(8.000000, 0.000000)">
+                    <path d="M28.072,26 C26.248,26 24.744,25.968 22.92,25.968 C21.128,25.968 19.592,26 17.768,26 L17.768,25.488 L19.592,25.264 C21.32,25.04 21.256,24.144 20.712,22.736 L19.272,18.96 L10.856,18.96 L10.184,20.688 C8.968,23.856 8.968,24.816 11.144,25.2 L12.744,25.488 L12.744,26 C11.368,26 10.28,25.968 8.904,25.968 C7.528,25.968 6.216,26 4.84,26 L4.84,25.52 L5.896,25.232 C7.592,24.784 8.232,23.888 9.544,20.464 L14.44,7.792 L15.72,4.112 L17.384,4.112 L24.328,22.032 C25.288,24.496 25.64,25.136 26.984,25.328 L28.072,25.488 L28.072,26 Z M15.08,7.856 L11.112,18.288 L19.016,18.288 L15.08,7.856 Z" id="A"></path>
+                    <text id="+" font-family="HarrietDisplay-Regular, Harriet Display" font-size="24" font-weight="normal">
+                        <tspan x="23" y="22">+</tspan>
+                    </text>
+                    <text id="-" font-family="HarrietDisplay-Regular, Harriet Display" font-size="24" font-weight="normal">
+                        <tspan x="0" y="22">-</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

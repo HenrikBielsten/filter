@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-// import ImageButton from '../ImageButton/ImageButton.js';
 
-import "./Image.css";
+import "./ImageButton.css";
 
-class Image extends Component {
+class ImageButton extends Component {
 
   render() {
 
@@ -20,24 +19,22 @@ class Image extends Component {
     }
 
     let important = {
+      width: '2vh',
+      height: '2vh',
       backgroundImage: `url("${src}")`,
-      backgroundSize: size,
       backgroundPosition: 'center center',
+      backgroundSize: size,
       backgroundRepeat: 'no-repeat',
-      transition: '.3s',
-      boxShadow: '1.5px 1.5px 5px grey',
-      borderTop: '2px #DAB0A0 solid',
+      zIndex: 10,
+      position: 'relative',
+      transform: 'translateY(8px)',
     };
 
     return (
-      <div className="imageContainer">
-        {/* <ImageButton src={this.state.} /> */}
-        <div {...props} style={{...defaults, ...style, ...important}} />
-
-      </div>
+      <div className='ImageButton' {...props} style={{...defaults, ...style, ...important}} />
     );
   }
 }
 
 
-export default Image;
+export default ImageButton;
