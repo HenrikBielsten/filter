@@ -1,6 +1,10 @@
 .article {
   margin-top: 60px;
   margin-bottom: 60px;
+<<<<<<< HEAD
+
+=======
+>>>>>>> d20aaf465bd1d0c7b9ad4926813ade7eeec36685
   transition: 1s margin;
 }
 .imgOpen {
@@ -28,7 +32,12 @@
   background-size: cover;
   background-position: center;
 }
+<<<<<<< HEAD
+
+.Article.false{
+=======
 .article.false{
+>>>>>>> d20aaf465bd1d0c7b9ad4926813ade7eeec36685
     margin-top: 0;
     margin-bottom: 0;
 }
