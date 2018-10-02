@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import articles from './articles.js';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import JoystickNew from '../Joystick/JoystickNew.js';
 import Header from '../Header/Header.js';
 import ProgressBar from '../ProgressBar/ProgressBar.js';
@@ -46,9 +46,9 @@ class Article extends Component{
 
   render() {
        return (
-         <div  key={this.state.article.id} className={`article ${this.state.togglemenus}`} onClick={this.toggleMenu}>
+         <div key={this.state.article.id} className={`article ${this.state.togglemenus}`} onClick={this.toggleMenu}>
          <Header menuHidden={this.state.togglemenus}/>
-         <ProgressBar menuHidden={this.state.togglemenus} />
+         <ProgressBar menuHidden={this.state.togglemenus}/>
          <div
            style={{backgroundColor: 'green', height: '50px', width: '50px', position: 'fixed'}}
            onClick={this.toggleClass}

@@ -18,16 +18,22 @@ class Chapter1 extends Component{
 
   state = {
     articles: articles,
+    togglemenus: true,
   }
 
+  toggleMenu = (e) => {
+    this.setState({
+      togglemenus: !this.state.togglemenus
+    })
+  }
   render() {
 
     const article = this.state.articles[0];
 
     return (
-      <div className="Chapter1">
-        <Header />
-        <ProgressBar />
+      <div className={`chapterOne ${this.state.togglemenus}`} onClick={this.toggleMenu}>
+        <Header menuHidden={this.state.togglemenus} />
+        <ProgressBar menuHidden={this.state.togglemenus} />
         <Title title={article.title} />
         <Ingress ingress={article.ingress} />
         <Text text={article.text} />
@@ -78,7 +84,7 @@ class Chapter1 extends Component{
         <Text text={article.text42} />
         <Image src={article.image1} mode='fit' />
         <JoystickNew />
-        <MenuBottom />
+        <MenuBottom menuHidden={this.state.togglemenus}/> />
       </div>
     );
   }
