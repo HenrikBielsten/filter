@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Header from "../Header/Header.js";
 import "./ReadMore.css";
 class ReadMore extends Component {
   constructor(props) {
@@ -9,26 +8,48 @@ class ReadMore extends Component {
   };
   this.eventHandler = this.eventHandler.bind(this);
 }
+
 eventHandler(event) {
   event.stopPropagation();
   this.setState(prevState => ({
     readmore: !prevState.readmore
   }));
+
 }
   render() {
-    return (
-      <div className={this.state.readmore ? "readMore Open" : "readMore Closed"}>
-        {this.state.readmore ? (
-        <div className="readMore">
-          <h1>{this.props.title}</h1>
-          <p>{this.props.content}</p>
-        </div> ) : <div className="readMore Closed">Read More </div>}
+    let {mode, src, height, width, style, ...props} = this.props;
+    let modes = {
+      'fill': 'cover',
+      'fit': 'contain'
+    };
+    let size = modes[mode] || 'contain';
 
-        <div
-         onClick={this.eventHandler}
-       >
-       -------------
-       </div>
+    let defaults = {
+      height: height || `${18}vh`,
+      width: width || `${46}vw`,
+    }
+
+    let important = {
+      backgroundImage: `url("${src}")`,
+      backgroundSize: size,
+      backgroundPosition: 'center center',
+      backgroundRepeat: 'no-repeat',
+    };
+    return (
+      <div className="readMoreWrapper">
+
+      <div
+      onClick={this.eventHandler}
+      className={this.state.readmore ? "open" : "closed"}
+      >
+      </div>
+
+      {this.state.readmore ? (
+        <div className="readMore">
+        <h1>{this.props.title}</h1>
+        <div className="logo" {...props} style={{...defaults, ...style, ...important}} />
+        </div> ) : <div className="readMoreClosed"> </div>}
+
       </div>
     );
   }

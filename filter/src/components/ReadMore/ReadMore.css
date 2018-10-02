@@ -1,0 +1,32 @@
+.readMore {
+  height: 268px;
+  width: 375px;
+  background-color: #D8AD9C;
+  transition: 1s height;
+}
+.readMoreClosed {
+  height: 1px;
+  transition: 1s height;
+}
+.open {
+  background-image: url('/../../icons/icon_minus_black.svg');
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  height: 18px;
+  width: 18px;
+  transition: 1s;
+}
+.closed {
+  background-image: url('/../../icons/icon_extra_photo_white.svg');
+  background-repeat: no-repeat;
+  background-size: 18.02px 18px;
+	height: 18px;
+  width: 18px;
+  transition: 1s;
+}
+.readMoreWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

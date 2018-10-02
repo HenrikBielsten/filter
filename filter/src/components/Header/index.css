@@ -3,9 +3,7 @@
   top: 0;
   width: 100%;
   transition: 1s transform;
-<<<<<<< HEAD
   z-index: 1000;
-=======
   -webkit-transition: 0.3s transform;
   -moz-transition: 0.3s transform;
   -o-transition: 0.3s transform;
@@ -15,7 +13,6 @@
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
   -o-transform: translateY(-100%);
->>>>>>> 2d78da9386480aa40bfae403ad181430728c43a3
 }
 .logo {
   height: 32px;
