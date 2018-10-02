@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Header from "../Header/Header.js";
 import "./ReadMore.css";
 class ReadMore extends Component {
   constructor(props) {

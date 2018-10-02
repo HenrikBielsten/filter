@@ -13,6 +13,7 @@ class HideAndShowPictures extends Component {
     })
   }
 
+
 render() {
   return (
     <div

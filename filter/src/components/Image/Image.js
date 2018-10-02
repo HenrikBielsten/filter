@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import ImageButton from '../ImageButton/ImageButton.js';
+import ImageButton from '../ImageButton/ImageButton.js';
 
 import "./Image.css";
 
@@ -31,7 +31,7 @@ class Image extends Component {
 
     return (
       <div className="imageContainer">
-        {/* <ImageButton src={this.state.} /> */}
+        <ImageButton />
         <div {...props} style={{...defaults, ...style, ...important}} />
 
       </div>
