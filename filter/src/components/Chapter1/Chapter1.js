@@ -32,7 +32,7 @@ class Chapter1 extends Component{
     return (
       <div className={`chapterOne ${this.state.togglemenus}`} onClick={this.toggleMenu}>
         <Header
-          menuHidden={this.state.togglemenus}
+          menuhidden={this.state.togglemenus.toString()}
           src={window.location.origin + '/icons/Filter_logo_F_white.svg'} mode='fit'
           title={article.title}
           dot={`.`}
@@ -40,7 +40,7 @@ class Chapter1 extends Component{
           extra={`/`}
           lastid={this.state.articles.length}
         />
-        <ProgressBar menuHidden={this.state.togglemenus} />
+        <ProgressBar menuhidden={this.state.togglemenus} />
         <Title title={article.title} />
         <Ingress ingress={article.ingress} />
         <Text text={article.text} />
@@ -91,7 +91,7 @@ class Chapter1 extends Component{
         <Text text={article.text42} />
         <Image src={article.image2} mode='fit' />
         <JoystickNew />
-        <MenuBottom menuHidden={this.state.togglemenus}/> />
+        <MenuBottom menuhidden={this.state.togglemenus}/> />
       </div>
     );
   }

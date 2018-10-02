@@ -39,7 +39,7 @@ render() {
   return (
     <div
       onClick={this.onClick}
-      className={`wrapper ${this.props.menuHidden}`}>
+      className={`wrapper ${this.props.menuhidden}`}>
       <div className="header">
         <div className="logo" {...props} style={{...defaults, ...style, ...important}} />
         <div className="titleAndNumber"> {this.props.title}{this.props.dot} {this.props.id} {this.props.extra} {this.props.lastid} </div>

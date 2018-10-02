@@ -14,7 +14,7 @@ render() {
   return (
     <div
       onClick={this.onClick}
-      className={`menuBottom ${this.props.menuHidden}`}>
+      className={`menuBottom ${this.props.menuhidden}`}>
       <div className="menuBottomContentWrapper">
         <Fontsize />
         <HideAndShowPictures />
