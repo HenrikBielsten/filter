@@ -3,6 +3,9 @@
   top: 0;
   width: 100%;
   transition: 1s transform;
+  -webkit-transition: 0.3s transform;
+  -moz-transition: 0.3s transform;
+  -o-transition: 0.3s transform;
 }
 .logo {
   height: 32px;
@@ -45,4 +48,7 @@
 }
 .wrapper.false{
   transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
 }

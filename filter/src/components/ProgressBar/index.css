@@ -4,14 +4,15 @@
   width: 100%;
   position: fixed;
   top: 50px;
-  transition: 1s top;
-}
-
-.progress-bar.false{
-    top: -6px;
-  transition: 1s top;
+  transition: 0.3s transform;
+  -webkit-transition: 0.3s transform;
+  -moz-transition: 0.3s transform;
+  -o-transition: 0.3s transform;
 }
 
 .progressBar.false{
-  top: 0px;
+  transform: translateY(-833%);
+  -webkit-transform: translateY(-833%);
+  -moz-transform: translateY(-833%);
+  -o-transform: translateY(-833%);
 }
