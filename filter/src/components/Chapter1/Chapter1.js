@@ -52,12 +52,12 @@ class Chapter1 extends Component{
         <ProgressBar menuhidden={this.state.togglemenus} />
         <Title title={article.title} />
         <Ingress ingress={article.ingress} />
+        <ReadMore  src={article.image1} title={article.extraTitle} />
         <Text text={article.text} />
         <Text text={article.text2} />
         <Text text={article.text3} />
         <Text text={article.text4} />
         <Text text={article.text5} />
-        <ReadMore title={article.extraTitle} content={article.extraContent} />
         <Text text={article.text6} />
         <Text text={article.text7} />
         <Text text={article.text8} />
@@ -68,6 +68,7 @@ class Chapter1 extends Component{
         <Text text={article.text13} />
         <Text text={article.text14} />
         <Text text={article.text15} />
+        <ReadMore src={article.image2} title={article.extraTitle} content={article.extraContent} />
         <Image src={article.image1} mode='fill' height={`${this.state.showImages ? '50vw' : '0px'}`} />
         <Text text={article.text15} />
         <Text text={article.text16} />

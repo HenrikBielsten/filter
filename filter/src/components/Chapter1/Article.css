@@ -5,19 +5,15 @@
   -webkit-transition: 0.5s margin;
   -moz-transition: 0.5s margin;
   -o-transition: 0.5s margin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .imgOpen {
   height: 50vw;
   width: 100vw;
   transition: .3s ;
-}
-
-.chapter.false{
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .chapterOne.false{
     margin-top: 0;
