@@ -12,13 +12,9 @@ class MenuBottom extends Component {
 
 render() {
   return (
-<<<<<<< HEAD
-    <div className={`menuBottom ${this.props.hidden}`}>
-=======
     <div
       onClick={this.onClick}
       className={`menuBottom ${this.props.menuHidden}`}>
->>>>>>> d20aaf465bd1d0c7b9ad4926813ade7eeec36685
       <div className="menuBottomContentWrapper">
         <Fontsize />
         <HideAndShowPictures />

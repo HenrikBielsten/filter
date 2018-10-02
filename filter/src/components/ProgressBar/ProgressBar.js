@@ -33,11 +33,7 @@ class ProgressBar extends Component {
  };
 render() {
   return (
-<<<<<<< HEAD
-    <div className={`progress-bar ${this.props.menuHidden}`}>
-=======
     <div className={`progressBar ${this.props.menuHidden}`}>
->>>>>>> d20aaf465bd1d0c7b9ad4926813ade7eeec36685
         <Filler percentage={this.state.percentage} />
     </div>
   )
