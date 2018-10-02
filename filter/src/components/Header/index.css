@@ -7,6 +7,12 @@
   -moz-transition: 0.3s transform;
   -o-transition: 0.3s transform;
 }
+.wrapper.false{
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+}
 .logo {
   height: 32px;
   width: 90.48px;
@@ -19,7 +25,6 @@
   height: 50px;
   width: 100%;
   background-color: black;
-  color: white;
 }
 .hamburger {
   position: absolute;
@@ -35,20 +40,24 @@
   border-radius: 50%;
 }
 .bars, .bars2, .bars3  {
-  width: 30px;
+  width: 27px;
   height: 3px;
   cursor: pointer;
   transition: 1s;
   background-color: white;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 .bars.Active {
   background-color: #D8AD9C;
   transition: 1s;
 }
-.wrapper.false{
-  transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
+.titleAndNumber {
+  height: 21px;
+  width: 235px;
+  margin-left: 19.7px;
+  color: #DAB0A0;
+  font-family: 'HarrietText-Regular';
+  font-size: 18px;
+  line-height: NaNpx;
+  margin-bottom: 10px;
 }

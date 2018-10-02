@@ -5,7 +5,7 @@ class Home extends Component {
 
     return (
       <div className="parties">
-        <Header />
+        <Header src={window.location.origin + '/images/Filter_logo.svg'} mode='fit' height={'14vh'} width={'14vh'}  />
         <h1>Home</h1>
       </div>
     );

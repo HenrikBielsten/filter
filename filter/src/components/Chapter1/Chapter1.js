@@ -29,10 +29,17 @@ class Chapter1 extends Component{
   render() {
 
     const article = this.state.articles[0];
-
     return (
       <div className={`chapterOne ${this.state.togglemenus}`} onClick={this.toggleMenu}>
-        <Header menuHidden={this.state.togglemenus} />
+        <Header
+          menuHidden={this.state.togglemenus}
+          src={window.location.origin + '/icons/Filter_logo_F_white.svg'} mode='fit'
+          title={article.title}
+          dot={`.`}
+          id={article.chapter}
+          extra={`/`}
+          lastid={this.state.articles.length}
+        />
         <ProgressBar menuHidden={this.state.togglemenus} />
         <Title title={article.title} />
         <Ingress ingress={article.ingress} />

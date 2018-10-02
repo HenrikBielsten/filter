@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import './index.css';
+import "./index.css";
+
 class Header extends Component {
   constructor(props) {
    super(props);
@@ -16,14 +17,32 @@ class Header extends Component {
  onClick = (e) => {
  e.stopPropagation();
  }
-
 render() {
+  let {mode, src, height, width, style, ...props} = this.props;
+  let modes = {
+    'fill': 'cover',
+    'fit': 'contain'
+  };
+  let size = modes[mode] || 'contain';
+
+  let defaults = {
+    height: height || `${8}vh`,
+    width: width || `${8}vw`,
+  }
+
+  let important = {
+    backgroundImage: `url("${src}")`,
+    backgroundSize: size,
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+  };
   return (
     <div
       onClick={this.onClick}
       className={`wrapper ${this.props.menuHidden}`}>
       <div className="header">
-        <img className="logo" src={window.location.origin + '/images/Filter_logo.svg'}  alt="logo"/>
+        <div className="logo" {...props} style={{...defaults, ...style, ...important}} />
+        <div className="titleAndNumber"> {this.props.title}{this.props.dot} {this.props.id} {this.props.extra} {this.props.lastid} </div>
         <div
         className="hamburger" >
           <div
