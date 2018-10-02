@@ -1,0 +1,10 @@
+.ImageButton {
+  width: 2vh;
+  height: 2vh;
+  background-image: url(/../../icons/icon_minus_white.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+  position: relative;
+  transform: translateY(8px);
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="14px" viewBox="0 0 12 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Icon/Check" transform="translate(1.000000, 1.000000)" stroke="#DAB0A0" stroke-width="2">
+            <path d="M0,7.22984095 L4.46489705,11.8413403 C4.65698026,12.0397305 4.97352146,12.0448432 5.17191161,11.85276 C5.22215728,11.8041117 5.26163823,11.7454635 5.2878036,11.6806047 L10,0" id="icon_check"></path>
+        </g>
+    </g>
+</svg>

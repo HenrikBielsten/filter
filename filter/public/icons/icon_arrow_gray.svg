@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="14px" viewBox="0 0 11 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_arrow_gray</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Forum_tråd" transform="translate(-347.000000, -180.000000)" fill="#A89898" fill-rule="nonzero">
+            <path d="M353.617661,182.234646 L358.876624,191.250011 C359.154904,191.727063 358.993768,192.339381 358.516716,192.617661 C358.36378,192.706874 358.1899,192.753882 358.012845,192.753882 L347.494919,192.753882 C346.942634,192.753882 346.494919,192.306167 346.494919,191.753882 C346.494919,191.576827 346.541927,191.402947 346.63114,191.250011 L351.890103,182.234646 C352.168383,181.757594 352.780701,181.596458 353.257753,181.874738 C353.406757,181.961657 353.530742,182.085642 353.617661,182.234646 Z" id="icon_arrow_gray" transform="translate(352.753882, 187.000000) scale(-1, 1) rotate(-90.000000) translate(-352.753882, -187.000000) "></path>
+        </g>
+    </g>
+</svg>

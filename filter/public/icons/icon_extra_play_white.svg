@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>button_extra_play_white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="extra/button">
+            <g id="Group-11-Copy" stroke-width="1" fill-rule="evenodd" fill="#DAB0A0">
+                <rect id="Rectangle-9" fill-rule="nonzero" x="0" y="0" width="16" height="16" rx="2"></rect>
+            </g>
+            <g id="extra/button/icon/video_white" transform="translate(1.300000, 1.000000)" fill="#FCFCF9" fill-rule="nonzero">
+                <path d="M1.5,1 C1.22385763,1 1,1.22385763 1,1.5 L1,12.5 C1,12.7761424 1.22385763,13 1.5,13 C1.57268474,13.0137932 1.64731526,13.0137932 1.72,13 L12.72,7.5 C12.8924952,7.41645678 13.0020551,7.24166129 13.0020551,7.05 C13.0020551,6.85833871 12.8924952,6.68354322 12.72,6.6 L1.72,1.05 C1.65056564,1.01933699 1.57586686,1.00235999 1.5,1 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -18,6 +18,8 @@ class Chapter1 extends Component{
   state = {
     articles: articles,
     togglemenus: true,
+    showImages: true,
+    imageIcon: false,
   }
 
   toggleMenu = (e) => {
@@ -25,6 +27,14 @@ class Chapter1 extends Component{
       togglemenus: !this.state.togglemenus
     })
   }
+
+  toggleImages = () => {
+    this.setState({
+      showImages: !this.state.showImages,
+      imageIcon: !this.state.imageIcon,
+    })
+  }
+
   render() {
 
     const article = this.state.articles[0];
@@ -58,7 +68,7 @@ class Chapter1 extends Component{
         <Text text={article.text13} />
         <Text text={article.text14} />
         <Text text={article.text15} />
-        <Image src={article.image1} mode='fit' />
+        <Image src={article.image1} mode='fill' height={`${this.state.showImages ? '50vw' : '0px'}`} />
         <Text text={article.text15} />
         <Text text={article.text16} />
         <Text text={article.text17} />
@@ -89,9 +99,9 @@ class Chapter1 extends Component{
         <Text text={article.text40} />
         <Text text={article.text41} />
         <Text text={article.text42} />
-        <Image src={article.image2} mode='fit' />
+        <Image src={article.image2} mode='fill' height={`${this.state.showImages ? '50vw' : '0vw'}`} />
         <JoystickNew />
-        <MenuBottom menuhidden={this.state.togglemenus}/> />
+        <MenuBottom toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
       </div>
     );
   }

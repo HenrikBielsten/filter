@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>extra/button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footer" transform="translate(-24.000000, -1208.000000)">
+            <g id="Extramaterial" transform="translate(24.000000, 1162.000000)">
+                <g id="Group-15" transform="translate(0.000000, 46.000000)">
+                    <g id="Group-5">
+                        <g id="extra/button">
+                            <g id="Group-11-Copy" fill="#DAB0A0">
+                                <rect id="Rectangle-9" fill-rule="nonzero" x="0" y="0" width="24" height="24" rx="2"></rect>
+                            </g>
+                            <g id="extra/button/icon/sound" transform="translate(1.950000, 1.500000)">
+                                <g id="icon_sound" transform="translate(0.769231, 1.538462)">
+                                    <path d="M16.4102565,1.53846154 C17.0967909,4.10477494 17.4400582,6.66887751 17.4400582,9.23076923 C17.4400582,11.792661 17.0967909,14.3567635 16.4102565,16.9230769" id="Line-2" stroke="#000000" stroke-linecap="round"></path>
+                                    <path d="M4.61538462,6.15384615 L11.0579269,0.999812337 C11.3896668,0.734420377 11.8737379,0.788206049 12.1391298,1.119946 C12.2482456,1.25634065 12.3076923,1.42581027 12.3076923,1.60048065 L12.3076923,16.8610578 C12.3076923,17.2858923 11.963296,17.6302886 11.5384615,17.6302886 C11.3637912,17.6302886 11.1943215,17.5708418 11.0579269,17.4617262 L4.61538462,12.3076923 L4.61538462,6.15384615 Z" id="Rectangle-3" fill="#000000" fill-rule="nonzero"></path>
+                                    <rect id="Rectangle-4" fill="#000000" fill-rule="nonzero" x="0" y="6.15384615" width="7.69230769" height="6.15384615" rx="1"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
