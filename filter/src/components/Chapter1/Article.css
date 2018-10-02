@@ -1,11 +1,10 @@
 .chapterOne {
   margin-top: 60px;
   margin-bottom: 60px;
-  transition: 1s margin;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  transition: 0.5s margin;
+  -webkit-transition: 0.5s margin;
+  -moz-transition: 0.5s margin;
+  -o-transition: 0.5s margin;
 }
 .imgOpen {
   height: 50vw;

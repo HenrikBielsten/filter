@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './index.css';
-import Home from "./components/Home/Home";
+import Home from "./components/Home/Home.js";
 import Chapter1 from "./components/Chapter1/Chapter1";
 import Chapter2 from "./components/Chapter2/Chapter2";
 import Chapter3 from "./components/Chapter3/Chapter3";
