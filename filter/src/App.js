@@ -7,7 +7,7 @@ import Chapter2 from "./components/Chapter2/Chapter2";
 import Chapter3 from "./components/Chapter3/Chapter3";
 import Chapter4 from "./components/Chapter4/Chapter4";
 
-import { Router, Link } from '@reach/router';
+import { Router } from '@reach/router';
 
 
 class App extends Component {
