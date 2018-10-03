@@ -5,3 +5,27 @@
   position: fixed;
   top: 50px;
 }
+.homePage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1A1A1A;
+  margin-top: -7px;
+}
+
+.wrapperHome {
+  border: 2px solid #D8D8D8;
+	height: 40vh;
+  width: 21.5vh;
+  margin: 16px;
+  color: white;
+}
+.wrapperHome:hover {
+  border: 2px solid #CA6A4A;
+}
+
+.wrapperHome ,.Chapter3 {
+  margin-top: 16px;
+}

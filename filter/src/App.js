@@ -14,17 +14,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <nav>
-          <Link to="/" style={{margin: '10px'}}>Home</Link>
-          <Link to="chapter1" style={{margin: '10px'}}>Chapter1</Link>
-          <Link to="chapter2" style={{margin: '10px'}}>Chapter2</Link>
-          <Link to="chapter3" style={{margin: '10px'}}>Chapter3</Link>
-          <Link to="chapter4" style={{margin: '10px'}}>Chapter4</Link>
-        </nav>
-
         <Router>
           <Home path="/"/>
-          <Chapter1 path="chapter1"/>
+          <Chapter1 path="Chapter1"/>
           <Chapter2 path="Chapter2"/>
           <Chapter3 path="Chapter3"/>
           <Chapter4 path="Chapter4"/>
