@@ -17,15 +17,18 @@
 
 .wrapperHome {
   border: 2px solid #D8D8D8;
-	height: 40vh;
-  width: 21.5vh;
-  margin: 16px;
+  height: 38vh;
+  width: 24vh;
+  margin-left: 16px;
   color: white;
 }
 .wrapperHome:hover {
   border: 2px solid #CA6A4A;
 }
 
-.wrapperHome ,.Chapter3 {
-  margin-top: 16px;
+.Chapter3 {
+  margin-top: -77px;
+}
+.Chapter1,.Chapter2 {
+  margin-top: 40px;
 }
