@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "./ReadMore.css";
+import React, { Component } from 'react';
+import './ReadMore.css';
 class ReadMore extends Component {
   constructor(props) {
   super(props);

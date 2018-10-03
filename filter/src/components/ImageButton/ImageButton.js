@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-import "./ImageButton.css";
+import './ImageButton.css';
 
 class ImageButton extends Component {
 

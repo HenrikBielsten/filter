@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import './MenuBottom.css';
 import NightMode from '../NightMode/NightMode.js';
 import Fontsize from '../Fontsize/Fontsize.js';

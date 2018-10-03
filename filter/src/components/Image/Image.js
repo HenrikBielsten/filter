@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ImageButton from '../ImageButton/ImageButton.js';
-
-import "./Image.css";
+import './Image.css';
 
 class Image extends Component {
 

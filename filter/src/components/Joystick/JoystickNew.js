@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class JoystickNew extends Component {
 
@@ -22,11 +22,7 @@ class JoystickNew extends Component {
 
   onMove = (e) => {
     e.persist();
-    // console.log(e);
     if (e.touches) {
-
-      // console.log('touched');
-
       const clientY = e.touches[0].clientY || e.clientY;
       const offsetY = e.target.offsetTop || e.offsetTop;
       const y = clientY - offsetY;

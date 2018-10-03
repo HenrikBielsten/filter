@@ -6,7 +6,6 @@ import Header from '../Header/Header.js';
 import ProgressBar from '../ProgressBar/ProgressBar.js';
 import MenuBottom from '../MenuBottom/MenuBottom';
 import "./Article.css";
-// import Test from './test.js';
 
 class Chapter4 extends Component{
 
