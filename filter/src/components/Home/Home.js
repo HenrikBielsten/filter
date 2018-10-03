@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import Header from "../Header/Header.js";
+import React, { Component } from 'react';
+import Header from '../Header/Header.js';
 import articles from '../Database/articles.js';
 import { Link } from '@reach/router';
-import "./Home.css";
+import './Home.css';
 class Home extends Component {
   state = {
     articles: articles,
