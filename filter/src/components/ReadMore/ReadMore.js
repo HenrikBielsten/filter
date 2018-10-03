@@ -35,6 +35,7 @@ eventHandler(event) {
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
     };
+
     return (
       <div className="readMoreWrapper">
 
@@ -44,11 +45,18 @@ eventHandler(event) {
       >
       </div>
 
-      {this.state.readmore ? (
-        <div className="readMore">
-        <h1>{this.props.title}</h1>
-        <div className="logo" {...props} style={{...defaults, ...style, ...important}} />
-        </div> ) : <div className="readMoreClosed"> </div>}
+      {this.state.readmore ?
+        (
+          <div className="readMore">
+            <h1 className="display">{this.props.title}</h1>
+            <div className="logo display" {...props} style={{...defaults, ...style, ...important}} />
+          </div>
+        )
+        : <div className="readMoreClosed">
+            <h1 className="displayNone">{this.props.title}</h1>
+            <div className="logo displayNone" {...props} style={{...defaults, ...style, ...important}} />
+          </div>
+      }
 
       </div>
     );

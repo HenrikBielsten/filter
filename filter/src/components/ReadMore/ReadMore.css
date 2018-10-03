@@ -1,12 +1,14 @@
 .readMore {
   height: 268px;
-  width: 375px;
+  width: 100vw;
   background-color: #D8AD9C;
-  transition: 1s height;
+  transition: .4s;
 }
 .readMoreClosed {
-  height: 1px;
-  transition: 1s height;
+  height: 0px;
+  width: 100vw;
+  transition: .4s;
+  background-color: #D8AD9C;
 }
 .open {
   background-image: url('/../../icons/icon_minus_black.svg');
@@ -19,7 +21,7 @@
 .closed {
   background-image: url('/../../icons/icon_extra_photo_white.svg');
   background-repeat: no-repeat;
-  background-size: 18.02px 18px;
+  background-size: 16px 16px;
 	height: 18px;
   width: 18px;
   transition: 1s;
@@ -29,4 +31,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.display {
+  /* display: block; */
+  opacity: 1;
+  transition: 1s;
+}
+
+.displayNone {
+  /* display: none; */
+  opacity: 0;
+  transition: 1s;
 }
