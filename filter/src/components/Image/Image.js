@@ -14,8 +14,8 @@ class Image extends Component {
     let size = modes[mode] || 'contain';
 
     let defaults = {
-      height: height || `${50}vw`,
-      width: width || `${89}vw`,
+      height: height || `${20}vw`,
+      width: width || `${30}vw`,
     }
 
     let important = {
@@ -23,14 +23,12 @@ class Image extends Component {
       backgroundSize: size,
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
-      transition: '.3s',
-      boxShadow: '1.5px 1.5px 5px grey',
-      borderTop: '2px #DAB0A0 solid',
+      margin: '0 2vw 0 2vw',
     };
 
     return (
       <div className="imageContainer">
-        <ImageButton />
+        {/* <ImageButton /> */}
         <div {...props} style={{...defaults, ...style, ...important}} />
 
       </div>

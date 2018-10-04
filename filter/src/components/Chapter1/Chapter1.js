@@ -39,6 +39,7 @@ class Chapter1 extends Component{
   render() {
 
     const article = this.state.articles[0];
+
     return (
       <div className={`chapterOne ${this.state.togglemenus}`} onClick={this.toggleMenu}>
         <Header
@@ -70,7 +71,7 @@ class Chapter1 extends Component{
         <Text text={article.text14} />
         <Text text={article.text15} />
         <ReadMore src={article.image2} title={article.extraTitle} content={article.extraContent} />
-        <Image src={article.image1} mode='fill' height={`${this.state.showImages ? '50vw' : '0px'}`} />
+        {/* <Image src={article.image1} mode='fill' height={`${this.state.showImages ? '50vw' : '0px'}`} /> */}
         <Text text={article.text15} />
         <Text text={article.text16} />
         <Text text={article.text17} />
@@ -101,7 +102,7 @@ class Chapter1 extends Component{
         <Text text={article.text40} />
         <Text text={article.text41} />
         <Text text={article.text42} />
-        <Image src={article.image2} mode='fill' height={`${this.state.showImages ? '50vw' : '0vw'}`} />
+        {/* <Image src={article.image2} mode='fill' height={`${this.state.showImages ? '50vw' : '0vw'}`} /> */}
         <JoystickNew />
         <Link to={'/Chapter2'}>Nästa Kapitel</Link>
         <MenuBottom toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>

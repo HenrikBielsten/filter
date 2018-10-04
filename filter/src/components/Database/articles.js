@@ -50,7 +50,7 @@
       text41: "Precis som bitcoin gick dogecoin och de andra valutor Sam bröt att växla mot dollar. Varje månad drog han in ungefär 1 000 dollar, tillräckligt för att betala hyran – där elen lyckligtvis ingick – och delar av universitetsavgiften.",
       text42: "– Innan jag träffade Sam trodde jag att kryptovalutor mest var något folk hade till att köpa droger på internet, säger Theodor. Jag tyckte att allt han berättade var väldigt intressant. Men hela grejen var fortfarande ganska underground och det fanns inte riktigt något användningsområde. När jag och Sam diskuterade vad vi skulle bygga tillsammans pratade vi om helt andra saker.",
       image2: 'https://i2.wp.com/magasinetfilter.se/wp-content/uploads/2018/09/everipedia-2.jpg?w=1600&ssl=1',
-      extraTitle: 'Sjukt grym extra information',
+      extraTitle: 'Bildgalleri från mordplatsen',
       extraContent: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       id: '1',
     },

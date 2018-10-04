@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import './ReadMore.css';
+import Image from '../Image/Image';
+import articles from '../Database/articles.js';
+
 class ReadMore extends Component {
   constructor(props) {
   super(props);
   this.state = {
-    readmore: false
+    readmore: false,
+    articles: articles,
   };
   this.eventHandler = this.eventHandler.bind(this);
 }
@@ -17,46 +21,32 @@ eventHandler(event) {
 
 }
   render() {
-    let {mode, src, height, width, style, ...props} = this.props;
-    let modes = {
-      'fill': 'cover',
-      'fit': 'contain'
-    };
-    let size = modes[mode] || 'contain';
 
-    let defaults = {
-      height: height || `${18}vh`,
-      width: width || `${46}vw`,
-    }
-
-    let important = {
-      backgroundImage: `url("${src}")`,
-      backgroundSize: size,
-      backgroundPosition: 'center center',
-      backgroundRepeat: 'no-repeat',
-    };
+    const article = this.state.articles[0];
 
     return (
       <div className="readMoreWrapper">
 
-      <div
-      onClick={this.eventHandler}
-      className={this.state.readmore ? "open" : "closed"}
-      >
-      </div>
+        <div
+          onClick={this.eventHandler}
+          className={this.state.readmore ? "open" : "closed"}
+          >
+        </div>
+        {/* <div className={this.state.readmore ? "underlayOpen" : "underlayClosed"}></div> */}
 
-      {this.state.readmore ?
-        (
-          <div className="readMore">
-            <h1 className="display">{this.props.title}</h1>
-            <div className="logo display" {...props} style={{...defaults, ...style, ...important}} />
+        <div className={this.state.readmore ? "borderTopOpen " : "borderTopClosed "}></div>
+        <div className={this.state.readmore ? "readMore" : "readMoreClosed"}>
+          <h1 className="readMoreHeader">{this.props.title}</h1>
+          <div className="imageWrapper">
+            <Image src={article.image1} mode='fill' height={64} width={96} />
+            <Image src={article.image2} mode='fill' height={64} width={96} />
+            <Image src={article.image1} mode='fill' height={64} width={96} />
+            <Image src={article.image2} mode='fill' height={64} width={96} />
+            <Image src={article.image1} mode='fill' height={64} width={96} />
           </div>
-        )
-        : <div className="readMoreClosed">
-            <h1 className="displayNone">{this.props.title}</h1>
-            <div className="logo displayNone" {...props} style={{...defaults, ...style, ...important}} />
-          </div>
-      }
+        </div>
+        <div className={this.state.readmore ? "borderBottomOpen " : "borderBottomClosed "}></div>
+
 
       </div>
     );
