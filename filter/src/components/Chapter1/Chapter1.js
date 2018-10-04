@@ -114,7 +114,13 @@ class Chapter1 extends Component{
           <Image src={article.image2} mode='fill' height={`${this.state.showImages ? '50vw' : '0vw'}`} />
         </div>
         <JoystickNew />
-        <Link to={'/Chapter2'}>Nästa Kapitel</Link>
+
+          <Link className="nextChapterWrapper" to={'/Chapter2'}>
+            <div className="nextChapterText">
+              Nästa Kapitel
+                <div className="nextChapterButton"></div>
+            </div>
+          </Link>
         <MenuBottom toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
       </div>
     );

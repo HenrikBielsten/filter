@@ -35,3 +35,33 @@
   padding-left: 24px;
   padding-right: 24px;
 }
+.nextChapterText {
+  font-family: "pf-din-text-pro";
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.nextChapterButton {
+  background-image: url('/../../icons/icon_next_white.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  height: 24px;
+	width: 24px;
+  border-radius: 2px;
+  background-color: #D8AD9C;
+  margin-left: 8px;
+}
+.nextChapterWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 32px;
+  margin-right: 24px;
+  margin-bottom: 40px;
+}
