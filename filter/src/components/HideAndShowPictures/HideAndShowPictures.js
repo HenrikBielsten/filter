@@ -8,6 +8,7 @@ class HideAndShowPictures extends Component {
   }
 
   toggleClass = (e) => {
+    e.stopPropagation();
     this.setState({
       closed: !this.state.closed
     })

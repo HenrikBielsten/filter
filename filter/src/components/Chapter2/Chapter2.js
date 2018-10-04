@@ -7,7 +7,6 @@ import Title from '../Title/Title';
 import Ingress from '../Ingress/Ingress';
 import Text from '../Text/Text';
 import Image from '../Image/Image';
-import BigText from '../BigText/BigText';
 import articles from '../Database/articles.js';
 import ReadMore from '../ReadMore/ReadMore.js';
 import { Link } from '@reach/router';
@@ -15,7 +14,6 @@ import './Chapter2.css';
 
 
 class Chapter2 extends Component{
-
   state = {
     articles: articles,
     togglemenus: true,
@@ -35,6 +33,9 @@ class Chapter2 extends Component{
       imageIcon: !this.state.imageIcon,
     })
   }
+componentDidMount(){
+  window.scrollTo(0, 0)
+}
 
   render() {
 
@@ -81,7 +82,6 @@ class Chapter2 extends Component{
         <Text text={article.text22} />
         <Text text={article.text23} />
         <Text text={article.text24} />
-        <BigText bigText={article.bigText1} />
         <Text text={article.text25} />
         <Text text={article.text26} />
         <Text text={article.text27} />
@@ -93,7 +93,6 @@ class Chapter2 extends Component{
         <Text text={article.text33} />
         <Text text={article.text34} />
         <Text text={article.text35} />
-        <BigText bigText={article.bigText2} />
         <Text text={article.text36} />
         <Text text={article.text37} />
         <Text text={article.text38} />
@@ -103,8 +102,18 @@ class Chapter2 extends Component{
         <Text text={article.text42} />
         <Image src={article.image2} mode='fill' height={`${this.state.showImages ? '50vw' : '0vw'}`} />
         <JoystickNew />
-        <Link to={'/Chapter1'}>Föregående Kapitel</Link>
-        <Link to={'/Chapter3'}>Nästa Kapitel</Link>
+        <Link className="previousChapterWrapper" to={'/Chapter1'}>
+          <div className="previousChapterText">
+              <div className="previousChapterButton"></div>
+              Föregående Kapitel
+          </div>
+        </Link>
+        <Link className="nextChapterWrapper" to={'/Chapter3'}>
+          <div className="nextChapterText">
+            Nästa Kapitel
+              <div className="nextChapterButton"></div>
+          </div>
+        </Link>
         <MenuBottom toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
       </div>
     );

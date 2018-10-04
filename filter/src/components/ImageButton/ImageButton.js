@@ -3,6 +3,16 @@ import './ImageButton.css';
 
 class ImageButton extends Component {
 
+  state = {
+    closed: false,
+  }
+
+  toggleClass = (e) => {
+    e.stopPropagation();
+    this.setState({
+      closed: !this.state.closed
+    })
+  }
   render() {
 
     // let {mode, src, height, width, style, ...props} = this.props;
@@ -32,7 +42,9 @@ class ImageButton extends Component {
     // {...props} style={{...defaults, ...style, ...important}}
 
     return (
-      <div className='ImageButton' />
+      <div className='ImageButton'
+      onClick={this.props.toggleImages}
+       />
     );
   }
 }

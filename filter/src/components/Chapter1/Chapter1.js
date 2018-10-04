@@ -7,9 +7,10 @@ import Title from '../Title/Title';
 import Ingress from '../Ingress/Ingress';
 import Text from '../Text/Text';
 import Image from '../Image/Image';
-import BigText from '../BigText/BigText';
+import SmallText from '../SmallText/SmallText';
 import articles from '../Database/articles.js';
 import ReadMore from '../ReadMore/ReadMore.js';
+import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
 import { Link } from '@reach/router';
 import './Chapter1.css';
 
@@ -35,6 +36,9 @@ class Chapter1 extends Component{
       imageIcon: !this.state.imageIcon,
     })
   }
+  componentDidMount(){
+    window.scrollTo(0, 0)
+  }
 
   render() {
 
@@ -52,59 +56,76 @@ class Chapter1 extends Component{
           lastid={this.state.articles.length}
         />
         <ProgressBar menuhidden={this.state.togglemenus} />
-        <Title title={article.title} />
-        <Ingress ingress={article.ingress} />
-        <ReadMore  src={article.image1} title={article.extraTitle} />
-        <Text text={article.text} />
-        <Text text={article.text2} />
-        <Text text={article.text3} />
-        <Text text={article.text4} />
-        <Text text={article.text5} />
-        <Text text={article.text6} />
-        <Text text={article.text7} />
-        <Text text={article.text8} />
-        <Text text={article.text9} />
-        <Text text={article.text10} />
-        <Text text={article.text11} />
-        <Text text={article.text12} />
-        <Text text={article.text13} />
-        <Text text={article.text14} />
-        <Text text={article.text15} />
-        <ReadMore src={article.image2} title={article.extraTitle} content={article.extraContent} />
-        {/* <Image src={article.image1} mode='fill' height={`${this.state.showImages ? '50vw' : '0px'}`} /> */}
-        <Text text={article.text15} />
-        <Text text={article.text16} />
-        <Text text={article.text17} />
-        <Text text={article.text18} />
-        <Text text={article.text19} />
-        <Text text={article.text20} />
-        <Text text={article.text21} />
-        <Text text={article.text22} />
-        <Text text={article.text23} />
-        <Text text={article.text24} />
-        <BigText bigText={article.bigText1} />
-        <Text text={article.text25} />
-        <Text text={article.text26} />
-        <Text text={article.text27} />
-        <Text text={article.text28} />
-        <Text text={article.text29} />
-        <Text text={article.text30} />
-        <Text text={article.text31} />
-        <Text text={article.text32} />
-        <Text text={article.text33} />
-        <Text text={article.text34} />
-        <Text text={article.text35} />
-        <BigText bigText={article.bigText2} />
-        <Text text={article.text36} />
-        <Text text={article.text37} />
-        <Text text={article.text38} />
-        <Text text={article.text39} />
-        <Text text={article.text40} />
-        <Text text={article.text41} />
-        <Text text={article.text42} />
-        {/* <Image src={article.image2} mode='fill' height={`${this.state.showImages ? '50vw' : '0vw'}`} /> */}
+        <div className="chapterTextWrapper">
+          <SmallText text={article.type} />
+          <Title title={article.title} />
+          <SmallText text={article.author} />
+          <SmallText text={article.illustrator} />
+          <SmallText text={article.published} />
+          <Ingress ingress={article.ingress} />
+          <Text text={article.text} />
+          <Text text={article.text2} />
+          <Text text={article.text3} />
+          <Text text={article.text4} />
+          <Text text={article.text5} />
+          <Text text={article.text6} />
+          <Text text={article.text7} />
+          <Text text={article.text8} />
+          <Text text={article.text9} />
+          <Text text={article.text10} />
+          <Text text={article.text11} />
+          <Text text={article.text12} />
+          <Text text={article.text13} />
+          <Text text={article.text14} />
+          <Text text={article.text15} />
+          </div>
+        <div className="chapterContetWrapper">
+          <ReadMore src={article.image2} title={article.extraTitle} content={article.extraContent} />
+          <Image src={article.image1} mode='fill' height={`${this.state.showImages ? '50vw' : '0px'}`} />
+        </div>
+        <div className="chapterTextWrapper">
+          <Text text={article.text15} />
+          <Text text={article.text16} />
+          <Text text={article.text17} />
+          <Text text={article.text18} />
+          <Text text={article.text19} />
+          <Text text={article.text20} />
+          <Text text={article.text21} />
+          <Text text={article.text22} />
+          <Text text={article.text23} />
+          <Text text={article.text24} />
+          <Text text={article.text25} />
+          <Text text={article.text26} />
+          <Text text={article.text27} />
+          <Text text={article.text28} />
+          <Text text={article.text29} />
+          <Text text={article.text30} />
+          <Text text={article.text31} />
+          <Text text={article.text32} />
+          <Text text={article.text33} />
+          <Text text={article.text34} />
+          <Text text={article.text35} />
+          <Text text={article.text36} />
+          <Text text={article.text37} />
+          <Text text={article.text38} />
+          <Text text={article.text39} />
+          <Text text={article.text40} />
+          <Text text={article.text41} />
+          <Text text={article.text42} />
+          <Text text={article.text43} />
+          <Text text={article.text44} />
+        </div>
+        <div className="chapterContentWrapper">
+          <Image src={article.image2} mode='fill' height={`${this.state.showImages ? '50vw' : '0vw'}`} />
+        </div>
         <JoystickNew />
-        <Link to={'/Chapter2'}>Nästa Kapitel</Link>
+          <Link className="nextChapterWrapper" to={'/Chapter2'}>
+            <div className="nextChapterText">
+              Nästa Kapitel
+                <div className="nextChapterButton"></div>
+            </div>
+          </Link>
+          <ExtraMaterial />
         <MenuBottom toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
       </div>
     );

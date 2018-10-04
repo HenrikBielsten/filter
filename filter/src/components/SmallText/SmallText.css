@@ -1,0 +1,31 @@
+.textWrapper {
+  font-family: "pf-din-text-pro";
+}
+.italic {
+  color: #1A1A1A;
+  font-style: italic;
+  font-family: "Harriet Display";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.authorName, .illustratorName {
+  display: inline;
+  font-style: normal;
+  font-family: "pf-din-text-pro";
+}
+.published {
+  color: #1A1A1A;
+
+  font-size: 11px;
+  line-height: NaNpx;
+}
+.filterNumber {
+  display: inline;
+  color: #DAB0A0;
+}
+.typeOfArticle {
+  color: #DAB0A0;
+  font-size: 16px;
+  line-height: 24px;
+}

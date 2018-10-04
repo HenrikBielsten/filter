@@ -25,7 +25,7 @@ class Image extends Component {
       backgroundRepeat: 'no-repeat',
       margin: '0 2vw 0 2vw',
     };
-
+console.log(src);
     return (
       <div className="imageContainer">
         {/* <ImageButton /> */}

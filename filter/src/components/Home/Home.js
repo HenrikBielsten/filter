@@ -7,8 +7,11 @@ class Home extends Component {
   state = {
     articles: articles,
   }
-  render() {
 
+  componentDidMount(){
+    window.scrollTo(0, -10);
+  }
+  render() {
     return (
       <div>
         <Header src={window.location.origin + '/images/Filter_logo.svg'} mode='fit' height={'14vh'} width={'14vh'}  />
@@ -16,8 +19,7 @@ class Home extends Component {
         <div className="homePage">
         {this.state.articles.map((article, key) => {
           return    <Link key={key} className={`wrapperHome Chapter${article.chapter.toString()}`} to={`Chapter${article.id}`} >
-                      <p>{article.title}</p>
-                      <p>{article.ingress}</p>
+                      <img  className="snapShot" src={window.location.origin + '/images/' + article.snapshot}  alt="snapshot"/>
                   </Link>
         })}
         </div>

@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
-
+import './Ingress.css';
 class Ingress extends Component {
 
   render() {
 
     return (
-      <div className="Ingress">
-
-        <h4> {this.props.ingress} </h4>
-
-      </div>
+        <p className="ingressText"> {this.props.ingress} </p>
     );
   }
 }
