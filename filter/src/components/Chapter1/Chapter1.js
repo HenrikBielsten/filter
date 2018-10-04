@@ -10,6 +10,7 @@ import Image from '../Image/Image';
 import SmallText from '../SmallText/SmallText';
 import articles from '../Database/articles.js';
 import ReadMore from '../ReadMore/ReadMore.js';
+import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
 import { Link } from '@reach/router';
 import './Chapter1.css';
 
@@ -123,6 +124,7 @@ class Chapter1 extends Component{
                 <div className="nextChapterButton"></div>
             </div>
           </Link>
+          <ExtraMaterial />
         <MenuBottom toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
       </div>
     );
