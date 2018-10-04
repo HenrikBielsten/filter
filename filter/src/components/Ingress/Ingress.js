@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './Ingress.css';
 class Ingress extends Component {
 
   render() {

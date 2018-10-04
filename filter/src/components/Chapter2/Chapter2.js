@@ -102,8 +102,18 @@ componentDidMount(){
         <Text text={article.text42} />
         <Image src={article.image2} mode='fill' height={`${this.state.showImages ? '50vw' : '0vw'}`} />
         <JoystickNew />
-        <Link to={'/Chapter1'}>Föregående Kapitel</Link>
-        <Link to={'/Chapter3'}>Nästa Kapitel</Link>
+        <Link className="previousChapterWrapper" to={'/Chapter1'}>
+          <div className="previousChapterText">
+              <div className="previousChapterButton"></div>
+              Föregående Kapitel
+          </div>
+        </Link>
+        <Link className="nextChapterWrapper" to={'/Chapter3'}>
+          <div className="nextChapterText">
+            Nästa Kapitel
+              <div className="nextChapterButton"></div>
+          </div>
+        </Link>
         <MenuBottom toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
       </div>
     );

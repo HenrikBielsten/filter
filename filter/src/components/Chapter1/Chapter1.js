@@ -35,6 +35,9 @@ class Chapter1 extends Component{
       imageIcon: !this.state.imageIcon,
     })
   }
+  componentDidMount(){
+    window.scrollTo(0, 0)
+  }
 
   render() {
 
@@ -114,7 +117,6 @@ class Chapter1 extends Component{
           <Image src={article.image2} mode='fill' height={`${this.state.showImages ? '50vw' : '0vw'}`} />
         </div>
         <JoystickNew />
-
           <Link className="nextChapterWrapper" to={'/Chapter2'}>
             <div className="nextChapterText">
               Nästa Kapitel
