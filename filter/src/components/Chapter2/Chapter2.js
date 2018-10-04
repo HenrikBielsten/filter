@@ -7,7 +7,6 @@ import Title from '../Title/Title';
 import Ingress from '../Ingress/Ingress';
 import Text from '../Text/Text';
 import Image from '../Image/Image';
-import BigText from '../BigText/BigText';
 import articles from '../Database/articles.js';
 import ReadMore from '../ReadMore/ReadMore.js';
 import { Link } from '@reach/router';
@@ -15,7 +14,6 @@ import './Chapter2.css';
 
 
 class Chapter2 extends Component{
-
   state = {
     articles: articles,
     togglemenus: true,
@@ -35,6 +33,9 @@ class Chapter2 extends Component{
       imageIcon: !this.state.imageIcon,
     })
   }
+componentDidMount(){
+  window.scrollTo(0, 0)
+}
 
   render() {
 
@@ -81,7 +82,6 @@ class Chapter2 extends Component{
         <Text text={article.text22} />
         <Text text={article.text23} />
         <Text text={article.text24} />
-        <BigText bigText={article.bigText1} />
         <Text text={article.text25} />
         <Text text={article.text26} />
         <Text text={article.text27} />
@@ -93,7 +93,6 @@ class Chapter2 extends Component{
         <Text text={article.text33} />
         <Text text={article.text34} />
         <Text text={article.text35} />
-        <BigText bigText={article.bigText2} />
         <Text text={article.text36} />
         <Text text={article.text37} />
         <Text text={article.text38} />

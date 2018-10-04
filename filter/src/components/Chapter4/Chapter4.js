@@ -1,81 +1,64 @@
 import React, { Component } from 'react';
-import articles from '../Database/articles.js';
-import { NavLink } from 'react-router-dom';
 import JoystickNew from '../Joystick/JoystickNew.js';
 import Header from '../Header/Header.js';
 import ProgressBar from '../ProgressBar/ProgressBar.js';
 import MenuBottom from '../MenuBottom/MenuBottom';
-import "./Article.css";
-
+import Title from '../Title/Title';
+import Ingress from '../Ingress/Ingress';
+import SmallText from '../SmallText/SmallText';
+import chapters from '../Database/test.js';
+import './Article.css';
+import { Link } from '@reach/router';
+import Test from './test.js';
 class Chapter4 extends Component{
+    state = {
+      chapters: chapters,
+      togglemenus: true,
+      showImages: true,
+      imageIcon: false,
+    }
 
-  state = {
-    closed: false,
-    oneClosed: false,
-  }
+    toggleMenu = (e) => {
+      this.setState({
+        togglemenus: !this.state.togglemenus
+      })
+    }
 
-  componentWillMount() {
-    const { id } = this.props.match.params;
-    const article = articles.filter(article => article.id === id);
-    console.log(article);
-    this.setState ({
-      article: article[0]
-    })
-  }
-
-  toggleClass = () => {
-    this.setState({
-      closed: !this.state.closed
-    })
-    console.log(this.state.closed);
-  }
-
-  toggleClassOnOne = (data) => {
-    this.setState({
-      oneClosed: !this.state.oneClosed
-    })
-    console.log(data);
-  }
+    toggleImages = () => {
+      this.setState({
+        showImages: !this.state.showImages,
+        imageIcon: !this.state.imageIcon,
+      })
+    }
+    componentDidMount(){
+      window.scrollTo(0, 0)
+    }
 
 
   render() {
+    const chapter = this.state.chapters[0];
     return (
-      <div  key={this.state.article.id} className="Article">
-        <Header />
-        <ProgressBar />
-        <div
-          style={{backgroundColor: 'green', height: '50px', width: '50px', position: 'fixed'}}
-          onClick={this.toggleClass}
-          >Press Me
-        </div>
-        {/* <Test
-           title={this.state.article.title}
-           chapter={this.state.article.chapter}
-           ingress={this.state.article.ingress}
-           text={this.state.article.text}
-         /> */}
-        <h3> {this.state.article.title} </h3>
-        <h5> Chapter: {this.state.article.chapter} </h5>
-        <p> {this.state.article.ingress} </p>
-        <p>{this.state.article.text}</p>
-        <div
-          style={{backgroundColor: 'red', height: '50px', width: '50px'}}
-          onClick={this.toggleClassOnOne}
-          >Press Me
-        </div>
-        <div className={`${this.state.closed ? 'imgClosed' : 'imgOpen'} ${this.state.article.imageOne[0].name}`}></div>
-        <p>{this.state.article.text2}</p>
-        <div
-          style={{backgroundColor: 'orange', height: '50px', width: '50px'}}
-          onClick={this.toggleClassOnOne}
-          >Press Me
-        </div>
-        <div className={`${this.state.closed ? 'imgClosed' : 'imgOpen'} ${this.state.article.imageTwo[0].name}`}></div>
-        <p>{this.state.article.text3}</p>
-        <p><NavLink exact to="/">Back</NavLink></p>
+      <div className={`chapterFour ${this.state.togglemenus}`} onClick={this.toggleMenu}>
+        <Header
+          menuhidden={this.state.togglemenus.toString()}
+          src={window.location.origin + '/icons/Filter_logo_F_white.svg'} mode='fit'
+          title={chapter.title}
+          dot={` • `}
+          id={chapter.chapter}
+          extra={`/`}
+          lastid={this.state.chapters.length}
+        />
+        <ProgressBar menuhidden={this.state.togglemenus} />
+        <Title title={chapter.title} />
+        <SmallText text={chapter.author} />
+        <SmallText text={chapter.illustrator} />
+        <SmallText text={chapter.published} />
+        <Ingress ingress={chapter.ingress} />
+        <Test text={chapter.content}  />
         <JoystickNew />
-        <MenuBottom />
-      </div>
+        <Link to={'/Chapter2'}>Föregående Kapitel</Link>
+        <MenuBottom toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
+        </div>
     );
   }
 }

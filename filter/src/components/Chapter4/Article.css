@@ -1,25 +1,31 @@
+.chapterFour {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  transition: 0.5s margin;
+  -webkit-transition: 0.5s margin;
+  -moz-transition: 0.5s margin;
+  -o-transition: 0.5s margin;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
 .imgOpen {
   height: 50vw;
   width: 100vw;
   transition: .3s ;
 }
-
-.imgClosed {
-  transition: .3s ;
-  height: 0px!important;
-  width: 100vw;
+.chapterFour.false{
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.imageOne {
-  border-top: black solid 3px;
-  background-image: url('/../../images/imageOne.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-.imageTwo {
-  border-top: black solid 3px;
-  background-image: url('/../../images/imageTwo.jpg');
-  background-size: cover;
-  background-position: center;
+.BigText {
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
 }

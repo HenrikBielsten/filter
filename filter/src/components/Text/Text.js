@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-
+import './Text.css';
 class Text extends Component {
 
   render() {
 
     return (
-        <p> {this.props.text} </p>
+        <p className="textForChapters"> {this.props.text} </p>
     );
   }
 }

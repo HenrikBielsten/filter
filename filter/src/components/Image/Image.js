@@ -27,7 +27,7 @@ class Image extends Component {
       boxShadow: '1.5px 1.5px 5px grey',
       borderTop: '2px #DAB0A0 solid',
     };
-
+console.log(src);
     return (
       <div className="imageContainer">
         <ImageButton />

@@ -1,14 +1,15 @@
 .chapterOne {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   transition: 0.5s margin;
   -webkit-transition: 0.5s margin;
   -moz-transition: 0.5s margin;
   -o-transition: 0.5s margin;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
+  text-align: left;
 }
 .imgOpen {
   height: 50vw;
@@ -19,7 +20,18 @@
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
+}
+.chapterContentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 16px;
+}
+.chapterTextWrapper {
+  padding-left: 24px;
+  padding-right: 24px;
 }
