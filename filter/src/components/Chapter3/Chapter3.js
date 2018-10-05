@@ -10,6 +10,9 @@ import Image from '../Image/Image';
 import articles from '../Database/articles.js';
 import './Chapter3.css';
 import { Link } from '@reach/router';
+import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
+import SimilarArticles from '../SimilarArticles/SimilarArticles.js';
+
 class Chapter3 extends Component{
 
   state = {
@@ -98,12 +101,14 @@ class Chapter3 extends Component{
         <Text text={article.text42} />
         <Image src={article.image2} mode='fill' height={`${this.state.showImages ? '50vw' : '0vw'}`} />
         <JoystickNew />
-        <Link className="nextChapterWrapper" to={'/Chapter2'}>
-          <div className="nextChapterText">
-              <div className="nextChapterButton"></div>
+        <Link className="previousChapterWrapper" to={'/Chapter2'}>
+          <div className="previousChapterText">
+              <div className="previousChapterButton"></div>
               Föregående Kapitel
           </div>
         </Link>
+        <ExtraMaterial />
+        <SimilarArticles />
         <MenuBottom toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
       </div>
     );

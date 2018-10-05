@@ -9,6 +9,7 @@ import Text from '../Text/Text';
 import Image from '../Image/Image';
 import articles from '../Database/articles.js';
 import { Link } from '@reach/router';
+import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
 import './Chapter2.css';
 
 
@@ -111,6 +112,7 @@ componentDidMount(){
               <div className="nextChapterButton"></div>
           </div>
         </Link>
+        <ExtraMaterial />
         <MenuBottom toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
       </div>
     );
