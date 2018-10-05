@@ -1,3 +1,12 @@
+.gallery {
+  background-image: url('/../../icons/icon_extra_photo_white.svg');
+}
+
+.galleryHeight {
+  height: 157px;
+  transition: .2s;
+}
+
 .readMoreWrapper {
   display: flex;
   flex-direction: column;
@@ -6,23 +15,21 @@
 }
 
 .readMore {
-  height: 157px;
   width: 100vw;
   background-color: #D8AD9C;
-  transition: .4s;
+  transition: .2s;
   overflow: hidden;
-  border-top: 4px solid #D8AD9C;
   transform: translateY(-9px);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .readMoreClosed {
   height: 0px;
   width: 100vw;
-  transition: .4s;
+  transition: .2s;
   background-color: #D8AD9C;
   overflow: hidden;
   transform: translateY(-9px);
@@ -36,45 +43,30 @@
   background-image: url('/../../icons/icon_minus_black.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 16px 16px;
+  background-size: cover;
   height: 16px;
   width: 16px;
-  transition: .4s;
+  transition: .2s;
   border-radius: 2px;
   z-index: 300;
   position: relative;
   box-shadow: 0px 2px 7px rgba(0,0,0,0.5);
-
 }
 
 .closed {
-  background-image: url('/../../icons/icon_extra_photo_white.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 16px 16px;
+  background-size: cover;
 	height: 16px;
   width: 16px;
-  transition: .4s;
+  transition: .2s;
   border-radius: 2px;
   z-index: 200;
   position: relative;
 }
 
-/* .borderTop {
-  width: 100vw;
-  background-color: #D8AD9C;
-  box-shadow: 0px 2px 7px rgba(0,0,0,0.5);
-  z-index: 100;
-}
-
-.borderBottom {
-  width: 100vw;
-  background-color: #D8AD9C;
-  box-shadow: 0px -2px 7px rgba(0,0,0,0.5);
-} */
-
 .borderBottomOpen {
-  height: 4px;
+  height: 3px;
   transition: .1s;
   width: 100vw;
   background-color: #D8AD9C;
@@ -85,7 +77,7 @@
 .borderBottomClosed {
   height: 0px;
   transition: .1s;
-  transition-delay: .4s;
+  transition-delay: .2s;
   width: 100vw;
   background-color: #D8AD9C;
   box-shadow: 0px -2px 7px rgba(0,0,0,0.5);
@@ -93,7 +85,7 @@
 }
 
 .borderTopOpen {
-  height: 4px;
+  height: 3px;
   transition: .1s;
   width: 100vw;
   background-color: #D8AD9C;
@@ -105,7 +97,7 @@
 .borderTopClosed {
   height: 0px;
   transition: .1s;
-  transition-delay: .4s;
+  transition-delay: .2s;
   width: 100vw;
   background-color: #D8AD9C;
   box-shadow: 0px 2px 7px rgba(0,0,0,0.5);
@@ -138,22 +130,22 @@
 }
 
 .readMoreHeader {
+  width: 87.2%;
+  height: 4vh;
   font-family: "Harriet Display";
   font-size: 20px;
   font-weight: 500;
   line-height: 21px;
   border-bottom: 1.2px solid black;
-  width: 90%;
-  height: 15%;
   text-align: left;
 }
 
 .imageWrapper {
+  width: 87.2%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   overflow-x: scroll;
-  width: 95%;
-  margin-bottom: 5%;
+  margin-top: 5%;
 }

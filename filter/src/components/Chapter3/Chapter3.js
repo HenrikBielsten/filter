@@ -6,9 +6,7 @@ import MenuBottom from '../MenuBottom/MenuBottom';
 import Title from '../Title/Title';
 import Ingress from '../Ingress/Ingress';
 import Text from '../Text/Text';
-import Image from '../Image/Image';
 import articles from '../Database/articles.js';
-import ReadMore from '../ReadMore/ReadMore.js';
 import './Chapter3.css';
 import { Link } from '@reach/router';
 class Chapter3 extends Component{
@@ -53,7 +51,6 @@ class Chapter3 extends Component{
         <ProgressBar menuhidden={this.state.togglemenus} />
         <Title title={article.title} />
         <Ingress ingress={article.ingress} />
-        <ReadMore  src={article.image1} title={article.extraTitle} />
         <Text text={article.text} />
         <Text text={article.text2} />
         <Text text={article.text3} />
@@ -69,8 +66,6 @@ class Chapter3 extends Component{
         <Text text={article.text13} />
         <Text text={article.text14} />
         <Text text={article.text15} />
-        <ReadMore src={article.image2} title={article.extraTitle} content={article.extraContent} />
-        <Image src={article.image1} mode='fill' height={`${this.state.showImages ? '50vw' : '0px'}`} />
         <Text text={article.text15} />
         <Text text={article.text16} />
         <Text text={article.text17} />
@@ -99,7 +94,6 @@ class Chapter3 extends Component{
         <Text text={article.text40} />
         <Text text={article.text41} />
         <Text text={article.text42} />
-        <Image src={article.image2} mode='fill' height={`${this.state.showImages ? '50vw' : '0vw'}`} />
         <JoystickNew />
         <Link className="nextChapterWrapper" to={'/Chapter2'}>
           <div className="nextChapterText">

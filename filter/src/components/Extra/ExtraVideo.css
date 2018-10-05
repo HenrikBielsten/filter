@@ -1,0 +1,13 @@
+.video {
+  background-image: url('/../../icons/icon_extra_play_white.svg');
+}
+
+.videoHeight {
+  height: 207px;
+  transition: .2s;
+}
+
+.videoContent {
+  width: 87.2%;
+  margin-top: 3%;
+}

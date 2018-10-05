@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import ImageButton from '../ImageButton/ImageButton.js';
 import './Image.css';
 
 class Image extends Component {
 
   render() {
 
-    let {mode, src, height, width, style, ...props} = this.props;
+    let {mode, src, height, width, margin, style, ...props} = this.props;
     let modes = {
       'fill': 'cover',
       'fit': 'contain'
@@ -16,6 +15,7 @@ class Image extends Component {
     let defaults = {
       height: height || `${20}vw`,
       width: width || `${30}vw`,
+      margin: margin || `${0}vw ${4}vw ${0}vw ${0}vw`,
     }
 
     let important = {
@@ -23,12 +23,10 @@ class Image extends Component {
       backgroundSize: size,
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
-      margin: '0 2vw 0 2vw',
     };
-console.log(src);
+
     return (
       <div className="imageContainer">
-        {/* <ImageButton /> */}
         <div {...props} style={{...defaults, ...style, ...important}} />
 
       </div>
