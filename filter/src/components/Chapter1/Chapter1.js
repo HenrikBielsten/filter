@@ -9,7 +9,8 @@ import Text from '../Text/Text';
 import Image from '../Image/Image';
 import SmallText from '../SmallText/SmallText';
 import articles from '../Database/articles.js';
-import ReadMore from '../ReadMore/ReadMore.js';
+import ExtraAudio from '../ExtraAudio/ExtraAudio.js';
+import ExtraImage from '../ExtraImage/ExtraImage.js';
 import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
 import { Link } from '@reach/router';
 import './Chapter1.css';
@@ -56,7 +57,6 @@ class Chapter1 extends Component{
           lastid={this.state.articles.length}
         />
         <ProgressBar menuhidden={this.state.togglemenus} />
-        <div className="chapterTextWrapper">
           <SmallText text={article.type} />
           <Title title={article.title} />
           <SmallText text={article.author} />
@@ -78,15 +78,11 @@ class Chapter1 extends Component{
           <Text text={article.text13} />
           <Text text={article.text14} />
           <Text text={article.text15} />
-          </div>
-        <div className="chapterContetWrapper">
-          <ReadMore src={article.image2} title={article.extraTitle} content={article.extraContent} />
-          <Image src={article.image1} mode='fill' height={`${this.state.showImages ? '50vw' : '0px'}`} />
-        </div>
-        <div className="chapterTextWrapper">
+          <ExtraImage title={article.extraTitle} content={article.extraContent} />
           <Text text={article.text15} />
           <Text text={article.text16} />
           <Text text={article.text17} />
+            <ExtraAudio title={article.extraTitle} content={article.extraContent} />
           <Text text={article.text18} />
           <Text text={article.text19} />
           <Text text={article.text20} />
@@ -114,10 +110,6 @@ class Chapter1 extends Component{
           <Text text={article.text42} />
           <Text text={article.text43} />
           <Text text={article.text44} />
-        </div>
-        <div className="chapterContentWrapper">
-          <Image src={article.image2} mode='fill' height={`${this.state.showImages ? '50vw' : '0vw'}`} />
-        </div>
         <JoystickNew />
           <Link className="nextChapterWrapper" to={'/Chapter2'}>
             <div className="nextChapterText">

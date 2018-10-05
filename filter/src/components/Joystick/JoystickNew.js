@@ -99,6 +99,7 @@ class JoystickNew extends Component {
                     position: 'fixed',
                     top: '60vh',
                     left: '65vw',
+                    zIndex: '500',
                   }}>
 
               </div>
