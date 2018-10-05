@@ -8,7 +8,6 @@ import Ingress from '../Ingress/Ingress';
 import Text from '../Text/Text';
 import Image from '../Image/Image';
 import articles from '../Database/articles.js';
-import ReadMore from '../ReadMore/ReadMore.js';
 import { Link } from '@reach/router';
 import './Chapter2.css';
 
@@ -54,7 +53,6 @@ componentDidMount(){
         <ProgressBar menuhidden={this.state.togglemenus} />
         <Title title={article.title} />
         <Ingress ingress={article.ingress} />
-        <ReadMore  src={article.image1} title={article.extraTitle} />
         <Text text={article.text} />
         <Text text={article.text2} />
         <Text text={article.text3} />
@@ -70,7 +68,6 @@ componentDidMount(){
         <Text text={article.text13} />
         <Text text={article.text14} />
         <Text text={article.text15} />
-        <ReadMore src={article.image2} title={article.extraTitle} content={article.extraContent} />
         <Image src={article.image1} mode='fill' height={`${this.state.showImages ? '50vw' : '0px'}`} />
         <Text text={article.text15} />
         <Text text={article.text16} />
