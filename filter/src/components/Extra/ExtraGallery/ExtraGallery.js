@@ -11,7 +11,6 @@ class ExtraGallery extends Component {
     articles: articles,
   }
 
-
   render() {
 
     const article = this.state.articles[0];

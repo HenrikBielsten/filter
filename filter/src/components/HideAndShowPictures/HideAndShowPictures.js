@@ -19,7 +19,7 @@ render() {
   return (
     <div
       className="hideAndShowPicturesWrapper"
-      onClick={this.props.toggleImages}
+      onClick={this.props.eventHandler}
       >
       <div className="hideAndShowPicturesIcon"></div>
       <p className="hideAndShowPicturesText">

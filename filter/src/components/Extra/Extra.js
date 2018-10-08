@@ -6,21 +6,26 @@ import ExtraVideo from './ExtraVideo/ExtraVideo';
 import './Extra.css';
 
 class Extra extends Component {
-  constructor(props) {
-  super(props);
-  this.state = {
-    readmore: true,
-  };
-  this.eventHandler = this.eventHandler.bind(this);
-}
 
-eventHandler(event) {
-  event.stopPropagation();
-  this.setState(prevState => ({
-    readmore: !prevState.readmore
-  }));
+  componentDidUpdate(prevProps) {
+    if (this.props.eventHandler !== prevProps.eventHandler) {
+      this.setState({
+        readmore: this.props.eventHandler,
+      })
+    }
+  }
 
-}
+  state = {
+    readmore: this.props.eventHandler,
+  }
+
+  eventHandler = (event) => {
+    event.stopPropagation();
+    this.setState(prevState => ({
+      readmore: !prevState.readmore
+    }));
+  }
+
   render() {
 
     return (
@@ -29,27 +34,27 @@ eventHandler(event) {
           onClick={this.eventHandler}
           className={`${this.state.readmore ? "open" : `${this.props.icon} closed`}`}
           >
-        </div>
-        {/* <div className={this.state.readmore ? "underlayOpen" : "underlayClosed"}></div> */}
+          </div>
+          {/* <div className={this.state.readmore ? "underlayOpen" : "underlayClosed"}></div> */}
 
-        <div className={this.state.readmore ? "borderTopOpen " : "borderTopClosed "}></div>
-        <div className={`${this.state.readmore ? `${this.props.height} readMore` : "readMoreClosed"}`}>
+          <div className={this.state.readmore ? "borderTopOpen " : "borderTopClosed "}></div>
+          <div className={`${this.state.readmore ? `${this.props.height} readMore` : "readMoreClosed"}`}>
 
-          <div className="readMoreHeader">{this.props.title}</div>
+            <div className="readMoreHeader">{this.props.title}</div>
 
             {this.props.layout === 'gallery' ?
 
-              <ExtraGallery />
+            <ExtraGallery />
 
             : this.props.layout === 'audio' ?
 
-              <ExtraAudio audioTitle={this.props.audioTitle}/>
+            <ExtraAudio audioTitle={this.props.audioTitle}/>
 
             :
 
-              <ExtraVideo />
+            <ExtraVideo />
 
-            }
+          }
 
         </div>
         <div className={this.state.readmore ? "borderBottomOpen " : "borderBottomClosed "}></div>
