@@ -1,0 +1,57 @@
+.extraMaterialComponent {
+  margin-bottom: 32px;
+  font-family: "Harriet-Display-Regular";
+}
+.extraMaterialWrapper {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ flex-direction: row;
+}
+.type {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  height: 24px;
+  width: 24px;
+  border-radius: 2px;
+  margin-left: 24px;
+  margin-right: 16px;
+  background-color: #DAB0A0;
+}
+.checked {
+  background-image: url('/../../icons/icon_check.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 11.99px;
+  width: 10px;
+  border-radius: 2px;
+  margin-left: 55px;
+}
+.false {
+  height: 11.99px;
+  width: 10px;
+  margin-left: 55px;
+}
+.pictures{
+  background-image: url('/../../icons/icon_extra_photo_white.svg');
+}
+.movie{
+  background-image: url('/../../icons/icon_extra_play_white.svg');
+}
+.audio{
+  background-image: url('/../../icons/icon_extra_audio_white.svg');
+}
+.extraMaterialTitle {
+  color: #DAB0A0;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 22px;
+  margin-left: 24px;
+}
+.extraMaterialText {
+  font-size: 16px;
+  line-height: 19px;
+}

@@ -1,0 +1,26 @@
+.similarArticlesMaterialWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.similarArticlesBox{
+  margin: 16px;
+}
+.similarArticlesMaterialTitle {
+  color: #DAB0A0;
+  font-family: "Harriet-Display-Regular";
+  font-size: 18px;
+  font-style: italic;
+  line-height: 22px;
+  margin-left: 24px;
+}
+.similarArticlesImage {
+  height: 64px;
+  width: 96px;
+}
+.similarArticlesMaterialText {
+  font-family: "pf-din-text-pro";
+  font-size: 12px;
+  line-height: 17px;
+}
