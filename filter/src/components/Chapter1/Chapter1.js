@@ -45,11 +45,9 @@ class Chapter1 extends Component{
 
   render() {
 
-    console.log('in chapter: ' + this.state.readmore);
-
     const article = this.state.articles[0];
     return (
-      <div className={`chapterOne ${this.state.togglemenus != 'menuDown'} ${this.state.nightMode && 'nightMode'}`} onClick={this.toggleMenu}>
+      <div className={`chapterOne ${this.state.togglemenus !== 'menuDown'} ${this.state.nightMode && 'nightMode'}`} onClick={this.toggleMenu}>
         <Header
           menuhidden={this.state.togglemenus.toString()}
           src={window.location.origin + '/icons/Filter_logo_F_white.svg'} mode='fit'

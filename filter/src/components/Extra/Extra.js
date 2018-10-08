@@ -21,15 +21,12 @@ class Extra extends Component {
 
   eventHandler = (event) => {
     event.stopPropagation();
-    console.log(this);
     this.setState(prevState => ({
       readmore: !prevState.readmore
     }));
   }
 
   render() {
-
-    console.log('in extra: ' + this.state.readmore);
 
     return (
       <div className="readMoreWrapper">

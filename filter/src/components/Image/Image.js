@@ -28,7 +28,6 @@ class VideoImage extends Component {
     return (
       <div className="imageContainer">
         <div {...props} style={{...defaults, ...style, ...important}} />
-
       </div>
     );
   }
