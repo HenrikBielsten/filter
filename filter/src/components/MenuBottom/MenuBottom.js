@@ -18,7 +18,7 @@ render() {
       className={`menuBottom ${this.props.menuhidden}`}>
       <div className="menuBottomContentWrapper">
         <Fontsize />
-        <HideAndShowPictures toggleImages={this.props.toggleImages}/>
+        <HideAndShowPictures eventHandler={this.props.eventHandler}/>
         <ChapterButton />
         <NightMode />
       </div>

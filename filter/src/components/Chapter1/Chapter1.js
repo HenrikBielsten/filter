@@ -19,8 +19,7 @@ class Chapter1 extends Component{
   state = {
     articles: articles,
     togglemenus: true,
-    showImages: true,
-    imageIcon: false,
+    readmore: true,
   }
 
   toggleMenu = (e) => {
@@ -29,17 +28,19 @@ class Chapter1 extends Component{
     })
   }
 
-  toggleImages = () => {
+  eventHandler = () => {
     this.setState({
-      showImages: !this.state.showImages,
-      imageIcon: !this.state.imageIcon,
+      readmore: !this.state.readmore,
     })
   }
+
   componentDidMount(){
     window.scrollTo(0, 0)
   }
 
   render() {
+
+    console.log('in chapter: ' + this.state.readmore);
 
     const article = this.state.articles[0];
 
@@ -76,9 +77,28 @@ class Chapter1 extends Component{
           <Text text={article.text13} />
           <Text text={article.text14} />
           <Text text={article.text15} />
-          <Extra title={article.extraGalleryTitle} icon='gallery' height='galleryHeight' layout='gallery' />
-          <Extra title={article.extraAudioTitle} audioTitle={article.audioTitle} icon='audio' height='audioHeight' layout='audio' />
-          <Extra title={article.extraVideoTitle} icon='video' height='videoHeight' layout='video' />
+          <Extra
+            title={article.extraGalleryTitle}
+            icon='gallery'
+            height='galleryHeight'
+            layout='gallery'
+            eventHandler={this.state.readmore}
+          />
+          <Extra
+            title={article.extraAudioTitle}
+            audioTitle={article.audioTitle}
+            icon='audio'
+            height='audioHeight'
+            layout='audio'
+            eventHandler={this.state.readmore}
+          />
+          <Extra
+            title={article.extraVideoTitle}
+            icon='video'
+            height='videoHeight'
+            layout='video'
+            eventHandler={this.state.readmore}
+          />
           <Text text={article.text15} />
           <Text text={article.text16} />
           <Text text={article.text17} />
@@ -117,7 +137,7 @@ class Chapter1 extends Component{
             </div>
           </Link>
           <ExtraMaterial />
-        <MenuBottom toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
+        <MenuBottom eventHandler={this.eventHandler} menuhidden={this.state.togglemenus}/>
       </div>
     );
   }
