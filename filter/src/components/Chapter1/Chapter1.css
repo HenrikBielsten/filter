@@ -10,8 +10,14 @@
   align-items: flex-start;
   flex-direction: column;
   text-align: left;
+  color: black;
+  background-color: white;
 }
-.chapterOne.false{
+.nightMode {
+  color:white;
+  background: black;
+}
+.chapterOne.menuDown{
   padding-top: 15px;
   padding-bottom: 15px;
   transition: 0.5s margin;

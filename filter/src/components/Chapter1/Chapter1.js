@@ -21,11 +21,17 @@ class Chapter1 extends Component{
     togglemenus: true,
     showImages: true,
     imageIcon: false,
+    nightMode: false,
   }
 
   toggleMenu = (e) => {
     this.setState({
       togglemenus: !this.state.togglemenus
+    })
+  }
+  toggleNightMode = (e) => {
+    this.setState({
+      nightMode: !this.state.nightMode
     })
   }
 
@@ -42,9 +48,8 @@ class Chapter1 extends Component{
   render() {
 
     const article = this.state.articles[0];
-
     return (
-      <div className={`chapterOne ${this.state.togglemenus}`} onClick={this.toggleMenu}>
+      <div className={`chapterOne ${this.state.togglemenus != 'menuDown'} ${this.state.nightMode && 'nightMode'}`} onClick={this.toggleMenu}>
         <Header
           menuhidden={this.state.togglemenus.toString()}
           src={window.location.origin + '/icons/Filter_logo_F_white.svg'} mode='fit'
@@ -117,7 +122,7 @@ class Chapter1 extends Component{
             </div>
           </Link>
           <ExtraMaterial />
-        <MenuBottom toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
+        <MenuBottom toggleNightMode={this.toggleNightMode} toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
       </div>
     );
   }

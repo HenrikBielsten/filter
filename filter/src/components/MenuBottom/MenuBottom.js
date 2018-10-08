@@ -20,7 +20,7 @@ render() {
         <Fontsize />
         <HideAndShowPictures toggleImages={this.props.toggleImages}/>
         <ChapterButton />
-        <NightMode />
+        <NightMode toggleNightMode={this.props.toggleNightMode} />
       </div>
     </div>
   )
