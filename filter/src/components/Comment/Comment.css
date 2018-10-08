@@ -1,0 +1,24 @@
+.commentsWrapper {
+  align-self: flex-end;
+  margin-right: 4px;
+}
+.comment {
+  background-image: url('/../../icons/icon_comment.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 21.01px;
+  width: 16px;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: center;
+  color: black;
+  font-family: "pf-din-text-pro";
+}
+.readComments {
+  height: 451px;
+  width: 362px;
+  border: 0.5px solid #1A1A1A;
+  background-color: #FCFCF9;
+  box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.1), 0 1px 4px 0 rgba(0,0,0,0.1);
+}

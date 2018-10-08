@@ -59,6 +59,7 @@
       extraAudioTitle: 'Ljudupptagning från rättegång',
       audioTitle: '158. Sture-Lasses rättegång',
       extraVideoTitle: 'Video från förhöret',
+      comment: 3,
       video: 'https://i1.wp.com/magasinetfilter.se/wp-content/uploads/2018/09/teodor-forselius-kontor-2.jpg?w=1600&ssl=1',
       id: '1',
     },

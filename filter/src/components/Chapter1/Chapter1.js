@@ -10,6 +10,7 @@ import SmallText from '../SmallText/SmallText';
 import articles from '../Database/articles.js';
 import Extra from '../Extra/Extra.js';
 import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
+import Comment from '../Comment/Comment.js';
 import { Link } from '@reach/router';
 import './Chapter1.css';
 
@@ -49,7 +50,7 @@ class Chapter1 extends Component{
 
     const article = this.state.articles[0];
     return (
-      <div className={`chapterOne ${this.state.togglemenus != 'menuDown'} ${this.state.nightMode && 'nightMode'}`} onClick={this.toggleMenu}>
+      <div className={`chapterOne ${this.state.togglemenus !== 'menuDown'} ${this.state.nightMode && 'nightMode'}`} onClick={this.toggleMenu}>
         <Header
           menuhidden={this.state.togglemenus.toString()}
           src={window.location.origin + '/icons/Filter_logo_F_white.svg'} mode='fit'
@@ -74,6 +75,7 @@ class Chapter1 extends Component{
           <Text text={article.text6} />
           <Text text={article.text7} />
           <Text text={article.text8} />
+          <Comment comment={article.comment} />
           <Text text={article.text9} />
           <Text text={article.text10} />
           <Text text={article.text11} />
