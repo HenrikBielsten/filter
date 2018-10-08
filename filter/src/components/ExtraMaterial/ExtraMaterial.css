@@ -1,5 +1,5 @@
 .extraMaterialComponent {
-  margin-bottom: 32px;
+  margin-bottom: 22px;
   font-family: "Harriet-Display-Regular";
 }
 .extraMaterialWrapper {
@@ -30,7 +30,7 @@
   border-radius: 2px;
   margin-left: 55px;
 }
-.false {
+.notchecked {
   height: 11.99px;
   width: 10px;
   margin-left: 55px;

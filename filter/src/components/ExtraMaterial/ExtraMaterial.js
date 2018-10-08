@@ -8,9 +8,9 @@ class ExtraMaterial extends Component {
           {type: 'pictures', title: 'Coola faktan om den där grejen', checked: 'checked'},
           {type: 'movie', title: 'Coola faktan om den där grejen', checked: 'checked'},
           {type: 'movie', title: 'Coola faktan om den där grejen', checked: 'checked'},
-          {type: 'pictures', title: 'Coola faktan om den där grejen', checked: 'false'},
+          {type: 'pictures', title: 'Coola faktan om den där grejen', checked: 'notchecked'},
           {type: 'audio', title: 'Coola faktan om den där grejen', checked: 'checked'},
-          {type: 'pictures', title: 'Coola faktan om den där grejen', checked: 'false'},
+          {type: 'pictures', title: 'Coola faktan om den där grejen', checked: 'notchecked'},
           {type: 'audio', title: 'Coola faktan om den där grejen', checked: 'checked'}
         ]
   };

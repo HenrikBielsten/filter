@@ -19,6 +19,5 @@
   src: url('/Font/pf-din-text-pro.otf');
 }
 .App {
-  text-align: center;
-  margin-top: 53px;
+  /* margin-top: 53px; */
 }

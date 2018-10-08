@@ -11,18 +11,23 @@
   flex-direction: column;
   text-align: left;
 }
+.chapterOne.false{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: 0.5s margin;
+  -webkit-transition: 0.5s margin;
+  -moz-transition: 0.5s margin;
+  -o-transition: 0.5s margin;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
 .imgOpen {
   height: 50vw;
   width: 100vw;
   transition: .3s ;
-}
-.chapterOne.false{
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
 }
 .chapterContentWrapper {
   display: flex;
