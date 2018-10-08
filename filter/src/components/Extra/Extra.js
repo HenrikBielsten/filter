@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
-import Image from '../Image/Image';
-import articles from '../Database/articles.js';
+import ExtraGallery from './ExtraGallery/ExtraGallery';
+import ExtraAudio from './ExtraAudio/ExtraAudio';
+import ExtraVideo from './ExtraVideo/ExtraVideo';
 
 import './Extra.css';
-import './ExtraAudio.css';
-import './ExtraVideo.css';
 
 class Extra extends Component {
   constructor(props) {
   super(props);
   this.state = {
     readmore: true,
-    articles: articles,
   };
   this.eventHandler = this.eventHandler.bind(this);
 }
@@ -24,8 +22,6 @@ eventHandler(event) {
 
 }
   render() {
-
-    const article = this.state.articles[0];
 
     return (
       <div className="readMoreWrapper">
@@ -43,42 +39,15 @@ eventHandler(event) {
 
             {this.props.layout === 'gallery' ?
 
-              <div className="imageWrapper">
-                <Image src={article.image1} mode='fill' height={64} width={96} />
-                <Image src={article.image2} mode='fill' height={64} width={96} />
-                <Image src={article.image1} mode='fill' height={64} width={96} />
-                <Image src={article.image2} mode='fill' height={64} width={96} />
-                <Image src={article.image1} mode='fill' height={64} width={96} />
-              </div>
+              <ExtraGallery />
 
             : this.props.layout === 'audio' ?
 
-              <div className="audioContent">
-
-                <div className="audioTitle">{this.props.audioTitle}</div>
-
-                <div className="buttonWrapper">
-                  <div className="buttons backwards"></div>
-                  <div className="buttons playAudio"></div>
-                  <div className="buttons forwards"></div>
-                </div>
-
-                <div className="playbackContainer">
-                  <div className="playCircle"></div>
-                  <div className="playLine"></div>
-                  <div className="timeContainer">
-                    <div className="numbers">0.03</div>
-                    <div className="numbers">-0.22</div>
-                  </div>
-                </div>
-
-              </div>
+              <ExtraAudio audioTitle={this.props.audioTitle}/>
 
             :
 
-            <div className="videoContent">
-              <Image src={article.video} mode='fill' width={360} height={130} margin="0px" />
-            </div>
+              <ExtraVideo />
 
             }
 

@@ -69,10 +69,6 @@ class Chapter3 extends Component{
         <Text text={article.text13} />
         <Text text={article.text14} />
         <Text text={article.text15} />
-<<<<<<< HEAD
-=======
-        <Image src={article.image1} mode='fill' height={`${this.state.showImages ? '50vw' : '0px'}`} />
->>>>>>> d013e98bf48a030a67fc56f0e6187173b27f1c98
         <Text text={article.text15} />
         <Text text={article.text16} />
         <Text text={article.text17} />

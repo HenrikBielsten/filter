@@ -7,10 +7,7 @@ import Title from '../Title/Title';
 import Ingress from '../Ingress/Ingress';
 import Text from '../Text/Text';
 import articles from '../Database/articles.js';
-<<<<<<< HEAD
 import Extra from '../Extra/Extra.js';
-=======
->>>>>>> d013e98bf48a030a67fc56f0e6187173b27f1c98
 import { Link } from '@reach/router';
 import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
 import './Chapter2.css';
@@ -57,10 +54,7 @@ componentDidMount(){
         <ProgressBar menuhidden={this.state.togglemenus} />
         <Title title={article.title} />
         <Ingress ingress={article.ingress} />
-<<<<<<< HEAD
         <Extra src={article.image1} title={article.extraTitle} />
-=======
->>>>>>> d013e98bf48a030a67fc56f0e6187173b27f1c98
         <Text text={article.text} />
         <Text text={article.text2} />
         <Text text={article.text3} />
@@ -76,10 +70,6 @@ componentDidMount(){
         <Text text={article.text13} />
         <Text text={article.text14} />
         <Text text={article.text15} />
-<<<<<<< HEAD
-=======
-        <Image src={article.image1} mode='fill' height={`${this.state.showImages ? '50vw' : '0px'}`} />
->>>>>>> d013e98bf48a030a67fc56f0e6187173b27f1c98
         <Text text={article.text15} />
         <Text text={article.text16} />
         <Text text={article.text17} />

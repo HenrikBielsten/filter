@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Image.css';
+import '../ExtraVideo.css';
 
 class VideoImage extends Component {
 
@@ -23,6 +23,7 @@ class VideoImage extends Component {
       backgroundSize: size,
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
+
     };
 
     return (
