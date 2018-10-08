@@ -8,8 +8,7 @@ import Ingress from '../Ingress/Ingress';
 import Text from '../Text/Text';
 import SmallText from '../SmallText/SmallText';
 import articles from '../Database/articles.js';
-import ExtraAudio from '../ExtraAudio/ExtraAudio.js';
-import ExtraImage from '../ExtraImage/ExtraImage.js';
+import Extra from '../Extra/Extra.js';
 import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
 import { Link } from '@reach/router';
 import './Chapter1.css';
@@ -77,11 +76,12 @@ class Chapter1 extends Component{
           <Text text={article.text13} />
           <Text text={article.text14} />
           <Text text={article.text15} />
-          <ExtraImage title={article.extraTitle} content={article.extraContent} />
+          <Extra title={article.extraGalleryTitle} icon='gallery' height='galleryHeight' layout='gallery' />
+          <Extra title={article.extraAudioTitle} audioTitle={article.audioTitle} icon='audio' height='audioHeight' layout='audio' />
+          <Extra title={article.extraVideoTitle} icon='video' height='videoHeight' layout='video' />
           <Text text={article.text15} />
           <Text text={article.text16} />
           <Text text={article.text17} />
-            <ExtraAudio title={article.extraTitle} content={article.extraContent} />
           <Text text={article.text18} />
           <Text text={article.text19} />
           <Text text={article.text20} />

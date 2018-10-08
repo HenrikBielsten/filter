@@ -1,0 +1,18 @@
+.gallery {
+  background-image: url('/../../icons/icon_extra_photo_white.svg');
+}
+
+.galleryHeight {
+  height: 157px;
+  transition: .2s;
+}
+
+.imageWrapper {
+  width: 87.2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-x: scroll;
+  margin-top: 5%;
+}
