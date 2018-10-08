@@ -23,9 +23,17 @@ class Comment extends Component {
         <div className="readComments">
           <p className="readCommentsTitle">Kommentarer på stycket från forumet</p>
           <div className="readCommentsBox">
+            <div>
+              <p>Tango_lasse</p>
+              <p>•</p>
+              <p>2d</p>
+            </div>
+            <p>{this.props.title}</p>
+            <p>{this.props.comment}</p>
+            <div>Gå till forumet</div>
           </div>
         </div> )
-        : ( <div className="comment"> {this.props.comment} </div>)
+        : ( <div className="comment"> {this.props.comments} </div>)
           }
       </div>
     );
