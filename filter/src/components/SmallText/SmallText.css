@@ -3,7 +3,6 @@
   padding: 0 6vw 0 6vw;
 }
 .italic {
-  color: #1A1A1A;
   font-style: italic;
   font-family: "Harriet Display";
   font-size: 12px;
@@ -16,8 +15,6 @@
   font-family: "pf-din-text-pro";
 }
 .published {
-  color: #1A1A1A;
-
   font-size: 11px;
   line-height: NaNpx;
 }

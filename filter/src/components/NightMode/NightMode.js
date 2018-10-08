@@ -19,7 +19,7 @@ render() {
   return (
     <div className="nightModeWrapper">
       <div className={this.state.navbar ? "nightModeIcon Active" : "nightModeIcon "}
-      onClick={this.eventHandler} ></div>
+      onClick={()=>{this.props.toggleNightMode();this.eventHandler()}} ></div>
       <p className="nightModeText">
         Nattläge
       </p>
