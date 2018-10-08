@@ -12,7 +12,6 @@ class SimilarArticles extends Component {
   };
 }
   render() {
-    console.log(this.state.articles);
     return (
       <div className="similarArticlesMaterialComponent">
         <p className="similarArticlesMaterialTitle">Liknande Artiklar</p>
@@ -20,7 +19,7 @@ class SimilarArticles extends Component {
         {this.state.articles.map((article, key) => {
           return (
           <div className="similarArticlesBox" key={key}>
-            <img className="similarArticlesImage" src={article.image} />
+            <img className="similarArticlesImage" src={article.image} alt="articleimage"/>
             <div>
               <p className="similarArticlesMaterialText">{article.title}</p>
             </div>

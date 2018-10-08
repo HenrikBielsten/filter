@@ -6,7 +6,6 @@ import MenuBottom from '../MenuBottom/MenuBottom';
 import Title from '../Title/Title';
 import Ingress from '../Ingress/Ingress';
 import Text from '../Text/Text';
-import Image from '../Image/Image';
 import SmallText from '../SmallText/SmallText';
 import articles from '../Database/articles.js';
 import ExtraAudio from '../ExtraAudio/ExtraAudio.js';

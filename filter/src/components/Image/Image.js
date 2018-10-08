@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ImageButton from '../ImageButton/ImageButton.js';
 import './Image.css';
 
 class Image extends Component {
@@ -28,7 +27,6 @@ class Image extends Component {
 console.log(src);
     return (
       <div className="imageContainer">
-        {/* <ImageButton /> */}
         <div {...props} style={{...defaults, ...style, ...important}} />
 
       </div>

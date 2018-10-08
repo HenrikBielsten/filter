@@ -16,7 +16,6 @@ class ExtraMaterial extends Component {
   };
 }
   render() {
-    console.log(this.state.contents);
     return (
       <div className="extraMaterialComponent">
         <p className="extraMaterialTitle">Extramaterial</p>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './ExtraAudio.css';
-import Image from '../Image/Image';
 import articles from '../Database/articles.js';
 
 class ExtraAudio extends Component {
