@@ -18,3 +18,6 @@
   font-family: 'pf-din-text-pro';
   src: url('/Font/pf-din-text-pro.otf');
 }
+* {
+    -webkit-font-smoothing: antialiased;
+}
