@@ -17,25 +17,22 @@
 .logo {
   height: 32px;
   width: 90.48px;
-  margin-left: 20px;
 }
 .header {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   height: 50px;
   width: 100%;
   background-color: black;
 }
 .hamburger {
-  position: absolute;
-  right: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  top: 12px;
   width: 32px;
   height: 30px;
   border-radius: 50%;
@@ -55,10 +52,11 @@
 .titleAndNumber {
   height: 21px;
   width: 235px;
-  margin-left: 19.7px;
   color: #DAB0A0;
   font-family: 'HarrietText-Regular';
   font-size: 18px;
   line-height: NaNpx;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }

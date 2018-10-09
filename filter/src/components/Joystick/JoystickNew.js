@@ -17,7 +17,6 @@ class JoystickNew extends Component {
 
   stopScroll = () => {
       clearTimeout(this.timer);
-      console.log('stopped');
   }
 
   onMove = (e) => {
@@ -59,22 +58,21 @@ class JoystickNew extends Component {
         this.setState({timeOut: 10});
       }
 
-
-      // console.log(clientY - offsetY);
-      console.log(this.state.timeOut);
-
       if (y > centerOfJoystick) {
-        // console.log('>50');
         window.scrollBy(0, 1);
         this.timer = setTimeout(() => this.onMove(e), this.state.timeOut);
       } else {
-        // console.log('<50');
         window.scrollBy(0, -1);
         this.timer = setTimeout(() => this.onMove(e), this.state.timeOut);
       }
 
     }
   };
+
+  stopDrag = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+  }
 
     render() {
         return (
@@ -85,6 +83,8 @@ class JoystickNew extends Component {
                   onMouseMove={this.onMove}
                   onTouchStart={this.onMove}
                   onTouchEnd={this.stopScroll}
+                  onTouchMove={this.stopDrag}
+                  draggable='false'
                   className="joystick"
                   style={{
                     width: '100px',

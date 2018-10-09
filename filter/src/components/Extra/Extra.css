@@ -9,7 +9,6 @@
   width: 100vw;
   background-color: #D8AD9C;
   transition: .2s;
-  overflow: hidden;
   transform: translateY(-9px);
   display: flex;
   flex-direction: column;

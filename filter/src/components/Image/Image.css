@@ -1,6 +1,15 @@
-.imageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.imgContainer {
+  position: relative;
+}
+
+.imgContainerOpen {
+  position: fixed;
+  top: 30%;
+  left: 45%;
+  transform: scale(4);
+  z-index: 1000;
+}
+
+.imgContainerClosed {
+
 }

@@ -80,3 +80,11 @@
 ::-webkit-scrollbar {
 display: none;
 }
+
+.pointerEventsOn {
+  pointer-events: auto;
+}
+
+.pointerEventsOff {
+  pointer-events: none;
+}

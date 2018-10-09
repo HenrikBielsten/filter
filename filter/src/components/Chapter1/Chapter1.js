@@ -86,21 +86,6 @@ class Chapter1 extends Component{
             layout='gallery'
             eventHandler={this.state.readmore}
           />
-          <Extra
-            title={article.extraAudioTitle}
-            audioTitle={article.audioTitle}
-            icon='audio'
-            height='audioHeight'
-            layout='audio'
-            eventHandler={this.state.readmore}
-          />
-          <Extra
-            title={article.extraVideoTitle}
-            icon='video'
-            height='videoHeight'
-            layout='video'
-            eventHandler={this.state.readmore}
-          />
           <Text text={article.text15} />
           <Text text={article.text16} />
           <Text text={article.text17} />
@@ -111,6 +96,14 @@ class Chapter1 extends Component{
           <Text text={article.text22} />
           <Text text={article.text23} />
           <Text text={article.text24} />
+          <Extra
+            title={article.extraAudioTitle}
+            audioTitle={article.audioTitle}
+            icon='audio'
+            height='audioHeight'
+            layout='audio'
+            eventHandler={this.state.readmore}
+          />
           <Text text={article.text25} />
           <Text text={article.text26} />
           <Text text={article.text27} />
@@ -126,6 +119,13 @@ class Chapter1 extends Component{
           <Text text={article.text37} />
           <Text text={article.text38} />
           <Text text={article.text39} />
+          <Extra
+            title={article.extraVideoTitle}
+            icon='video'
+            height='videoHeight'
+            layout='video'
+            eventHandler={this.state.readmore}
+          />
           <Text text={article.text40} />
           <Text text={article.text41} />
           <Text text={article.text42} />

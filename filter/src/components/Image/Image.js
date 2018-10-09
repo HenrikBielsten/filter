@@ -3,6 +3,17 @@ import './Image.css';
 
 class VideoImage extends Component {
 
+  state = {
+    expand: false,
+  }
+
+  expand = (event) => {
+    event.stopPropagation();
+    this.setState({
+      expand: !this.state.expand,
+    })
+  }
+
   render() {
 
     let {mode, src, height, width, margin, style, ...props} = this.props;
@@ -26,7 +37,8 @@ class VideoImage extends Component {
     };
 
     return (
-      <div className="imageContainer">
+      <div className={`${this.state.expand ? 'imgContainerOpen' : 'imgContainerClosed'}`}
+        onClick={this.expand}>
         <div {...props} style={{...defaults, ...style, ...important}} />
       </div>
     );

@@ -15,4 +15,5 @@
   align-items: flex-start;
   overflow-x: scroll;
   margin-top: 5%;
+  position: relative;
 }
