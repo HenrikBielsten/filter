@@ -18,22 +18,34 @@ class Comment extends Component {
   render() {
     console.log(this.state.readcomment);
     return (
-      <div className="commentsWrapper" onClick={this.eventHandler}>
+      <div className="commentsWrapper" >
       {this.state.readcomment ? (
         <div className="readComments">
-          <p className="readCommentsTitle">Kommentarer på stycket från forumet</p>
+          <div className="readCommentsTitle">Kommentarer på stycket från forumet<div onClick={this.eventHandler} className="closeCommentsIcon"></div></div>
+          <div className="lineBetween"></div>
           <div className="readCommentsBox">
-            <div>
+            <div className="theCommentedBox">
               <p>Tango_lasse</p>
-              <p>•</p>
+              <p className="dot">•</p>
               <p>2d</p>
             </div>
-            <p>{this.props.title}</p>
-            <p>{this.props.comment}</p>
-            <div>Gå till forumet</div>
+            <p className="commentArticleTitle">{this.props.title}</p>
+            <p className="comment">{this.props.comment}</p>
+            <div className="goToForumText">Gå till forumet <div className="goToForumIcon"></div></div>
           </div>
-        </div> )
-        : ( <div className="comment"> {this.props.comments} </div>)
+          <div className="lineBetween"></div>
+          <div className="readCommentsBox">
+            <div className="theCommentedBox">
+              <p>Tango_lasse</p>
+              <p className="dot">•</p>
+              <p>2d</p>
+            </div>
+            <p className="commentArticleTitle">{this.props.title}</p>
+            <p className="comment">{this.props.comment}</p>
+            <div className="goToForumText">Gå till forumet <div className="goToForumIcon"></div></div>
+          </div>
+        </div>
+      ): ( <div onClick={this.eventHandler} className="commentIcon"> {this.props.comments} </div>)
           }
       </div>
     );
