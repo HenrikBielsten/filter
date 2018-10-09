@@ -11,7 +11,7 @@ class Comment extends Component {
  eventHandler(event) {
    event.stopPropagation();
    this.setState(prevState => ({
-     readcomment: !prevState.navbar
+     readcomment: !prevState.readcomment
    }));
  }
 
