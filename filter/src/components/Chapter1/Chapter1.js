@@ -10,7 +10,6 @@ import SmallText from '../SmallText/SmallText';
 import articles from '../Database/articles.js';
 import Extra from '../Extra/Extra.js';
 import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
-import Comment from '../Comment/Comment.js';
 import { Link } from '@reach/router';
 import './Chapter1.css';
 

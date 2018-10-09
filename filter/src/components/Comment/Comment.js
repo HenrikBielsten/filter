@@ -16,7 +16,6 @@ class Comment extends Component {
  }
 
   render() {
-    console.log(this.state.readcomment);
     return (
       <div className={this.state.readcomment ? "commentsWrapper Open" : "commentsWrapper "} >
       {this.state.readcomment ? (
