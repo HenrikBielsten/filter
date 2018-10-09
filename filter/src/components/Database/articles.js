@@ -1,6 +1,7 @@
   const articles = [
     {
       chapter: 1,
+      image0: 'https://i2.wp.com/magasinetfilter.se/wp-content/uploads/2018/07/samir-alj-facc88lt-3.jpg?fit=1500%2C840&ssl=1',
       type: '<div class="typeOfArticle">PORTRÄTT</div>',
       headline: 'Miniubåtar med larvband',
       author: '<div class="italic">Text: <div class="illustratorName">MADELENE POLLNOW</div><div/>',
