@@ -99,18 +99,20 @@ componentDidMount(){
         <Text text={article.text41} />
         <Text text={article.text42} />
         <JoystickNew />
-        <Link className="previousChapterWrapper" to={'/Chapter1'}>
-          <div className="previousChapterText">
-              <div className="previousChapterButton"></div>
-              Föregående Kapitel
-          </div>
-        </Link>
-        <Link className="nextChapterWrapper" to={'/Chapter3'}>
-          <div className="nextChapterText">
-            Nästa Kapitel
-              <div className="nextChapterButton"></div>
-          </div>
-        </Link>
+        <div className="wrapperForButtons">
+          <Link className="previousChapterWrapper" to={'/Chapter1'}>
+            <div className="previousChapterText">
+                <div className="previousChapterButton"></div>
+                Föregående Kapitel
+            </div>
+          </Link>
+          <Link className="nextChapterWrapper" to={'/Chapter3'}>
+            <div className="nextChapterText">
+              Nästa Kapitel
+                <div className="nextChapterButton"></div>
+            </div>
+          </Link>
+        </div>
         <ExtraMaterial />
         <MenuBottom toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
       </div>

@@ -67,13 +67,10 @@
   margin-left: 8px;
 }
 .nextChapterWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
+  width: 50%;
+  align-self: flex-end;
   margin-top: 32px;
-  margin-right: 24px;
+  margin-right: 10px;
   margin-bottom: 40px;
 }
 
