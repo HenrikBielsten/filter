@@ -11,6 +11,7 @@ import './Chapter3.css';
 import { Link } from '@reach/router';
 import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
 import SimilarArticles from '../SimilarArticles/SimilarArticles.js';
+import Comment from '../Comment/Comment.js';
 
 class Chapter3 extends Component{
 
@@ -63,6 +64,7 @@ class Chapter3 extends Component{
         <Text text={article.text7} />
         <Text text={article.text8} />
         <Text text={article.text9} />
+        <Comment title={article.title} comment={article.comment} comments={article.comments} />
         <Text text={article.text10} />
         <Text text={article.text11} />
         <Text text={article.text12} />

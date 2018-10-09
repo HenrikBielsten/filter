@@ -10,6 +10,7 @@ import articles from '../Database/articles.js';
 import Extra from '../Extra/Extra.js';
 import { Link } from '@reach/router';
 import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
+import Comment from '../Comment/Comment.js';
 import './Chapter2.css';
 
 
@@ -64,6 +65,7 @@ componentDidMount(){
         <Text text={article.text7} />
         <Text text={article.text8} />
         <Text text={article.text9} />
+        <Comment title={article.title} comment={article.comment} comments={article.comments} />
         <Text text={article.text10} />
         <Text text={article.text11} />
         <Text text={article.text12} />
