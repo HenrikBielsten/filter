@@ -1,4 +1,6 @@
-
+<p align="center">
+<img src="https://media.giphy.com/media/9dFvgd4ID6ne0/giphy.gif" alt="02 - Logic & Presentation" width="100%">
+</p>
 # Magasinet Filter
 
 A Progressive Web App made for Magasinet Filter, using [react](https://reactjs.org/).
@@ -28,3 +30,6 @@ Niknaz Moslehi <br/>
 Samuel Wijk
 
 ## License
+Copyright (c) Magasinet Filter.
+All Rights Reserved. Unauthorized copying of this file, via any
+medium is strictly prohibited. Proprietary and confidential.

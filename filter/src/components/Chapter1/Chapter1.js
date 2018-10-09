@@ -10,6 +10,7 @@ import SmallText from '../SmallText/SmallText';
 import articles from '../Database/articles.js';
 import Extra from '../Extra/Extra.js';
 import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
+import Image from '../Image/Image.js';
 import { Link } from '@reach/router';
 import './Chapter1.css';
 
@@ -58,12 +59,14 @@ class Chapter1 extends Component{
           lastid={this.state.articles.length}
         />
         <ProgressBar menuhidden={this.state.togglemenus} />
+        <Image mode='fill' margin={`0`} height={`50vw`} width={`100vw`} src={article.image0} />
           <SmallText text={article.type} />
           <Title title={article.title} />
           <SmallText text={article.author} />
           <SmallText text={article.illustrator} />
           <SmallText text={article.published} />
           <Ingress ingress={article.ingress} />
+          <div className="lineSeperator"></div>
           <Text text={article.text} />
           <Text text={article.text2} />
           <Text text={article.text3} />
@@ -71,7 +74,7 @@ class Chapter1 extends Component{
           <Text text={article.text5} />
           <Text text={article.text6} />
           <Text text={article.text7} />
-          <Text text={article.text8} />
+          <Text text={article.text8} comment='yes' />
           <Text text={article.text9} />
           <Text text={article.text10} />
           <Text text={article.text11} />
