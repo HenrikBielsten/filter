@@ -1,7 +1,15 @@
 .commentsWrapper {
-  align-self: flex-end;
   margin-right: 4px;
   font-family: "pf-din-text-pro";
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 93%;
+}
+.commentsWrapper.Open {
+  position: fixed;
+  left: 6px;
+  top: 15%;
 }
 .commentIcon {
   background-image: url('/../../icons/icon_comment.svg');

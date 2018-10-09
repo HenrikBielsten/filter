@@ -72,8 +72,7 @@ class Chapter1 extends Component{
           <Text text={article.text5} />
           <Text text={article.text6} />
           <Text text={article.text7} />
-          <Text text={article.text8} />
-          <Comment title={article.title} comment={article.comment} comments={article.comments} />
+          <Text text={article.text8} comment='yes' />
           <Text text={article.text9} />
           <Text text={article.text10} />
           <Text text={article.text11} />
@@ -120,7 +119,6 @@ class Chapter1 extends Component{
           <Text text={article.text29} />
           <Text text={article.text30} />
           <Text text={article.text31} />
-          <Comment title={article.title} comment={article.comment} comments={article.comments} />
           <Text text={article.text32} />
           <Text text={article.text33} />
           <Text text={article.text34} />
