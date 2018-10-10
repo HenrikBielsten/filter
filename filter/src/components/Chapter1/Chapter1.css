@@ -37,17 +37,6 @@
   width: 100vw;
   transition: .3s ;
 }
-.chapterContentWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-left: 16px;
-}
-.chapterTextWrapper {
-  padding-left: 24px;
-  padding-right: 24px;
-}
 .lineSeperator {
   margin-left: 24px;
   background-color: #000000;
@@ -81,15 +70,12 @@
   margin-right: 10px;
   margin-bottom: 40px;
 }
-
 ::-webkit-scrollbar {
 display: none;
 }
-
 .pointerEventsOn {
   pointer-events: auto;
 }
-
 .pointerEventsOff {
   pointer-events: none;
 }
