@@ -55,7 +55,7 @@ class Chapter2 extends Component{
           lastid={this.state.articles.length}
         />
         <ProgressBar menuhidden={this.state.togglemenus} />
-        <SmallText text={article.indecator} />
+        <SmallText text={article.indicator} />
         <SmallText text={article.readtime} />
         <Text text={article.text} />
         <Text text={article.text2} />

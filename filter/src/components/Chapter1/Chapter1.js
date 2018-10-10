@@ -64,7 +64,7 @@ class Chapter1 extends Component{
           <SmallText text={article.author} />
           <SmallText text={article.illustrator} />
           <SmallText text={article.published} />
-          <SmallText text={article.indecator} />
+          <SmallText text={article.indicator} />
           <SmallText text={article.readtime} />
           <Ingress ingress={article.ingress} />
           <div className="lineSeperator"></div>
