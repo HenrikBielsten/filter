@@ -3,12 +3,12 @@
 </p>
 # Magasinet Filter
 
-A Progressive Web App made for Magasinet Filter, using [react](https://reactjs.org/).
+A mobile prototype made for Magasinet Filter to make the user- and reading-experience better, using [react](https://reactjs.org/).
 
 
 ### Setup
 - Download or clone the project
-- Navigate with the command prompt to the root file of the project
+- Navigate with the command prompt to the filter/filter folder of the project
 - Run commands:
 ```sh
   $ npm install

@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import JoystickNew from '../Joystick/JoystickNew.js';
-import Header from '../Header/Header.js';
-import ProgressBar from '../ProgressBar/ProgressBar.js';
-import MenuBottom from '../MenuBottom/MenuBottom';
-import Title from '../Title/Title';
-import Ingress from '../Ingress/Ingress';
-import Text from '../Text/Text';
-import SmallText from '../SmallText/SmallText';
-import articles from '../Database/articles.js';
-import Extra from '../Extra/Extra.js';
-import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
-import Image from '../Image/Image.js';
+import JoystickNew from '../../Joystick/JoystickNew.js';
+import Header from '../../Menus/Header/Header.js';
+import ProgressBar from '../../ProgressBar/ProgressBar.js';
+import MenuBottom from '../../Menus/MenuBottom/MenuBottom';
+import Title from '../../Title/Title';
+import Ingress from '../../Ingress/Ingress';
+import Text from '../../Text/Text';
+import SmallText from '../../SmallText/SmallText';
+import articles from '../../Database/articles.js';
+import Extra from '../../Extra/Extra.js';
+import ExtraMaterial from '../../ExtraMaterial/ExtraMaterial.js';
+import Image from '../../Image/Image.js';
 import { Link } from '@reach/router';
 import './Chapter1.css';
 

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import JoystickNew from '../Joystick/JoystickNew.js';
-import Header from '../Header/Header.js';
-import ProgressBar from '../ProgressBar/ProgressBar.js';
-import MenuBottom from '../MenuBottom/MenuBottom';
-import Text from '../Text/Text';
-import articles from '../Database/articles.js';
-import Extra from '../Extra/Extra.js';
+import JoystickNew from '../../Joystick/JoystickNew.js';
+import Header from '../../Menus/Header/Header.js';
+import ProgressBar from '../../ProgressBar/ProgressBar.js';
+import MenuBottom from '../../Menus/MenuBottom/MenuBottom';
+import Text from '../../Text/Text';
+import articles from '../../Database/articles.js';
+import Extra from '../../Extra/Extra.js';
 import { Link } from '@reach/router';
-import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
-import SmallText from '../SmallText/SmallText';
+import ExtraMaterial from '../../ExtraMaterial/ExtraMaterial.js';
+import SmallText from '../../SmallText/SmallText';
 import './Chapter2.css';
 
 

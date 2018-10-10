@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../Header/Header.js';
+import Header from '../Menus/Header/Header.js';
 import articles from '../Database/articles.js';
 import { Link } from '@reach/router';
 import './Home.css';
