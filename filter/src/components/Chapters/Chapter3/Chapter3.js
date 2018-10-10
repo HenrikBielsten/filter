@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import JoystickNew from '../Joystick/JoystickNew.js';
-import Header from '../Header/Header.js';
-import ProgressBar from '../ProgressBar/ProgressBar.js';
-import MenuBottom from '../MenuBottom/MenuBottom';
-import Text from '../Text/Text';
-import articles from '../Database/articles.js';
+import JoystickNew from '../../Joystick/JoystickNew.js';
+import Header from '../../Menus/Header/Header.js';
+import ProgressBar from '../../ProgressBar/ProgressBar.js';
+import MenuBottom from '../../Menus/MenuBottom/MenuBottom';
+import Text from '../../Text/Text';
+import articles from '../../Database/articles.js';
 import './Chapter3.css';
 import { Link } from '@reach/router';
-import Extra from '../Extra/Extra.js';
-import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
-import SimilarArticles from '../SimilarArticles/SimilarArticles.js';
-import SmallText from '../SmallText/SmallText';
+import Extra from '../../Extra/Extra.js';
+import ExtraMaterial from '../../ExtraMaterial/ExtraMaterial.js';
+import SimilarArticles from '../../SimilarArticles/SimilarArticles.js';
+import SmallText from '../../SmallText/SmallText';
 
 class Chapter3 extends Component{
   state = {
