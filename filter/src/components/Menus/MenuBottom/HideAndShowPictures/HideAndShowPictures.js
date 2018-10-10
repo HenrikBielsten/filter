@@ -22,9 +22,9 @@ render() {
       onClick={this.props.eventHandler}
       >
       <div className="hideAndShowPicturesIcon"></div>
-      <p className="hideAndShowPicturesText">
+      <div className="hideAndShowPicturesText">
         Dölj/visa bilder
-      </p>
+      </div>
     </div>
   )
 }

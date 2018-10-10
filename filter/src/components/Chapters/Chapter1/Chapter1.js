@@ -82,7 +82,6 @@ class Chapter1 extends Component{
           <Text text={article.text12} />
           <Text text={article.text13} comment='yes' />
           <Text text={article.text14} />
-          <Text text={article.text15} />
           <Extra
             title={article.extraGalleryTitle}
             icon='gallery'

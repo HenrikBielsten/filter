@@ -87,10 +87,10 @@ class JoystickNew extends Component {
                   className="joystick"
                   style={{
                     width: '25vw',
-                    height: '15vh',
+                    height: '25vw',
                     borderRadius: `50%`,
                     backgroundColor: 'lightgrey',
-                    opacity: '0.5 ',
+                    opacity: '0.5',
                     userSelect: 'none',
                     WebkitUserSelect: 'none',
                     KhtmlUserDrag: 'none',
@@ -98,8 +98,8 @@ class JoystickNew extends Component {
                     MozUserSelect: 'none',
                     MsUserSelect: 'none',
                     position: 'fixed',
-                    top: '60vh',
-                    left: '65vw',
+                    top: '70vh',
+                    left: '70vw',
                     zIndex: '500',
                   }}>
 
