@@ -75,7 +75,7 @@ class Chapter1 extends Component{
           <Text text={article.text6} />
           <Text text={article.text7} />
           <Text text={article.text8} comment='yes' />
-          <Text text={article.text9} />
+          <Text text={article.text9} comment='yes'/>
           <Text text={article.text10} />
           <Text text={article.text11} />
           <Text text={article.text12} />

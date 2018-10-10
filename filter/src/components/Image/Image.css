@@ -5,9 +5,10 @@
 .imgContainerOpen {
   position: fixed;
   top: 30%;
-  left: 45%;
-  transform: scale(4);
+  left: 38%;
+  transform: scale(3);
   z-index: 1000;
+  transition: .2s ease-in-out;
 }
 
 .imgContainerClosed {

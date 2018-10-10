@@ -17,36 +17,49 @@ class Comment extends Component {
 
   render() {
     return (
-      <div className={this.state.readcomment ? "commentsWrapper Open" : "commentsWrapper "} >
-      {this.state.readcomment ? (
-        <div className="readComments">
-          <div className="readCommentsTitle">Kommentarer på stycket från forumet<div onClick={this.eventHandler} className="closeCommentsIcon"></div></div>
-          <div className="lineBetween"></div>
-          <div className="readCommentsBox">
-            <div className="theCommentedBox">
-              <p>Tango_lasse</p>
-              <p className="dot">•</p>
-              <p>2d</p>
+      <div className="commentDiv">
+        <div className={this.state.readcomment ? "commentsWrapper Open" : "commentsWrapper "} ></div>
+
+        {this.state.readcomment ?
+
+          <div className="readComments">
+            <div className="commentsHeader">
+              <div className="readCommentsTitle">Kommentarer på stycket från forumet</div>
+              <div onClick={this.eventHandler} className="closeCommentsIcon"></div>
             </div>
-            <p className="commentArticleTitle">{this.props.title}</p>
-            <p className="comment">{this.props.comment}</p>
-            <div className="goToForumText">Gå till forumet <div className="goToForumIcon"></div></div>
-          </div>
-          <div className="lineBetween"></div>
-          <div className="readCommentsBox">
-            <div className="theCommentedBox">
-              <p>Tango_lasse</p>
-              <p className="dot">•</p>
-              <p>2d</p>
+            <div className="lineBetween"></div>
+            <div className="readCommentsBox">
+              <div className="theCommentedBox">
+                <p>Tango_lasse</p>
+                <p className="dot">•</p>
+                <p>2d</p>
+              </div>
+              <p className="commentArticleTitle">{this.props.title}</p>
+              <p className="comment">{this.props.comment}</p>
+              <div className="goToForumText">Gå till forumet <div className="goToForumIcon"></div></div>
             </div>
-            <p className="commentArticleTitle">{this.props.title}</p>
-            <p className="comment">{this.props.comment}</p>
-            <div className="goToForumText">Gå till forumet <div className="goToForumIcon"></div></div>
+            <div className="lineBetween"></div>
+            <div className="readCommentsBox">
+              <div className="theCommentedBox">
+                <p>Tango_lasse</p>
+                <p className="dot">•</p>
+                <p>2d</p>
+              </div>
+              <p className="commentArticleTitle">{this.props.title}</p>
+              <p className="comment">{this.props.comment}</p>
+              <div className="goToForumText">Gå till forumet <div className="goToForumIcon"></div></div>
+            </div>
           </div>
-        </div>
-      ): ( <div onClick={this.eventHandler} className="commentIcon"> {this.props.comments} </div>)
-          }
+
+          :
+
+          <div onClick={this.eventHandler} className="commentIcon"> {this.props.comments} </div>
+
+        }
+
+
       </div>
+
     );
   }
 }

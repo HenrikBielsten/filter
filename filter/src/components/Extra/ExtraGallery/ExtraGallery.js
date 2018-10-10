@@ -18,11 +18,11 @@ class ExtraGallery extends Component {
     return (
 
       <div className="imageWrapper">
-        <Image src={article.image1} mode='fill' height={64} width={96} />
-        <Image src={article.image2} mode='fill' height={64} width={96} />
-        <Image src={article.image1} mode='fill' height={64} width={96} />
-        <Image src={article.image2} mode='fill' height={64} width={96} />
-        <Image src={article.image1} mode='fill' height={64} width={96} />
+        <Image src={article.image1} mode='fill' height={80} width={120} />
+        <Image src={article.image2} mode='fill' height={80} width={120} />
+        <Image src={article.image1} mode='fill' height={80} width={120} />
+        <Image src={article.image2} mode='fill' height={80} width={120} />
+        <Image src={article.image1} mode='fill' height={80} width={120} />
       </div>
 
     );
