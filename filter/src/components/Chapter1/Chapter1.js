@@ -76,11 +76,11 @@ class Chapter1 extends Component{
           <Text text={article.text6} />
           <Text text={article.text7} />
           <Text text={article.text8} comment='yes' />
-          <Text text={article.text9} comment='yes'/>
+          <Text text={article.text9} />
           <Text text={article.text10} />
           <Text text={article.text11} />
           <Text text={article.text12} />
-          <Text text={article.text13} />
+          <Text text={article.text13} comment='yes' />
           <Text text={article.text14} />
           <Text text={article.text15} />
           <Extra
@@ -94,11 +94,11 @@ class Chapter1 extends Component{
           <Text text={article.text16} />
           <Text text={article.text17} />
           <Text text={article.text18} />
-          <Text text={article.text19} />
+          <Text text={article.text19} comment='yes' />
           <Text text={article.text20} />
           <Text text={article.text21} />
           <Text text={article.text22} />
-          <Text text={article.text23} />
+          <Text text={article.text23} comment='yes' />
           <Text text={article.text24} />
           <Extra
             title={article.extraAudioTitle}
@@ -110,16 +110,16 @@ class Chapter1 extends Component{
           />
           <Text text={article.text25} />
           <Text text={article.text26} />
-          <Text text={article.text27} />
+          <Text text={article.text27} comment='yes'/>
           <Text text={article.text28} />
           <Text text={article.text29} />
           <Text text={article.text30} />
           <Text text={article.text31} />
           <Text text={article.text32} />
-          <Text text={article.text33} />
+          <Text text={article.text33}  comment='yes'/>
           <Text text={article.text34} />
           <Text text={article.text35} />
-          <Text text={article.text36} />
+          <Text text={article.text36} comment='yes' />
           <Text text={article.text37} />
           <Text text={article.text38} />
           <Text text={article.text39} />
@@ -132,7 +132,7 @@ class Chapter1 extends Component{
           />
           <Text text={article.text40} />
           <Text text={article.text41} />
-          <Text text={article.text42} />
+          <Text text={article.text42} comment='yes' />
           <Text text={article.text43} />
           <Text text={article.text44} />
         <JoystickNew />

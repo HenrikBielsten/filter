@@ -61,6 +61,14 @@ class Chapter2 extends Component{
         <Text text={article.text2} />
         <Extra src={article.image1} title={article.extraTitle} />
         <Text text={article.text3} />
+        <Extra
+          title={article.extraAudioTitle}
+          audioTitle={article.audioTitle}
+          icon='audio'
+          height='audioHeight'
+          layout='audio'
+          eventHandler={this.state.readmore}
+        />
         <Text text={article.text4} />
         <Text text={article.text5} />
         <Text text={article.text6} />
@@ -72,24 +80,46 @@ class Chapter2 extends Component{
         <Text text={article.text12} />
         <Text text={article.text13} />
         <Text text={article.text14} />
-        <Text text={article.text15} />
+        <Text text={article.text15}  comment='yes'/>
         <Text text={article.text15} />
         <Text text={article.text16} />
         <Text text={article.text17} />
+        <Extra
+          title={article.extraGalleryTitle}
+          icon='gallery'
+          height='galleryHeight'
+          layout='gallery'
+          eventHandler={this.state.readmore}
+        />
         <Text text={article.text18} />
         <Text text={article.text19} />
-        <Text text={article.text20} />
+        <Text text={article.text20} comment='yes'/>
         <Text text={article.text21} />
         <Text text={article.text22} />
+        <Extra
+          title={article.extraVideoTitle}
+          icon='video'
+          height='videoHeight'
+          layout='video'
+          eventHandler={this.state.readmore}
+        />
         <Text text={article.text23} />
         <Text text={article.text24} />
         <Text text={article.text25} />
         <Text text={article.text26} />
         <Text text={article.text27} />
         <Text text={article.text28} />
-        <Text text={article.text29} />
+        <Text text={article.text29} comment='yes' />
         <Text text={article.text30} />
         <Text text={article.text31} />
+        <Extra
+          title={article.extraAudioTitle}
+          audioTitle={article.audioTitle}
+          icon='audio'
+          height='audioHeight'
+          layout='audio'
+          eventHandler={this.state.readmore}
+        />
         <Text text={article.text32} />
         <Text text={article.text33} />
         <Text text={article.text34} />
@@ -98,7 +128,7 @@ class Chapter2 extends Component{
         <Text text={article.text37} />
         <Text text={article.text38} />
         <Text text={article.text39} />
-        <Text text={article.text40} />
+        <Text text={article.text40} comment='yes' />
         <Text text={article.text41} />
         <Text text={article.text42} />
         <JoystickNew />
