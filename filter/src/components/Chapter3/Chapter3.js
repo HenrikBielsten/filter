@@ -12,12 +12,10 @@ import SimilarArticles from '../SimilarArticles/SimilarArticles.js';
 import SmallText from '../SmallText/SmallText';
 
 class Chapter3 extends Component{
-
   state = {
     articles: articles,
     togglemenus: true,
-    showImages: true,
-    imageIcon: false,
+    readmore: true,
   }
 
   toggleMenu = (e) => {
@@ -25,13 +23,18 @@ class Chapter3 extends Component{
       togglemenus: !this.state.togglemenus
     })
   }
-
-  toggleImages = () => {
+  toggleNightMode = (e) => {
     this.setState({
-      showImages: !this.state.showImages,
-      imageIcon: !this.state.imageIcon,
+      nightMode: !this.state.nightMode
     })
   }
+
+  eventHandler = () => {
+    this.setState({
+      readmore: !this.state.readmore,
+    })
+  }
+
   componentDidMount(){
     window.scrollTo(0, 0)
   }
@@ -40,7 +43,7 @@ class Chapter3 extends Component{
 
     const article = this.state.articles[2];
     return (
-      <div className={`chapterOne ${this.state.togglemenus}`} onClick={this.toggleMenu}>
+      <div className={`chapterOne ${!this.state.togglemenus && 'menuDown'} ${this.state.nightMode && 'nightMode'}`} onClick={this.toggleMenu}>
         <Header
           menuhidden={this.state.togglemenus.toString()}
           src={window.location.origin + '/icons/Filter_logo_F_white.svg'} mode='fit'
@@ -105,7 +108,7 @@ class Chapter3 extends Component{
         </Link>
         <ExtraMaterial />
         <SimilarArticles />
-        <MenuBottom toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
+        <MenuBottom toggleNightMode={this.toggleNightMode} toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
       </div>
     );
   }

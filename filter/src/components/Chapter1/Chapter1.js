@@ -16,7 +16,6 @@ import './Chapter1.css';
 
 
 class Chapter1 extends Component{
-
   state = {
     articles: articles,
     togglemenus: true,
@@ -65,6 +64,8 @@ class Chapter1 extends Component{
           <SmallText text={article.author} />
           <SmallText text={article.illustrator} />
           <SmallText text={article.published} />
+          <SmallText text={article.indecator} />
+          <SmallText text={article.readtime} />
           <Ingress ingress={article.ingress} />
           <div className="lineSeperator"></div>
           <Text text={article.text} />
