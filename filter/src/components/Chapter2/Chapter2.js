@@ -51,7 +51,8 @@ componentDidMount(){
           lastid={this.state.articles.length}
         />
         <ProgressBar menuhidden={this.state.togglemenus} />
-        <SmallText text={`Kapitel : ${article.chapter}`} />
+        <SmallText text={article.indecator} />
+        <SmallText text={article.readtime} />
         <Text text={article.text} />
         <Text text={article.text2} />
         <Extra src={article.image1} title={article.extraTitle} />
