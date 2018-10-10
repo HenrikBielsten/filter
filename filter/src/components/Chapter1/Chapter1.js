@@ -92,6 +92,13 @@ class Chapter1 extends Component{
           />
           <Text text={article.text15} />
           <Text text={article.text16} />
+          <Extra
+            title={article.extraVideoTitle}
+            icon='video'
+            height='videoHeight'
+            layout='video'
+            eventHandler={this.state.readmore}
+          />
           <Text text={article.text17} />
           <Text text={article.text18} />
           <Text text={article.text19} comment='yes' />
