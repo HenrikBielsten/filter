@@ -3,13 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .readMore {
   width: 100vw;
   background-color: #D8AD9C;
-  transition: .2s;
-  transform: translateY(-9px);
+  transition: .1s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,10 +19,9 @@
 .readMoreClosed {
   height: 0px;
   width: 100vw;
-  transition: .2s;
+  transition: .1s;
   background-color: #D8AD9C;
   overflow: hidden;
-  transform: translateY(-9px);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -36,11 +35,13 @@
   background-size: cover;
   height: 16px;
   width: 16px;
-  transition: .2s;
+  transition: .1s;
   border-radius: 2px;
   z-index: 300;
   position: relative;
   box-shadow: 0px 2px 7px rgba(0,0,0,0.5);
+  position: absolute;
+  top: -7px;
 }
 
 .closed {
@@ -49,10 +50,11 @@
   background-size: cover;
 	height: 16px;
   width: 16px;
-  transition: .2s;
+  transition: .1s;
   border-radius: 2px;
   z-index: 200;
-  position: relative;
+  position: absolute;
+  top: -7px;
 }
 
 .borderBottomOpen {
@@ -61,17 +63,57 @@
   width: 100vw;
   background-color: #D8AD9C;
   box-shadow: 0px -2px 7px rgba(0,0,0,0.5);
-  transform: translateY(-9px);
+  position: absolute;
+  bottom: 0px;
 }
 
 .borderBottomClosed {
-  height: 0px;
+  height: 3px;
   transition: .1s;
-  transition-delay: .2s;
+  transition-delay: .1s;
+  background-color: #D8AD9C;
+  position: absolute;
+  transform: translateY(1px);
+}
+
+.borderOverlayOpen {
+  height: 3px;
+  transition: .1s;
+  transition-delay: 1s;
   width: 100vw;
   background-color: #D8AD9C;
-  box-shadow: 0px -2px 7px rgba(0,0,0,0.5);
-  transform: translateY(-9px);
+  position: absolute;
+  bottom: 0px;
+}
+
+.borderOverlayClosed {
+  height: 0px;
+  transition: .1s;
+  width: 100vw;
+  background-color: #D8AD9C;
+  position: absolute;
+  bottom: 0px;
+  transition-delay: 1s;
+}
+
+.rightOpen {
+  width: 50vw;
+  left: 50%;
+}
+
+.leftOpen {
+  width: 50vw;
+  right: 50%;
+}
+
+.rightClosed {
+  width: 10vw;
+  left: 54%;
+}
+
+.leftClosed {
+  width: 10vw;
+  right: 54%;
 }
 
 .borderTopOpen {
@@ -81,18 +123,18 @@
   background-color: #D8AD9C;
   box-shadow: 0px 2px 7px rgba(0,0,0,0.5);
   z-index: 100;
-  transform: translateY(-9px);
+  position: absolute;
+  top: 0px;
 }
 
 .borderTopClosed {
   height: 0px;
-  transition: .1s;
-  transition-delay: .2s;
+  transition: 1s;
+  transition-delay: .1s;
   width: 100vw;
   background-color: #D8AD9C;
   box-shadow: 0px 2px 7px rgba(0,0,0,0.5);
   z-index: 100;
-  transform: translateY(-9px);
 }
 
 .underlayClosed {

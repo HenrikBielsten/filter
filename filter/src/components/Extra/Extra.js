@@ -35,10 +35,10 @@ class Extra extends Component {
           className={`${this.state.readmore ? "open" : `${this.props.icon} closed`}`}
           >
           </div>
-          {/* <div className={this.state.readmore ? "underlayOpen" : "underlayClosed"}></div> */}
-
-          <div className={this.state.readmore ? "borderTopOpen " : "borderTopClosed "}></div>
           <div className={`${this.state.readmore ? `${this.props.height} readMore` : "readMoreClosed"}`}>
+              {/* <div className={this.state.readmore ? "underlayOpen" : "underlayClosed"}></div> */}
+
+              <div className={this.state.readmore ? "borderTopOpen" : "borderTopClosed"}></div>
 
             <div className="readMoreHeader">{this.props.title}</div>
 
@@ -56,8 +56,10 @@ class Extra extends Component {
 
           }
 
+          <div className={this.state.readmore ? "borderBottomOpen rightOpen" : "borderBottomClosed rightClosed"}></div>
+          <div className={this.state.readmore ? "borderBottomOpen leftOpen" : "borderBottomClosed leftClosed"}></div>
+          <div className={this.state.readmore ? "borderOverlayOpen" : "borderOverlayClosed"}></div>
         </div>
-        <div className={this.state.readmore ? "borderBottomOpen " : "borderBottomClosed "}></div>
       </div>
     );
   }
