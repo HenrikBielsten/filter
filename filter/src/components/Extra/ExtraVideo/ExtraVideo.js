@@ -19,7 +19,7 @@ class ExtraVideo extends Component {
     return (
 
       <div className="videoContent">
-        <VideoImage src={article.video} mode='fill' width={360} height={180} margin="0px" />
+        <VideoImage src={article.video} mode='fill' width={326} height={180} margin="0px" />
         <div className="playButton"></div>
       </div>
 

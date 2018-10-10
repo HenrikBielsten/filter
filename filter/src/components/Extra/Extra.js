@@ -36,7 +36,6 @@ class Extra extends Component {
           >
           </div>
           <div className={`${this.state.readmore ? `${this.props.height} readMore` : "readMoreClosed"}`}>
-              {/* <div className={this.state.readmore ? "underlayOpen" : "underlayClosed"}></div> */}
 
               <div className={this.state.readmore ? "borderTopOpen" : "borderTopClosed"}></div>
 

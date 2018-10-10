@@ -79,7 +79,7 @@
   border-radius: 20px;
   box-shadow: 0 2px 4px 0 rgba(26,26,26,0.61);
   position: relative;
-  transform: translateY(10px) translateX(-110px);
+  transform: translateY(10px) translateX(-90px);
 }
 
 .timeContainer {

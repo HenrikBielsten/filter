@@ -14,6 +14,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  transition-delay: .1s;
 }
 
 .readMoreClosed {
@@ -59,66 +61,63 @@
 
 .borderBottomOpen {
   height: 3px;
-  transition: .1s;
-  width: 100vw;
   background-color: #D8AD9C;
-  box-shadow: 0px -2px 7px rgba(0,0,0,0.5);
   position: absolute;
   bottom: 0px;
 }
 
 .borderBottomClosed {
   height: 3px;
-  transition: .1s;
-  transition-delay: .1s;
   background-color: #D8AD9C;
   position: absolute;
   transform: translateY(1px);
 }
 
-.borderOverlayOpen {
-  height: 3px;
-  transition: .1s;
-  transition-delay: 1s;
-  width: 100vw;
-  background-color: #D8AD9C;
-  position: absolute;
-  bottom: 0px;
-}
-
-.borderOverlayClosed {
-  height: 0px;
-  transition: .1s;
-  width: 100vw;
-  background-color: #D8AD9C;
-  position: absolute;
-  bottom: 0px;
-  transition-delay: 1s;
-}
-
 .rightOpen {
   width: 50vw;
   left: 50%;
+  transition: .1s;
 }
 
 .leftOpen {
   width: 50vw;
   right: 50%;
+  transition: .1s;
 }
 
 .rightClosed {
   width: 10vw;
   left: 54%;
+  transition: .1s;
+  transition-delay: .2s;
 }
 
 .leftClosed {
   width: 10vw;
   right: 54%;
+  transition: .1s;
+  transition-delay: .2s;
+}
+
+.borderOverlayOpen {
+  height: 3px;
+  width: 100vw;
+  background-color: #D8AD9C;
+  position: absolute;
+  bottom: 0px;
+  box-shadow: 0px -2px 7px rgba(0,0,0,0.5);
+}
+
+.borderOverlayClosed {
+  height: 0px;
+  width: 100vw;
+  background-color: #D8AD9C;
+  position: absolute;
+  bottom: 0px;
 }
 
 .borderTopOpen {
   height: 3px;
-  transition: .1s;
   width: 100vw;
   background-color: #D8AD9C;
   box-shadow: 0px 2px 7px rgba(0,0,0,0.5);
@@ -129,36 +128,10 @@
 
 .borderTopClosed {
   height: 0px;
-  transition: 1s;
-  transition-delay: .1s;
   width: 100vw;
   background-color: #D8AD9C;
   box-shadow: 0px 2px 7px rgba(0,0,0,0.5);
   z-index: 100;
-}
-
-.underlayClosed {
-  height: 0px;
-  width: 16px;
-  border-radius: 2px;
-  box-shadow: 0px 2px 7px rgba(0,0,0,0.5);
-  z-index: 50;
-  position: relative;
-  transform: translateY(-16px);
-  position: relative;
-  transition: .1s;
-}
-
-.underlayOpen {
-  height: 16px;
-  width: 16px;
-  border-radius: 2px;
-  box-shadow: 0px 2px 7px rgba(0,0,0,0.5);
-  z-index: 50;
-  position: relative;
-  transform: translateY(-16px);
-  position: relative;
-  transition: .1s;
 }
 
 .readMoreHeader {

@@ -8,9 +8,5 @@
   left: 38%;
   transform: scale(3);
   z-index: 1000;
-  transition: .2s ease-in-out;
-}
-
-.imgContainerClosed {
-
+  transition: .2s ease-in-out
 }
