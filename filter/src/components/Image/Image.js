@@ -44,7 +44,7 @@ class VideoImage extends Component {
         {this.state.expand ?
 
           <div className="imgTextWrapper">
-            <div className="imgText">{this.props.imgText}</div>
+            <div className="imgText">{this.props.imgtext}</div>
           </div>
 
           : <div></div>

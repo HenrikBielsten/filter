@@ -19,7 +19,7 @@ class Chapter1 extends Component{
   state = {
     articles: articles,
     togglemenus: true,
-    readmore: true,
+    readmore: false,
   }
 
   toggleMenu = (e) => {
