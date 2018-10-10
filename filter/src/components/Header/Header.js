@@ -18,7 +18,7 @@ class Header extends Component {
  e.stopPropagation();
  }
 render() {
-  let {mode, src, height, width,margin, style, ...props} = this.props;
+  let {mode, src, height, width,padding, style, ...props} = this.props;
   let modes = {
     'fill': 'cover',
     'fit': 'contain'
@@ -28,7 +28,7 @@ render() {
   let defaults = {
     height: height || `${8}vh`,
     width: width || `${8}vw`,
-    margin: margin || `${0}vw ${0}vw ${0}vw ${0}vw`,
+    padding: padding || `${0}vw ${0}vw ${0}vw ${0}vw`,
   }
 
   let important = {

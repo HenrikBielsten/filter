@@ -12,8 +12,10 @@
   text-align: left;
   color: black;
   background-color: white;
+  transition: 0.2s;
 }
 .nightMode {
+  transition: 0.2s;
   color:white;
   background: black;
 }

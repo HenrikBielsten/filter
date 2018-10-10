@@ -15,7 +15,7 @@ class Home extends Component {
     return (
       <div>
         <div className="homePage">
-        <Header src={window.location.origin + '/images/Filter_logo.svg'} mode='fit' height={'14vh'} width={'14vh'} margin={`0vw 0vh 0vw 2vh`}  />
+        <Header src={window.location.origin + '/images/Filter_logo.svg'} mode='fit' height={'14vh'} width={'14vh'}   />
         <div className="headerLine"></div>
         {this.state.articles.map((article, key) => {
           return    <Link key={key} className={`wrapperHome Chapter${article.chapter.toString()}`} to={`Chapter${article.id}`} >
