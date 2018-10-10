@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 class JoystickNew extends Component {
-
   state = {
     timeOut: 0,
   }
@@ -87,9 +86,11 @@ class JoystickNew extends Component {
                   draggable='false'
                   className="joystick"
                   style={{
-                    width: '100px',
-                    height: '200px',
-                    backgroundColor: 'dodgerblue',
+                    width: '25vw',
+                    height: '15vh',
+                    borderRadius: `50%`,
+                    backgroundColor: 'lightgrey',
+                    opacity: '0.5 ',
                     userSelect: 'none',
                     WebkitUserSelect: 'none',
                     KhtmlUserDrag: 'none',

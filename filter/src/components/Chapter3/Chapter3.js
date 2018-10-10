@@ -7,17 +7,16 @@ import Text from '../Text/Text';
 import articles from '../Database/articles.js';
 import './Chapter3.css';
 import { Link } from '@reach/router';
+import Extra from '../Extra/Extra.js';
 import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
 import SimilarArticles from '../SimilarArticles/SimilarArticles.js';
 import SmallText from '../SmallText/SmallText';
 
 class Chapter3 extends Component{
-
   state = {
     articles: articles,
     togglemenus: true,
-    showImages: true,
-    imageIcon: false,
+    readmore: true,
   }
 
   toggleMenu = (e) => {
@@ -25,13 +24,18 @@ class Chapter3 extends Component{
       togglemenus: !this.state.togglemenus
     })
   }
-
-  toggleImages = () => {
+  toggleNightMode = (e) => {
     this.setState({
-      showImages: !this.state.showImages,
-      imageIcon: !this.state.imageIcon,
+      nightMode: !this.state.nightMode
     })
   }
+
+  eventHandler = () => {
+    this.setState({
+      readmore: !this.state.readmore,
+    })
+  }
+
   componentDidMount(){
     window.scrollTo(0, 0)
   }
@@ -40,7 +44,7 @@ class Chapter3 extends Component{
 
     const article = this.state.articles[2];
     return (
-      <div className={`chapterOne ${this.state.togglemenus}`} onClick={this.toggleMenu}>
+      <div className={`chapterOne ${!this.state.togglemenus && 'menuDown'} ${this.state.nightMode && 'nightMode'}`} onClick={this.toggleMenu}>
         <Header
           menuhidden={this.state.togglemenus.toString()}
           src={window.location.origin + '/icons/Filter_logo_F_white.svg'} mode='fit'
@@ -51,14 +55,14 @@ class Chapter3 extends Component{
           lastid={this.state.articles.length}
         />
         <ProgressBar menuhidden={this.state.togglemenus} />
-        <SmallText text={article.indecator} />
+        <SmallText text={article.indicator} />
         <SmallText text={article.readtime} />
         <Text text={article.text} />
         <Text text={article.text2} />
-        <Text text={article.text3} />
+        <Text text={article.text3} comment='yes' />
         <Text text={article.text4} />
         <Text text={article.text5} />
-        <Text text={article.text6} />
+        <Text text={article.text6}  comment='yes'/>
         <Text text={article.text7} />
         <Text text={article.text8} />
         <Text text={article.text9} />
@@ -69,21 +73,35 @@ class Chapter3 extends Component{
         <Text text={article.text14} />
         <Text text={article.text15} />
         <Text text={article.text15} />
-        <Text text={article.text16} />
+        <Text text={article.text16} comment='yes'/>
         <Text text={article.text17} />
         <Text text={article.text18} />
+        <Extra
+          title={article.extraGalleryTitle}
+          icon='gallery'
+          height='galleryHeight'
+          layout='gallery'
+          eventHandler={this.state.readmore}
+        />
         <Text text={article.text19} />
         <Text text={article.text20} />
         <Text text={article.text21} />
         <Text text={article.text22} />
-        <Text text={article.text23} />
+        <Text text={article.text23} comment='yes' />
         <Text text={article.text24} />
         <Text text={article.text25} />
+        <Extra
+          title={article.extraVideoTitle}
+          icon='video'
+          height='videoHeight'
+          layout='video'
+          eventHandler={this.state.readmore}
+        />
         <Text text={article.text26} />
         <Text text={article.text27} />
         <Text text={article.text28} />
         <Text text={article.text29} />
-        <Text text={article.text30} />
+        <Text text={article.text30} comment='yes' />
         <Text text={article.text31} />
         <Text text={article.text32} />
         <Text text={article.text33} />
@@ -91,7 +109,7 @@ class Chapter3 extends Component{
         <Text text={article.text35} />
         <Text text={article.text36} />
         <Text text={article.text37} />
-        <Text text={article.text38} />
+        <Text text={article.text38} comment='yes' />
         <Text text={article.text39} />
         <Text text={article.text40} />
         <Text text={article.text41} />
@@ -105,7 +123,7 @@ class Chapter3 extends Component{
         </Link>
         <ExtraMaterial />
         <SimilarArticles />
-        <MenuBottom toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
+        <MenuBottom toggleNightMode={this.toggleNightMode} toggleImages={this.toggleImages} menuhidden={this.state.togglemenus}/>
       </div>
     );
   }

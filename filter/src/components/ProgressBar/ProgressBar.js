@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Filler from '../Filler/Filler.js';
-import './index.css';
+import Filler from './Filler/Filler.js';
+import './ProgressBar.css';
 class ProgressBar extends Component {
   constructor(props) {
     super(props);

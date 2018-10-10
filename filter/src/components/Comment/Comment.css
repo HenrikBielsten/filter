@@ -63,7 +63,7 @@
 .readCommentsTitle {
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
+  text-align:left;
   color: #A89898;
   display: flex;
   height: 44px;
@@ -86,7 +86,6 @@
   font-size: 16px;
   line-height: 19px;
   margin: 0px;
-  margin-left: 16px;
   color: black;
 }
 .comment {
