@@ -3,14 +3,13 @@ import JoystickNew from '../Joystick/JoystickNew.js';
 import Header from '../Header/Header.js';
 import ProgressBar from '../ProgressBar/ProgressBar.js';
 import MenuBottom from '../MenuBottom/MenuBottom';
-import Title from '../Title/Title';
-import Ingress from '../Ingress/Ingress';
 import Text from '../Text/Text';
 import articles from '../Database/articles.js';
 import './Chapter3.css';
 import { Link } from '@reach/router';
 import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
 import SimilarArticles from '../SimilarArticles/SimilarArticles.js';
+import SmallText from '../SmallText/SmallText';
 
 class Chapter3 extends Component{
 
@@ -52,8 +51,8 @@ class Chapter3 extends Component{
           lastid={this.state.articles.length}
         />
         <ProgressBar menuhidden={this.state.togglemenus} />
-        <Title title={article.title} />
-        <Ingress ingress={article.ingress} />
+        <SmallText text={article.indecator} />
+        <SmallText text={article.readtime} />
         <Text text={article.text} />
         <Text text={article.text2} />
         <Text text={article.text3} />

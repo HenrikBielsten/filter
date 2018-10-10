@@ -17,6 +17,7 @@
 .published {
   font-size: 11px;
   line-height: NaNpx;
+  margin-top: 8px;
 }
 .filterNumber {
   display: inline;
