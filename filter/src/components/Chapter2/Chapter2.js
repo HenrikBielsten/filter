@@ -3,13 +3,12 @@ import JoystickNew from '../Joystick/JoystickNew.js';
 import Header from '../Header/Header.js';
 import ProgressBar from '../ProgressBar/ProgressBar.js';
 import MenuBottom from '../MenuBottom/MenuBottom';
-import Title from '../Title/Title';
-import Ingress from '../Ingress/Ingress';
 import Text from '../Text/Text';
 import articles from '../Database/articles.js';
 import Extra from '../Extra/Extra.js';
 import { Link } from '@reach/router';
 import ExtraMaterial from '../ExtraMaterial/ExtraMaterial.js';
+import SmallText from '../SmallText/SmallText';
 import './Chapter2.css';
 
 
@@ -52,11 +51,10 @@ componentDidMount(){
           lastid={this.state.articles.length}
         />
         <ProgressBar menuhidden={this.state.togglemenus} />
-        <Title title={article.title} />
-        <Ingress ingress={article.ingress} />
-        <Extra src={article.image1} title={article.extraTitle} />
+        <SmallText text={`Kapitel : ${article.chapter}`} />
         <Text text={article.text} />
         <Text text={article.text2} />
+        <Extra src={article.image1} title={article.extraTitle} />
         <Text text={article.text3} />
         <Text text={article.text4} />
         <Text text={article.text5} />
