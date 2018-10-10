@@ -26,8 +26,8 @@ render() {
   let size = modes[mode] || 'contain';
 
   let defaults = {
-    height: height || `${8}vh`,
-    width: width || `${8}vw`,
+    height: height || `${7.2}vh`,
+    width: width || `${7.2}vw`,
     padding: padding || `${0}vw ${0}vw ${0}vw ${0}vw`,
   }
 

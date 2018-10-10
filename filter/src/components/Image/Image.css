@@ -4,9 +4,29 @@
 
 .imgContainerOpen {
   position: fixed;
-  top: 30%;
-  left: 38%;
+  top: 38%;
+  left: 34%;
   transform: scale(3);
   z-index: 1000;
-  transition: .2s ease-in-out
+  transition: .2s ease-in-out;
+  box-shadow: 0px 2px 7px rgba(0,0,0,0.5);
+  /* border: solid black 1px; */
+}
+
+.imgContainerClosed {
+  margin-right: 4vw;
+}
+
+.imgTextWrapper {
+  width: 120px;
+  background-color: #D8AD9C;
+  /* border-top: solid white 1px; */
+}
+
+.imgText {
+  font-family: "HarrietText-Regular";
+  font-size: 4.5px;
+  font-style: italic;
+  text-align: left;
+  padding: 4px;
 }

@@ -26,7 +26,7 @@ class VideoImage extends Component {
     let defaults = {
       height: height || `${20}vw`,
       width: width || `${30}vw`,
-      margin: margin || `${0}vw ${4}vw ${0}vw ${0}vw`,
+      // margin: margin || `${0}vw ${4}vw ${0}vw ${0}vw`,
     }
 
     let important = {
@@ -39,7 +39,17 @@ class VideoImage extends Component {
     return (
       <div className={`${this.state.expand ? 'imgContainerOpen' : 'imgContainerClosed'}`}
         onClick={this.expand}>
-        <div {...props} style={{...defaults, ...style, ...important}} />
+        <div {...props} style={{...defaults, ...style, ...important}} ></div>
+
+        {this.state.expand ?
+
+          <div className="imgTextWrapper">
+            <div className="imgText">{this.props.imgText}</div>
+          </div>
+
+          : <div></div>
+
+        }
       </div>
     );
   }

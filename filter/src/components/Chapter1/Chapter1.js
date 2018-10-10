@@ -74,6 +74,13 @@ class Chapter1 extends Component{
           <Text text={article.text4} />
           <Text text={article.text5} />
           <Text text={article.text6} />
+          <Extra
+            title={article.extraGalleryTitle}
+            icon='gallery'
+            height='galleryHeight'
+            layout='gallery'
+            eventHandler={this.state.readmore}
+          />
           <Text text={article.text7} />
           <Text text={article.text8} comment='yes' />
           <Text text={article.text9} />
@@ -82,13 +89,6 @@ class Chapter1 extends Component{
           <Text text={article.text12} />
           <Text text={article.text13} comment='yes' />
           <Text text={article.text14} />
-          <Extra
-            title={article.extraGalleryTitle}
-            icon='gallery'
-            height='galleryHeight'
-            layout='gallery'
-            eventHandler={this.state.readmore}
-          />
           <Text text={article.text15} />
           <Text text={article.text16} />
           <Extra

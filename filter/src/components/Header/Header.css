@@ -14,19 +14,16 @@
   -moz-transform: translateY(-100%);
   -o-transform: translateY(-100%);
 }
-.logo {
-  height: 32px;
-  width: 90.48px;
-  margin-left: 10px;
-}
+
 .header {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 50px;
-  width: 100%;
   background-color: black;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .hamburger {
   display: flex;
