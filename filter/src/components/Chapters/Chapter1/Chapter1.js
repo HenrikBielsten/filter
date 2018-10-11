@@ -10,7 +10,6 @@ import SmallText from '../../SmallText/SmallText';
 import articles from '../../Database/articles.js';
 import Extra from '../../Extra/Extra.js';
 import ExtraMaterial from '../../ExtraMaterial/ExtraMaterial.js';
-import Image from '../../Image/Image.js';
 import { Link } from '@reach/router';
 import './Chapter1.css';
 
@@ -20,6 +19,7 @@ class Chapter1 extends Component{
     articles: articles,
     togglemenus: true,
     readmore: false,
+    nightMode: false,
   }
 
   toggleMenu = (e) => {
@@ -58,7 +58,7 @@ class Chapter1 extends Component{
           lastid={this.state.articles.length}
         />
         <ProgressBar menuhidden={this.state.togglemenus} />
-        <Image mode='fill' margin={`0`} height={`50vw`} width={`100vw`} src={article.image0} />
+        <img src={article.image0} alt="header" style={{height: '60vw', width: '100vw'}} />
           <SmallText text={article.type} />
           <Title title={article.title} />
           <SmallText text={article.author} />

@@ -59,7 +59,6 @@ class Chapter2 extends Component{
         <SmallText text={article.readtime} />
         <Text text={article.text} />
         <Text text={article.text2} />
-        <Extra src={article.image1} title={article.extraTitle} />
         <Text text={article.text3} />
         <Extra
           title={article.extraAudioTitle}
